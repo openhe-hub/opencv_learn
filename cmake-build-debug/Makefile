@@ -111,82 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named hsv-substraction
+# Target rules for targets named ocv
 
 # Build rule for target.
-hsv-substraction: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hsv-substraction
-.PHONY : hsv-substraction
+ocv: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ocv
+.PHONY : ocv
 
 # fast build rule for target.
-hsv-substraction/fast:
-	$(MAKE) -f CMakeFiles/hsv-substraction.dir/build.make CMakeFiles/hsv-substraction.dir/build
-.PHONY : hsv-substraction/fast
-
-#=============================================================================
-# Target rules for targets named binarization2
-
-# Build rule for target.
-binarization2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 binarization2
-.PHONY : binarization2
-
-# fast build rule for target.
-binarization2/fast:
-	$(MAKE) -f CMakeFiles/binarization2.dir/build.make CMakeFiles/binarization2.dir/build
-.PHONY : binarization2/fast
-
-#=============================================================================
-# Target rules for targets named demo3
-
-# Build rule for target.
-demo3: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 demo3
-.PHONY : demo3
-
-# fast build rule for target.
-demo3/fast:
-	$(MAKE) -f CMakeFiles/demo3.dir/build.make CMakeFiles/demo3.dir/build
-.PHONY : demo3/fast
-
-#=============================================================================
-# Target rules for targets named demo2
-
-# Build rule for target.
-demo2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 demo2
-.PHONY : demo2
-
-# fast build rule for target.
-demo2/fast:
-	$(MAKE) -f CMakeFiles/demo2.dir/build.make CMakeFiles/demo2.dir/build
-.PHONY : demo2/fast
-
-#=============================================================================
-# Target rules for targets named demo1
-
-# Build rule for target.
-demo1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 demo1
-.PHONY : demo1
-
-# fast build rule for target.
-demo1/fast:
-	$(MAKE) -f CMakeFiles/demo1.dir/build.make CMakeFiles/demo1.dir/build
-.PHONY : demo1/fast
-
-#=============================================================================
-# Target rules for targets named energy_main
-
-# Build rule for target.
-energy_main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 energy_main
-.PHONY : energy_main
-
-# fast build rule for target.
-energy_main/fast:
-	$(MAKE) -f CMakeFiles/energy_main.dir/build.make CMakeFiles/energy_main.dir/build
-.PHONY : energy_main/fast
+ocv/fast:
+	$(MAKE) -f CMakeFiles/ocv.dir/build.make CMakeFiles/ocv.dir/build
+.PHONY : ocv/fast
 
 #=============================================================================
 # Target rules for targets named binarization1
@@ -202,6 +137,84 @@ binarization1/fast:
 .PHONY : binarization1/fast
 
 #=============================================================================
+# Target rules for targets named demo1
+
+# Build rule for target.
+demo1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo1
+.PHONY : demo1
+
+# fast build rule for target.
+demo1/fast:
+	$(MAKE) -f CMakeFiles/demo1.dir/build.make CMakeFiles/demo1.dir/build
+.PHONY : demo1/fast
+
+#=============================================================================
+# Target rules for targets named filter1
+
+# Build rule for target.
+filter1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 filter1
+.PHONY : filter1
+
+# fast build rule for target.
+filter1/fast:
+	$(MAKE) -f CMakeFiles/filter1.dir/build.make CMakeFiles/filter1.dir/build
+.PHONY : filter1/fast
+
+#=============================================================================
+# Target rules for targets named demo3
+
+# Build rule for target.
+demo3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo3
+.PHONY : demo3
+
+# fast build rule for target.
+demo3/fast:
+	$(MAKE) -f CMakeFiles/demo3.dir/build.make CMakeFiles/demo3.dir/build
+.PHONY : demo3/fast
+
+#=============================================================================
+# Target rules for targets named energy_main
+
+# Build rule for target.
+energy_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 energy_main
+.PHONY : energy_main
+
+# fast build rule for target.
+energy_main/fast:
+	$(MAKE) -f CMakeFiles/energy_main.dir/build.make CMakeFiles/energy_main.dir/build
+.PHONY : energy_main/fast
+
+#=============================================================================
+# Target rules for targets named demo2
+
+# Build rule for target.
+demo2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo2
+.PHONY : demo2
+
+# fast build rule for target.
+demo2/fast:
+	$(MAKE) -f CMakeFiles/demo2.dir/build.make CMakeFiles/demo2.dir/build
+.PHONY : demo2/fast
+
+#=============================================================================
+# Target rules for targets named canny1
+
+# Build rule for target.
+canny1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 canny1
+.PHONY : canny1
+
+# fast build rule for target.
+canny1/fast:
+	$(MAKE) -f CMakeFiles/canny1.dir/build.make CMakeFiles/canny1.dir/build
+.PHONY : canny1/fast
+
+#=============================================================================
 # Target rules for targets named my_test
 
 # Build rule for target.
@@ -215,17 +228,43 @@ my_test/fast:
 .PHONY : my_test/fast
 
 #=============================================================================
-# Target rules for targets named ocv
+# Target rules for targets named channel
 
 # Build rule for target.
-ocv: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ocv
-.PHONY : ocv
+channel: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 channel
+.PHONY : channel
 
 # fast build rule for target.
-ocv/fast:
-	$(MAKE) -f CMakeFiles/ocv.dir/build.make CMakeFiles/ocv.dir/build
-.PHONY : ocv/fast
+channel/fast:
+	$(MAKE) -f CMakeFiles/channel.dir/build.make CMakeFiles/channel.dir/build
+.PHONY : channel/fast
+
+#=============================================================================
+# Target rules for targets named binarization2
+
+# Build rule for target.
+binarization2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 binarization2
+.PHONY : binarization2
+
+# fast build rule for target.
+binarization2/fast:
+	$(MAKE) -f CMakeFiles/binarization2.dir/build.make CMakeFiles/binarization2.dir/build
+.PHONY : binarization2/fast
+
+#=============================================================================
+# Target rules for targets named hsv-substraction
+
+# Build rule for target.
+hsv-substraction: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hsv-substraction
+.PHONY : hsv-substraction
+
+# fast build rule for target.
+hsv-substraction/fast:
+	$(MAKE) -f CMakeFiles/hsv-substraction.dir/build.make CMakeFiles/hsv-substraction.dir/build
+.PHONY : hsv-substraction/fast
 
 main.o: main.cpp.o
 
@@ -308,6 +347,33 @@ src/binarization/binarization2.cpp.s:
 	$(MAKE) -f CMakeFiles/binarization2.dir/build.make CMakeFiles/binarization2.dir/src/binarization/binarization2.cpp.s
 .PHONY : src/binarization/binarization2.cpp.s
 
+src/contour-detect/canny1.o: src/contour-detect/canny1.cpp.o
+
+.PHONY : src/contour-detect/canny1.o
+
+# target to build an object file
+src/contour-detect/canny1.cpp.o:
+	$(MAKE) -f CMakeFiles/canny1.dir/build.make CMakeFiles/canny1.dir/src/contour-detect/canny1.cpp.o
+.PHONY : src/contour-detect/canny1.cpp.o
+
+src/contour-detect/canny1.i: src/contour-detect/canny1.cpp.i
+
+.PHONY : src/contour-detect/canny1.i
+
+# target to preprocess a source file
+src/contour-detect/canny1.cpp.i:
+	$(MAKE) -f CMakeFiles/canny1.dir/build.make CMakeFiles/canny1.dir/src/contour-detect/canny1.cpp.i
+.PHONY : src/contour-detect/canny1.cpp.i
+
+src/contour-detect/canny1.s: src/contour-detect/canny1.cpp.s
+
+.PHONY : src/contour-detect/canny1.s
+
+# target to generate assembly for a file
+src/contour-detect/canny1.cpp.s:
+	$(MAKE) -f CMakeFiles/canny1.dir/build.make CMakeFiles/canny1.dir/src/contour-detect/canny1.cpp.s
+.PHONY : src/contour-detect/canny1.cpp.s
+
 src/demo/energy/main.o: src/demo/energy/main.cpp.o
 
 .PHONY : src/demo/energy/main.o
@@ -335,6 +401,33 @@ src/demo/energy/main.cpp.s:
 	$(MAKE) -f CMakeFiles/energy_main.dir/build.make CMakeFiles/energy_main.dir/src/demo/energy/main.cpp.s
 .PHONY : src/demo/energy/main.cpp.s
 
+src/extract/channel.o: src/extract/channel.cpp.o
+
+.PHONY : src/extract/channel.o
+
+# target to build an object file
+src/extract/channel.cpp.o:
+	$(MAKE) -f CMakeFiles/channel.dir/build.make CMakeFiles/channel.dir/src/extract/channel.cpp.o
+.PHONY : src/extract/channel.cpp.o
+
+src/extract/channel.i: src/extract/channel.cpp.i
+
+.PHONY : src/extract/channel.i
+
+# target to preprocess a source file
+src/extract/channel.cpp.i:
+	$(MAKE) -f CMakeFiles/channel.dir/build.make CMakeFiles/channel.dir/src/extract/channel.cpp.i
+.PHONY : src/extract/channel.cpp.i
+
+src/extract/channel.s: src/extract/channel.cpp.s
+
+.PHONY : src/extract/channel.s
+
+# target to generate assembly for a file
+src/extract/channel.cpp.s:
+	$(MAKE) -f CMakeFiles/channel.dir/build.make CMakeFiles/channel.dir/src/extract/channel.cpp.s
+.PHONY : src/extract/channel.cpp.s
+
 src/extract/hsv-extract.o: src/extract/hsv-extract.cpp.o
 
 .PHONY : src/extract/hsv-extract.o
@@ -361,6 +454,33 @@ src/extract/hsv-extract.s: src/extract/hsv-extract.cpp.s
 src/extract/hsv-extract.cpp.s:
 	$(MAKE) -f CMakeFiles/hsv-substraction.dir/build.make CMakeFiles/hsv-substraction.dir/src/extract/hsv-extract.cpp.s
 .PHONY : src/extract/hsv-extract.cpp.s
+
+src/filter/filter1.o: src/filter/filter1.cpp.o
+
+.PHONY : src/filter/filter1.o
+
+# target to build an object file
+src/filter/filter1.cpp.o:
+	$(MAKE) -f CMakeFiles/filter1.dir/build.make CMakeFiles/filter1.dir/src/filter/filter1.cpp.o
+.PHONY : src/filter/filter1.cpp.o
+
+src/filter/filter1.i: src/filter/filter1.cpp.i
+
+.PHONY : src/filter/filter1.i
+
+# target to preprocess a source file
+src/filter/filter1.cpp.i:
+	$(MAKE) -f CMakeFiles/filter1.dir/build.make CMakeFiles/filter1.dir/src/filter/filter1.cpp.i
+.PHONY : src/filter/filter1.cpp.i
+
+src/filter/filter1.s: src/filter/filter1.cpp.s
+
+.PHONY : src/filter/filter1.s
+
+# target to generate assembly for a file
+src/filter/filter1.cpp.s:
+	$(MAKE) -f CMakeFiles/filter1.dir/build.make CMakeFiles/filter1.dir/src/filter/filter1.cpp.s
+.PHONY : src/filter/filter1.cpp.s
 
 src/mat/demo1.o: src/mat/demo1.cpp.o
 
@@ -476,17 +596,20 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... hsv-substraction"
-	@echo "... binarization2"
-	@echo "... edit_cache"
-	@echo "... demo3"
-	@echo "... demo2"
-	@echo "... demo1"
-	@echo "... energy_main"
-	@echo "... binarization1"
-	@echo "... my_test"
 	@echo "... ocv"
+	@echo "... binarization1"
+	@echo "... demo1"
+	@echo "... filter1"
+	@echo "... demo3"
+	@echo "... energy_main"
+	@echo "... demo2"
+	@echo "... canny1"
+	@echo "... my_test"
+	@echo "... channel"
+	@echo "... rebuild_cache"
+	@echo "... edit_cache"
+	@echo "... binarization2"
+	@echo "... hsv-substraction"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -496,12 +619,21 @@ help:
 	@echo "... src/binarization/binarization2.o"
 	@echo "... src/binarization/binarization2.i"
 	@echo "... src/binarization/binarization2.s"
+	@echo "... src/contour-detect/canny1.o"
+	@echo "... src/contour-detect/canny1.i"
+	@echo "... src/contour-detect/canny1.s"
 	@echo "... src/demo/energy/main.o"
 	@echo "... src/demo/energy/main.i"
 	@echo "... src/demo/energy/main.s"
+	@echo "... src/extract/channel.o"
+	@echo "... src/extract/channel.i"
+	@echo "... src/extract/channel.s"
 	@echo "... src/extract/hsv-extract.o"
 	@echo "... src/extract/hsv-extract.i"
 	@echo "... src/extract/hsv-extract.s"
+	@echo "... src/filter/filter1.o"
+	@echo "... src/filter/filter1.i"
+	@echo "... src/filter/filter1.s"
 	@echo "... src/mat/demo1.o"
 	@echo "... src/mat/demo1.i"
 	@echo "... src/mat/demo1.s"

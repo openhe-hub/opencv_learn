@@ -8,18 +8,15 @@
 int main(){
     cv::Mat src= cv::imread("../src/demo/energy/energy.png");
     assert(src.channels()==3);
-    // split color channels,[0]=>blue,[1]=>green,[2]=>red
-    cv::Mat channels[3];
-    cv::split(src,channels);
-    cv::Mat red_sub_blue=channels[2]-channels[0];
-    // normalization
-    // cv::NORM_MINMAX: p=ai/(max(ai)-min(ai))*|alpha-beta|+min(alpha-beta)
-    cv::Mat normal_mat;
-    cv::normalize(red_sub_blue,normal_mat,0,255,cv::NORM_MINMAX); //=>[0,255]
-    // binarization
-    cv::Mat result;
-    cv::threshold(normal_mat,result,100,255,cv::THRESH_OTSU); //otsu-method
-    cv::imwrite("../src/demo/energy/energy-output.jpg",result);
+    // 1. convert
+    cv::Mat hsv;
+    cv::cvtColor(src,hsv,cv::COLOR_RGB2HSV);
+
+    cv::Mat hsv_result;
+    cv::inRange(hsv,cv::Scalar(100,43,46),cv::Scalar(124,255,255),hsv_result);
+    cv::imshow("extract result",hsv_result);
+    cv::waitKey(0);
     return 0;
+
 }
 
