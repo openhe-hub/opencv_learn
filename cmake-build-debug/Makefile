@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named hsv-substraction
+
+# Build rule for target.
+hsv-substraction: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hsv-substraction
+.PHONY : hsv-substraction
+
+# fast build rule for target.
+hsv-substraction/fast:
+	$(MAKE) -f CMakeFiles/hsv-substraction.dir/build.make CMakeFiles/hsv-substraction.dir/build
+.PHONY : hsv-substraction/fast
+
+#=============================================================================
 # Target rules for targets named binarization2
 
 # Build rule for target.
@@ -161,6 +174,19 @@ demo1: cmake_check_build_system
 demo1/fast:
 	$(MAKE) -f CMakeFiles/demo1.dir/build.make CMakeFiles/demo1.dir/build
 .PHONY : demo1/fast
+
+#=============================================================================
+# Target rules for targets named energy_main
+
+# Build rule for target.
+energy_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 energy_main
+.PHONY : energy_main
+
+# fast build rule for target.
+energy_main/fast:
+	$(MAKE) -f CMakeFiles/energy_main.dir/build.make CMakeFiles/energy_main.dir/build
+.PHONY : energy_main/fast
 
 #=============================================================================
 # Target rules for targets named binarization1
@@ -282,6 +308,60 @@ src/binarization/binarization2.cpp.s:
 	$(MAKE) -f CMakeFiles/binarization2.dir/build.make CMakeFiles/binarization2.dir/src/binarization/binarization2.cpp.s
 .PHONY : src/binarization/binarization2.cpp.s
 
+src/demo/energy/main.o: src/demo/energy/main.cpp.o
+
+.PHONY : src/demo/energy/main.o
+
+# target to build an object file
+src/demo/energy/main.cpp.o:
+	$(MAKE) -f CMakeFiles/energy_main.dir/build.make CMakeFiles/energy_main.dir/src/demo/energy/main.cpp.o
+.PHONY : src/demo/energy/main.cpp.o
+
+src/demo/energy/main.i: src/demo/energy/main.cpp.i
+
+.PHONY : src/demo/energy/main.i
+
+# target to preprocess a source file
+src/demo/energy/main.cpp.i:
+	$(MAKE) -f CMakeFiles/energy_main.dir/build.make CMakeFiles/energy_main.dir/src/demo/energy/main.cpp.i
+.PHONY : src/demo/energy/main.cpp.i
+
+src/demo/energy/main.s: src/demo/energy/main.cpp.s
+
+.PHONY : src/demo/energy/main.s
+
+# target to generate assembly for a file
+src/demo/energy/main.cpp.s:
+	$(MAKE) -f CMakeFiles/energy_main.dir/build.make CMakeFiles/energy_main.dir/src/demo/energy/main.cpp.s
+.PHONY : src/demo/energy/main.cpp.s
+
+src/extract/hsv-extract.o: src/extract/hsv-extract.cpp.o
+
+.PHONY : src/extract/hsv-extract.o
+
+# target to build an object file
+src/extract/hsv-extract.cpp.o:
+	$(MAKE) -f CMakeFiles/hsv-substraction.dir/build.make CMakeFiles/hsv-substraction.dir/src/extract/hsv-extract.cpp.o
+.PHONY : src/extract/hsv-extract.cpp.o
+
+src/extract/hsv-extract.i: src/extract/hsv-extract.cpp.i
+
+.PHONY : src/extract/hsv-extract.i
+
+# target to preprocess a source file
+src/extract/hsv-extract.cpp.i:
+	$(MAKE) -f CMakeFiles/hsv-substraction.dir/build.make CMakeFiles/hsv-substraction.dir/src/extract/hsv-extract.cpp.i
+.PHONY : src/extract/hsv-extract.cpp.i
+
+src/extract/hsv-extract.s: src/extract/hsv-extract.cpp.s
+
+.PHONY : src/extract/hsv-extract.s
+
+# target to generate assembly for a file
+src/extract/hsv-extract.cpp.s:
+	$(MAKE) -f CMakeFiles/hsv-substraction.dir/build.make CMakeFiles/hsv-substraction.dir/src/extract/hsv-extract.cpp.s
+.PHONY : src/extract/hsv-extract.cpp.s
+
 src/mat/demo1.o: src/mat/demo1.cpp.o
 
 .PHONY : src/mat/demo1.o
@@ -397,11 +477,13 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... hsv-substraction"
 	@echo "... binarization2"
 	@echo "... edit_cache"
 	@echo "... demo3"
 	@echo "... demo2"
 	@echo "... demo1"
+	@echo "... energy_main"
 	@echo "... binarization1"
 	@echo "... my_test"
 	@echo "... ocv"
@@ -414,6 +496,12 @@ help:
 	@echo "... src/binarization/binarization2.o"
 	@echo "... src/binarization/binarization2.i"
 	@echo "... src/binarization/binarization2.s"
+	@echo "... src/demo/energy/main.o"
+	@echo "... src/demo/energy/main.i"
+	@echo "... src/demo/energy/main.s"
+	@echo "... src/extract/hsv-extract.o"
+	@echo "... src/extract/hsv-extract.i"
+	@echo "... src/extract/hsv-extract.s"
 	@echo "... src/mat/demo1.o"
 	@echo "... src/mat/demo1.i"
 	@echo "... src/mat/demo1.s"

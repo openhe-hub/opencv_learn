@@ -53,10 +53,12 @@ CMAKE_BINARY_DIR = /tmp/tmp.OfiI9xYkEj/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/hsv-substraction.dir/all
 all: CMakeFiles/binarization2.dir/all
 all: CMakeFiles/demo3.dir/all
 all: CMakeFiles/demo2.dir/all
 all: CMakeFiles/demo1.dir/all
+all: CMakeFiles/energy_main.dir/all
 all: CMakeFiles/binarization1.dir/all
 all: CMakeFiles/my_test.dir/all
 all: CMakeFiles/ocv.dir/all
@@ -69,15 +71,44 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/hsv-substraction.dir/clean
 clean: CMakeFiles/binarization2.dir/clean
 clean: CMakeFiles/demo3.dir/clean
 clean: CMakeFiles/demo2.dir/clean
 clean: CMakeFiles/demo1.dir/clean
+clean: CMakeFiles/energy_main.dir/clean
 clean: CMakeFiles/binarization1.dir/clean
 clean: CMakeFiles/my_test.dir/clean
 clean: CMakeFiles/ocv.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/hsv-substraction.dir
+
+# All Build rule for target.
+CMakeFiles/hsv-substraction.dir/all:
+	$(MAKE) -f CMakeFiles/hsv-substraction.dir/build.make CMakeFiles/hsv-substraction.dir/depend
+	$(MAKE) -f CMakeFiles/hsv-substraction.dir/build.make CMakeFiles/hsv-substraction.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/tmp/tmp.OfiI9xYkEj/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target hsv-substraction"
+.PHONY : CMakeFiles/hsv-substraction.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/hsv-substraction.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/tmp.OfiI9xYkEj/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/hsv-substraction.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/tmp.OfiI9xYkEj/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/hsv-substraction.dir/rule
+
+# Convenience name for target.
+hsv-substraction: CMakeFiles/hsv-substraction.dir/rule
+
+.PHONY : hsv-substraction
+
+# clean rule for target.
+CMakeFiles/hsv-substraction.dir/clean:
+	$(MAKE) -f CMakeFiles/hsv-substraction.dir/build.make CMakeFiles/hsv-substraction.dir/clean
+.PHONY : CMakeFiles/hsv-substraction.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/binarization2.dir
@@ -188,6 +219,33 @@ CMakeFiles/demo1.dir/clean:
 .PHONY : CMakeFiles/demo1.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/energy_main.dir
+
+# All Build rule for target.
+CMakeFiles/energy_main.dir/all:
+	$(MAKE) -f CMakeFiles/energy_main.dir/build.make CMakeFiles/energy_main.dir/depend
+	$(MAKE) -f CMakeFiles/energy_main.dir/build.make CMakeFiles/energy_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/tmp/tmp.OfiI9xYkEj/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target energy_main"
+.PHONY : CMakeFiles/energy_main.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/energy_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/tmp.OfiI9xYkEj/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/energy_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/tmp.OfiI9xYkEj/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/energy_main.dir/rule
+
+# Convenience name for target.
+energy_main: CMakeFiles/energy_main.dir/rule
+
+.PHONY : energy_main
+
+# clean rule for target.
+CMakeFiles/energy_main.dir/clean:
+	$(MAKE) -f CMakeFiles/energy_main.dir/build.make CMakeFiles/energy_main.dir/clean
+.PHONY : CMakeFiles/energy_main.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/binarization1.dir
 
 # All Build rule for target.
@@ -221,7 +279,7 @@ CMakeFiles/binarization1.dir/clean:
 CMakeFiles/my_test.dir/all:
 	$(MAKE) -f CMakeFiles/my_test.dir/build.make CMakeFiles/my_test.dir/depend
 	$(MAKE) -f CMakeFiles/my_test.dir/build.make CMakeFiles/my_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/tmp/tmp.OfiI9xYkEj/cmake-build-debug/CMakeFiles --progress-num=11,12 "Built target my_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/tmp/tmp.OfiI9xYkEj/cmake-build-debug/CMakeFiles --progress-num=15,16 "Built target my_test"
 .PHONY : CMakeFiles/my_test.dir/all
 
 # Build rule for subdir invocation for target.
@@ -248,7 +306,7 @@ CMakeFiles/my_test.dir/clean:
 CMakeFiles/ocv.dir/all:
 	$(MAKE) -f CMakeFiles/ocv.dir/build.make CMakeFiles/ocv.dir/depend
 	$(MAKE) -f CMakeFiles/ocv.dir/build.make CMakeFiles/ocv.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/tmp/tmp.OfiI9xYkEj/cmake-build-debug/CMakeFiles --progress-num=13,14 "Built target ocv"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/tmp/tmp.OfiI9xYkEj/cmake-build-debug/CMakeFiles --progress-num=17,18 "Built target ocv"
 .PHONY : CMakeFiles/ocv.dir/all
 
 # Build rule for subdir invocation for target.

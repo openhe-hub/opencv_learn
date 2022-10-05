@@ -54,10 +54,12 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/hsv-substraction.dir/DependInfo.cmake"
   "CMakeFiles/binarization2.dir/DependInfo.cmake"
   "CMakeFiles/demo3.dir/DependInfo.cmake"
   "CMakeFiles/demo2.dir/DependInfo.cmake"
   "CMakeFiles/demo1.dir/DependInfo.cmake"
+  "CMakeFiles/energy_main.dir/DependInfo.cmake"
   "CMakeFiles/binarization1.dir/DependInfo.cmake"
   "CMakeFiles/my_test.dir/DependInfo.cmake"
   "CMakeFiles/ocv.dir/DependInfo.cmake"
