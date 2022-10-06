@@ -402,6 +402,39 @@ build canny1: CXX_EXECUTABLE_LINKER__canny1_Debug CMakeFiles/canny1.dir/src/cont
   TARGET_FILE = canny1
   TARGET_PDB = canny1.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target channel
+
+
+#############################################
+# Order-only phony target for channel
+
+build cmake_object_order_depends_target_channel: phony || CMakeFiles/channel.dir
+
+build CMakeFiles/channel.dir/src/extract/channel.cpp.o: CXX_COMPILER__channel_Debug /home/sjtu/code/cpp/opencv_learn/src/extract/channel.cpp || cmake_object_order_depends_target_channel
+  DEP_FILE = CMakeFiles/channel.dir/src/extract/channel.cpp.o.d
+  FLAGS = -g -std=gnu++11
+  INCLUDES = -isystem /usr/local/include/opencv4
+  OBJECT_DIR = CMakeFiles/channel.dir
+  OBJECT_FILE_DIR = CMakeFiles/channel.dir/src/extract
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target channel
+
+
+#############################################
+# Link the executable channel
+
+build channel: CXX_EXECUTABLE_LINKER__channel_Debug CMakeFiles/channel.dir/src/extract/channel.cpp.o | /usr/local/lib/libopencv_gapi.so.4.6.0 /usr/local/lib/libopencv_stitching.so.4.6.0 /usr/local/lib/libopencv_alphamat.so.4.6.0 /usr/local/lib/libopencv_aruco.so.4.6.0 /usr/local/lib/libopencv_barcode.so.4.6.0 /usr/local/lib/libopencv_bgsegm.so.4.6.0 /usr/local/lib/libopencv_bioinspired.so.4.6.0 /usr/local/lib/libopencv_ccalib.so.4.6.0 /usr/local/lib/libopencv_dnn_objdetect.so.4.6.0 /usr/local/lib/libopencv_dnn_superres.so.4.6.0 /usr/local/lib/libopencv_dpm.so.4.6.0 /usr/local/lib/libopencv_face.so.4.6.0 /usr/local/lib/libopencv_freetype.so.4.6.0 /usr/local/lib/libopencv_fuzzy.so.4.6.0 /usr/local/lib/libopencv_hfs.so.4.6.0 /usr/local/lib/libopencv_img_hash.so.4.6.0 /usr/local/lib/libopencv_intensity_transform.so.4.6.0 /usr/local/lib/libopencv_line_descriptor.so.4.6.0 /usr/local/lib/libopencv_mcc.so.4.6.0 /usr/local/lib/libopencv_quality.so.4.6.0 /usr/local/lib/libopencv_rapid.so.4.6.0 /usr/local/lib/libopencv_reg.so.4.6.0 /usr/local/lib/libopencv_rgbd.so.4.6.0 /usr/local/lib/libopencv_saliency.so.4.6.0 /usr/local/lib/libopencv_sfm.so.4.6.0 /usr/local/lib/libopencv_stereo.so.4.6.0 /usr/local/lib/libopencv_structured_light.so.4.6.0 /usr/local/lib/libopencv_superres.so.4.6.0 /usr/local/lib/libopencv_surface_matching.so.4.6.0 /usr/local/lib/libopencv_tracking.so.4.6.0 /usr/local/lib/libopencv_videostab.so.4.6.0 /usr/local/lib/libopencv_wechat_qrcode.so.4.6.0 /usr/local/lib/libopencv_xfeatures2d.so.4.6.0 /usr/local/lib/libopencv_xobjdetect.so.4.6.0 /usr/local/lib/libopencv_xphoto.so.4.6.0 /usr/local/lib/libopencv_shape.so.4.6.0 /usr/local/lib/libopencv_highgui.so.4.6.0 /usr/local/lib/libopencv_datasets.so.4.6.0 /usr/local/lib/libopencv_plot.so.4.6.0 /usr/local/lib/libopencv_text.so.4.6.0 /usr/local/lib/libopencv_ml.so.4.6.0 /usr/local/lib/libopencv_phase_unwrapping.so.4.6.0 /usr/local/lib/libopencv_optflow.so.4.6.0 /usr/local/lib/libopencv_ximgproc.so.4.6.0 /usr/local/lib/libopencv_video.so.4.6.0 /usr/local/lib/libopencv_videoio.so.4.6.0 /usr/local/lib/libopencv_imgcodecs.so.4.6.0 /usr/local/lib/libopencv_objdetect.so.4.6.0 /usr/local/lib/libopencv_calib3d.so.4.6.0 /usr/local/lib/libopencv_dnn.so.4.6.0 /usr/local/lib/libopencv_features2d.so.4.6.0 /usr/local/lib/libopencv_flann.so.4.6.0 /usr/local/lib/libopencv_photo.so.4.6.0 /usr/local/lib/libopencv_imgproc.so.4.6.0 /usr/local/lib/libopencv_core.so.4.6.0
+  FLAGS = -g
+  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  /usr/local/lib/libopencv_gapi.so.4.6.0  /usr/local/lib/libopencv_stitching.so.4.6.0  /usr/local/lib/libopencv_alphamat.so.4.6.0  /usr/local/lib/libopencv_aruco.so.4.6.0  /usr/local/lib/libopencv_barcode.so.4.6.0  /usr/local/lib/libopencv_bgsegm.so.4.6.0  /usr/local/lib/libopencv_bioinspired.so.4.6.0  /usr/local/lib/libopencv_ccalib.so.4.6.0  /usr/local/lib/libopencv_dnn_objdetect.so.4.6.0  /usr/local/lib/libopencv_dnn_superres.so.4.6.0  /usr/local/lib/libopencv_dpm.so.4.6.0  /usr/local/lib/libopencv_face.so.4.6.0  /usr/local/lib/libopencv_freetype.so.4.6.0  /usr/local/lib/libopencv_fuzzy.so.4.6.0  /usr/local/lib/libopencv_hfs.so.4.6.0  /usr/local/lib/libopencv_img_hash.so.4.6.0  /usr/local/lib/libopencv_intensity_transform.so.4.6.0  /usr/local/lib/libopencv_line_descriptor.so.4.6.0  /usr/local/lib/libopencv_mcc.so.4.6.0  /usr/local/lib/libopencv_quality.so.4.6.0  /usr/local/lib/libopencv_rapid.so.4.6.0  /usr/local/lib/libopencv_reg.so.4.6.0  /usr/local/lib/libopencv_rgbd.so.4.6.0  /usr/local/lib/libopencv_saliency.so.4.6.0  /usr/local/lib/libopencv_sfm.so.4.6.0  /usr/local/lib/libopencv_stereo.so.4.6.0  /usr/local/lib/libopencv_structured_light.so.4.6.0  /usr/local/lib/libopencv_superres.so.4.6.0  /usr/local/lib/libopencv_surface_matching.so.4.6.0  /usr/local/lib/libopencv_tracking.so.4.6.0  /usr/local/lib/libopencv_videostab.so.4.6.0  /usr/local/lib/libopencv_wechat_qrcode.so.4.6.0  /usr/local/lib/libopencv_xfeatures2d.so.4.6.0  /usr/local/lib/libopencv_xobjdetect.so.4.6.0  /usr/local/lib/libopencv_xphoto.so.4.6.0  /usr/local/lib/libopencv_shape.so.4.6.0  /usr/local/lib/libopencv_highgui.so.4.6.0  /usr/local/lib/libopencv_datasets.so.4.6.0  /usr/local/lib/libopencv_plot.so.4.6.0  /usr/local/lib/libopencv_text.so.4.6.0  /usr/local/lib/libopencv_ml.so.4.6.0  /usr/local/lib/libopencv_phase_unwrapping.so.4.6.0  /usr/local/lib/libopencv_optflow.so.4.6.0  /usr/local/lib/libopencv_ximgproc.so.4.6.0  /usr/local/lib/libopencv_video.so.4.6.0  /usr/local/lib/libopencv_videoio.so.4.6.0  /usr/local/lib/libopencv_imgcodecs.so.4.6.0  /usr/local/lib/libopencv_objdetect.so.4.6.0  /usr/local/lib/libopencv_calib3d.so.4.6.0  /usr/local/lib/libopencv_dnn.so.4.6.0  /usr/local/lib/libopencv_features2d.so.4.6.0  /usr/local/lib/libopencv_flann.so.4.6.0  /usr/local/lib/libopencv_photo.so.4.6.0  /usr/local/lib/libopencv_imgproc.so.4.6.0  /usr/local/lib/libopencv_core.so.4.6.0
+  OBJECT_DIR = CMakeFiles/channel.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = channel
+  TARGET_PDB = channel.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -437,7 +470,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/sjtu/code/cpp/opencv_learn/cmake-build-debug
 
-build all: phony ocv my_test demo1 demo2 demo3 binarization1 binarization2 energy_main hsv-substraction filter1 canny1
+build all: phony ocv my_test demo1 demo2 demo3 binarization1 binarization2 energy_main hsv-substraction filter1 canny1 channel
 
 # =============================================================================
 # Built-in targets
