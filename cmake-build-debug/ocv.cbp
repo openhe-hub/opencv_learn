@@ -27,98 +27,6 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="hsv-substraction">
-				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/hsv-substraction" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 hsv-substraction"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="hsv-substraction/fast">
-				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/hsv-substraction" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 hsv-substraction/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="binarization2">
-				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/binarization2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 binarization2"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="binarization2/fast">
-				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/binarization2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 binarization2/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
 				<Option type="4"/>
@@ -129,14 +37,15 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="demo3">
-				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/demo3" prefix_auto="0" extension_auto="0"/>
+			<Target title="eigen_demo4">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/eigen_demo4" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -146,20 +55,21 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 demo3"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 eigen_demo4"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="demo3/fast">
-				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/demo3" prefix_auto="0" extension_auto="0"/>
+			<Target title="eigen_demo4/fast">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/eigen_demo4" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -169,20 +79,21 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 demo3/fast"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 eigen_demo4/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="filter1">
-				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/filter1" prefix_auto="0" extension_auto="0"/>
+			<Target title="eigen_demo3">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/eigen_demo3" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -192,20 +103,21 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 filter1"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 eigen_demo3"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="filter1/fast">
-				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/filter1" prefix_auto="0" extension_auto="0"/>
+			<Target title="eigen_demo3/fast">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/eigen_demo3" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -215,20 +127,21 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 filter1/fast"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 eigen_demo3/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="demo2">
-				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/demo2" prefix_auto="0" extension_auto="0"/>
+			<Target title="eigen_demo2">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/eigen_demo2" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -238,20 +151,21 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 demo2"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 eigen_demo2"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="demo2/fast">
-				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/demo2" prefix_auto="0" extension_auto="0"/>
+			<Target title="eigen_demo2/fast">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/eigen_demo2" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
 					<Add directory="/usr/include/c++/9/backward"/>
@@ -261,191 +175,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 demo2/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="demo1">
-				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/demo1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 demo1"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="demo1/fast">
-				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/demo1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 demo1/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="energy_main">
-				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/energy_main" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 energy_main"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="energy_main/fast">
-				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/energy_main" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 energy_main/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="binarization1">
-				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/binarization1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 binarization1"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="binarization1/fast">
-				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/binarization1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 binarization1/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="my_test">
-				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/my_test" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_test"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="my_test/fast">
-				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/my_test" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/usr/local/include/opencv4"/>
-					<Add directory="/usr/include/c++/9"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
-					<Add directory="/usr/include/c++/9/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_test/fast"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 eigen_demo2/fast"/>
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -458,6 +188,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/local/include/opencv4"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
@@ -481,6 +212,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
 					<Add directory="/usr/local/include/opencv4"/>
 					<Add directory="/usr/include/c++/9"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
@@ -497,9 +229,597 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="binarization1">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/binarization1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 binarization1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="binarization1/fast">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/binarization1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 binarization1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo1">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/demo1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 demo1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo1/fast">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/demo1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 demo1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo3">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/demo3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 demo3"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo3/fast">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/demo3" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 demo3/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="energy_main">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/energy_main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 energy_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="energy_main/fast">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/energy_main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 energy_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo2">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/demo2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 demo2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="demo2/fast">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/demo2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 demo2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="canny1">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/canny1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 canny1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="canny1/fast">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/canny1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 canny1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_test">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/my_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="my_test/fast">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/my_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 my_test/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="channel">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/channel" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 channel"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="channel/fast">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/channel" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 channel/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="binarization2">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/binarization2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 binarization2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="binarization2/fast">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/binarization2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 binarization2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hsv-substraction">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/hsv-substraction" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 hsv-substraction"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="hsv-substraction/fast">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/hsv-substraction" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 hsv-substraction/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="filter1">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/filter1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 filter1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="filter1/fast">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/filter1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 filter1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="eigen_demo1">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/eigen_demo1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 eigen_demo1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="eigen_demo1/fast">
+				<Option output="/tmp/tmp.OfiI9xYkEj/cmake-build-debug/eigen_demo1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/tmp/tmp.OfiI9xYkEj/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/local/include/opencv4"/>
+					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 eigen_demo1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/tmp/tmp.OfiI9xYkEj/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
 		<Unit filename="/tmp/tmp.OfiI9xYkEj/main.cpp">
 			<Option target="ocv"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.OfiI9xYkEj/src/Eigen_learn/eigen_demo1.cpp">
+			<Option target="eigen_demo1"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.OfiI9xYkEj/src/Eigen_learn/eigen_demo2.cpp">
+			<Option target="eigen_demo2"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.OfiI9xYkEj/src/Eigen_learn/eigen_demo3.cpp">
+			<Option target="eigen_demo3"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.OfiI9xYkEj/src/Eigen_learn/eigen_demo4.cpp">
+			<Option target="eigen_demo4"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.OfiI9xYkEj/src/binarization/binarization1.cpp">
 			<Option target="binarization1"/>
@@ -507,8 +827,14 @@
 		<Unit filename="/tmp/tmp.OfiI9xYkEj/src/binarization/binarization2.cpp">
 			<Option target="binarization2"/>
 		</Unit>
+		<Unit filename="/tmp/tmp.OfiI9xYkEj/src/contour-detect/canny1.cpp">
+			<Option target="canny1"/>
+		</Unit>
 		<Unit filename="/tmp/tmp.OfiI9xYkEj/src/demo/energy/main.cpp">
 			<Option target="energy_main"/>
+		</Unit>
+		<Unit filename="/tmp/tmp.OfiI9xYkEj/src/extract/channel.cpp">
+			<Option target="channel"/>
 		</Unit>
 		<Unit filename="/tmp/tmp.OfiI9xYkEj/src/extract/hsv-extract.cpp">
 			<Option target="hsv-substraction"/>
