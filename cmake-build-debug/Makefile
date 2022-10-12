@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named transform_main
+
+# Build rule for target.
+transform_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 transform_main
+.PHONY : transform_main
+
+# fast build rule for target.
+transform_main/fast:
+	$(MAKE) -f CMakeFiles/transform_main.dir/build.make CMakeFiles/transform_main.dir/build
+.PHONY : transform_main/fast
+
+#=============================================================================
 # Target rules for targets named eigen_demo4
 
 # Build rule for target.
@@ -148,6 +161,19 @@ eigen_demo2: cmake_check_build_system
 eigen_demo2/fast:
 	$(MAKE) -f CMakeFiles/eigen_demo2.dir/build.make CMakeFiles/eigen_demo2.dir/build
 .PHONY : eigen_demo2/fast
+
+#=============================================================================
+# Target rules for targets named geometry
+
+# Build rule for target.
+geometry: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry
+.PHONY : geometry
+
+# fast build rule for target.
+geometry/fast:
+	$(MAKE) -f CMakeFiles/geometry.dir/build.make CMakeFiles/geometry.dir/build
+.PHONY : geometry/fast
 
 #=============================================================================
 # Target rules for targets named ocv
@@ -453,6 +479,33 @@ src/Eigen_learn/eigen_demo4.cpp.s:
 	$(MAKE) -f CMakeFiles/eigen_demo4.dir/build.make CMakeFiles/eigen_demo4.dir/src/Eigen_learn/eigen_demo4.cpp.s
 .PHONY : src/Eigen_learn/eigen_demo4.cpp.s
 
+src/Eigen_learn/geometry.o: src/Eigen_learn/geometry.cpp.o
+
+.PHONY : src/Eigen_learn/geometry.o
+
+# target to build an object file
+src/Eigen_learn/geometry.cpp.o:
+	$(MAKE) -f CMakeFiles/geometry.dir/build.make CMakeFiles/geometry.dir/src/Eigen_learn/geometry.cpp.o
+.PHONY : src/Eigen_learn/geometry.cpp.o
+
+src/Eigen_learn/geometry.i: src/Eigen_learn/geometry.cpp.i
+
+.PHONY : src/Eigen_learn/geometry.i
+
+# target to preprocess a source file
+src/Eigen_learn/geometry.cpp.i:
+	$(MAKE) -f CMakeFiles/geometry.dir/build.make CMakeFiles/geometry.dir/src/Eigen_learn/geometry.cpp.i
+.PHONY : src/Eigen_learn/geometry.cpp.i
+
+src/Eigen_learn/geometry.s: src/Eigen_learn/geometry.cpp.s
+
+.PHONY : src/Eigen_learn/geometry.s
+
+# target to generate assembly for a file
+src/Eigen_learn/geometry.cpp.s:
+	$(MAKE) -f CMakeFiles/geometry.dir/build.make CMakeFiles/geometry.dir/src/Eigen_learn/geometry.cpp.s
+.PHONY : src/Eigen_learn/geometry.cpp.s
+
 src/binarization/binarization1.o: src/binarization/binarization1.cpp.o
 
 .PHONY : src/binarization/binarization1.o
@@ -560,6 +613,33 @@ src/demo/energy/main.s: src/demo/energy/main.cpp.s
 src/demo/energy/main.cpp.s:
 	$(MAKE) -f CMakeFiles/energy_main.dir/build.make CMakeFiles/energy_main.dir/src/demo/energy/main.cpp.s
 .PHONY : src/demo/energy/main.cpp.s
+
+src/demo/transform/main.o: src/demo/transform/main.cpp.o
+
+.PHONY : src/demo/transform/main.o
+
+# target to build an object file
+src/demo/transform/main.cpp.o:
+	$(MAKE) -f CMakeFiles/transform_main.dir/build.make CMakeFiles/transform_main.dir/src/demo/transform/main.cpp.o
+.PHONY : src/demo/transform/main.cpp.o
+
+src/demo/transform/main.i: src/demo/transform/main.cpp.i
+
+.PHONY : src/demo/transform/main.i
+
+# target to preprocess a source file
+src/demo/transform/main.cpp.i:
+	$(MAKE) -f CMakeFiles/transform_main.dir/build.make CMakeFiles/transform_main.dir/src/demo/transform/main.cpp.i
+.PHONY : src/demo/transform/main.cpp.i
+
+src/demo/transform/main.s: src/demo/transform/main.cpp.s
+
+.PHONY : src/demo/transform/main.s
+
+# target to generate assembly for a file
+src/demo/transform/main.cpp.s:
+	$(MAKE) -f CMakeFiles/transform_main.dir/build.make CMakeFiles/transform_main.dir/src/demo/transform/main.cpp.s
+.PHONY : src/demo/transform/main.cpp.s
 
 src/extract/channel.o: src/extract/channel.cpp.o
 
@@ -758,9 +838,11 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... transform_main"
 	@echo "... eigen_demo4"
 	@echo "... eigen_demo3"
 	@echo "... eigen_demo2"
+	@echo "... geometry"
 	@echo "... ocv"
 	@echo "... binarization1"
 	@echo "... demo1"
@@ -789,6 +871,9 @@ help:
 	@echo "... src/Eigen_learn/eigen_demo4.o"
 	@echo "... src/Eigen_learn/eigen_demo4.i"
 	@echo "... src/Eigen_learn/eigen_demo4.s"
+	@echo "... src/Eigen_learn/geometry.o"
+	@echo "... src/Eigen_learn/geometry.i"
+	@echo "... src/Eigen_learn/geometry.s"
 	@echo "... src/binarization/binarization1.o"
 	@echo "... src/binarization/binarization1.i"
 	@echo "... src/binarization/binarization1.s"
@@ -801,6 +886,9 @@ help:
 	@echo "... src/demo/energy/main.o"
 	@echo "... src/demo/energy/main.i"
 	@echo "... src/demo/energy/main.s"
+	@echo "... src/demo/transform/main.o"
+	@echo "... src/demo/transform/main.i"
+	@echo "... src/demo/transform/main.s"
 	@echo "... src/extract/channel.o"
 	@echo "... src/extract/channel.i"
 	@echo "... src/extract/channel.s"
