@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = D$:/program/cpp/opencv_learn/cmake-build-debug/
+cmake_ninja_workdir = /home/sjtu/code/cpp/opencv_learn/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target ocv
 
@@ -49,14 +49,12 @@ cmake_ninja_workdir = D$:/program/cpp/opencv_learn/cmake-build-debug/
 
 build cmake_object_order_depends_target_ocv: phony || CMakeFiles/ocv.dir
 
-build CMakeFiles/ocv.dir/main.cpp.obj: CXX_COMPILER__ocv_Debug D$:/program/cpp/opencv_learn/main.cpp || cmake_object_order_depends_target_ocv
-  DEP_FILE = CMakeFiles\ocv.dir\main.cpp.obj.d
+build CMakeFiles/ocv.dir/main.cpp.o: CXX_COMPILER__ocv_Debug /home/sjtu/code/cpp/opencv_learn/main.cpp || cmake_object_order_depends_target_ocv
+  DEP_FILE = CMakeFiles/ocv.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++11
-  INCLUDES = -isystem D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/include
-  OBJECT_DIR = CMakeFiles\ocv.dir
-  OBJECT_FILE_DIR = CMakeFiles\ocv.dir
-  TARGET_COMPILE_PDB = CMakeFiles\ocv.dir\
-  TARGET_PDB = ocv.pdb
+  INCLUDES = -I/usr/include/eigen3 -isystem /usr/local/include/opencv4
+  OBJECT_DIR = CMakeFiles/ocv.dir
+  OBJECT_FILE_DIR = CMakeFiles/ocv.dir
 
 
 # =============================================================================
@@ -64,18 +62,16 @@ build CMakeFiles/ocv.dir/main.cpp.obj: CXX_COMPILER__ocv_Debug D$:/program/cpp/o
 
 
 #############################################
-# Link the executable ocv.exe
+# Link the executable ocv
 
-build ocv.exe: CXX_EXECUTABLE_LINKER__ocv_Debug CMakeFiles/ocv.dir/main.cpp.obj | D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_gapi455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_highgui455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_ml455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_objdetect455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_photo455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_stitching455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_video455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_videoio455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgcodecs455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_dnn455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_calib3d455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_features2d455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_flann455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgproc455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_core455.dll.a
+build ocv: CXX_EXECUTABLE_LINKER__ocv_Debug CMakeFiles/ocv.dir/main.cpp.o | /usr/local/lib/libopencv_gapi.so.4.6.0 /usr/local/lib/libopencv_stitching.so.4.6.0 /usr/local/lib/libopencv_alphamat.so.4.6.0 /usr/local/lib/libopencv_aruco.so.4.6.0 /usr/local/lib/libopencv_barcode.so.4.6.0 /usr/local/lib/libopencv_bgsegm.so.4.6.0 /usr/local/lib/libopencv_bioinspired.so.4.6.0 /usr/local/lib/libopencv_ccalib.so.4.6.0 /usr/local/lib/libopencv_dnn_objdetect.so.4.6.0 /usr/local/lib/libopencv_dnn_superres.so.4.6.0 /usr/local/lib/libopencv_dpm.so.4.6.0 /usr/local/lib/libopencv_face.so.4.6.0 /usr/local/lib/libopencv_freetype.so.4.6.0 /usr/local/lib/libopencv_fuzzy.so.4.6.0 /usr/local/lib/libopencv_hfs.so.4.6.0 /usr/local/lib/libopencv_img_hash.so.4.6.0 /usr/local/lib/libopencv_intensity_transform.so.4.6.0 /usr/local/lib/libopencv_line_descriptor.so.4.6.0 /usr/local/lib/libopencv_mcc.so.4.6.0 /usr/local/lib/libopencv_quality.so.4.6.0 /usr/local/lib/libopencv_rapid.so.4.6.0 /usr/local/lib/libopencv_reg.so.4.6.0 /usr/local/lib/libopencv_rgbd.so.4.6.0 /usr/local/lib/libopencv_saliency.so.4.6.0 /usr/local/lib/libopencv_sfm.so.4.6.0 /usr/local/lib/libopencv_stereo.so.4.6.0 /usr/local/lib/libopencv_structured_light.so.4.6.0 /usr/local/lib/libopencv_superres.so.4.6.0 /usr/local/lib/libopencv_surface_matching.so.4.6.0 /usr/local/lib/libopencv_tracking.so.4.6.0 /usr/local/lib/libopencv_videostab.so.4.6.0 /usr/local/lib/libopencv_wechat_qrcode.so.4.6.0 /usr/local/lib/libopencv_xfeatures2d.so.4.6.0 /usr/local/lib/libopencv_xobjdetect.so.4.6.0 /usr/local/lib/libopencv_xphoto.so.4.6.0 /usr/local/lib/libopencv_shape.so.4.6.0 /usr/local/lib/libopencv_highgui.so.4.6.0 /usr/local/lib/libopencv_datasets.so.4.6.0 /usr/local/lib/libopencv_plot.so.4.6.0 /usr/local/lib/libopencv_text.so.4.6.0 /usr/local/lib/libopencv_ml.so.4.6.0 /usr/local/lib/libopencv_phase_unwrapping.so.4.6.0 /usr/local/lib/libopencv_optflow.so.4.6.0 /usr/local/lib/libopencv_ximgproc.so.4.6.0 /usr/local/lib/libopencv_video.so.4.6.0 /usr/local/lib/libopencv_videoio.so.4.6.0 /usr/local/lib/libopencv_imgcodecs.so.4.6.0 /usr/local/lib/libopencv_objdetect.so.4.6.0 /usr/local/lib/libopencv_calib3d.so.4.6.0 /usr/local/lib/libopencv_dnn.so.4.6.0 /usr/local/lib/libopencv_features2d.so.4.6.0 /usr/local/lib/libopencv_flann.so.4.6.0 /usr/local/lib/libopencv_photo.so.4.6.0 /usr/local/lib/libopencv_imgproc.so.4.6.0 /usr/local/lib/libopencv_core.so.4.6.0
   FLAGS = -g
-  LINK_LIBRARIES = D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_gapi455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_highgui455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_ml455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_objdetect455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_photo455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_stitching455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_video455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_videoio455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgcodecs455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_dnn455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_calib3d455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_features2d455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_flann455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgproc455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_core455.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\ocv.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\ocv.dir\
-  TARGET_FILE = ocv.exe
-  TARGET_IMPLIB = libocv.dll.a
-  TARGET_PDB = ocv.pdb
+  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  /usr/local/lib/libopencv_gapi.so.4.6.0  /usr/local/lib/libopencv_stitching.so.4.6.0  /usr/local/lib/libopencv_alphamat.so.4.6.0  /usr/local/lib/libopencv_aruco.so.4.6.0  /usr/local/lib/libopencv_barcode.so.4.6.0  /usr/local/lib/libopencv_bgsegm.so.4.6.0  /usr/local/lib/libopencv_bioinspired.so.4.6.0  /usr/local/lib/libopencv_ccalib.so.4.6.0  /usr/local/lib/libopencv_dnn_objdetect.so.4.6.0  /usr/local/lib/libopencv_dnn_superres.so.4.6.0  /usr/local/lib/libopencv_dpm.so.4.6.0  /usr/local/lib/libopencv_face.so.4.6.0  /usr/local/lib/libopencv_freetype.so.4.6.0  /usr/local/lib/libopencv_fuzzy.so.4.6.0  /usr/local/lib/libopencv_hfs.so.4.6.0  /usr/local/lib/libopencv_img_hash.so.4.6.0  /usr/local/lib/libopencv_intensity_transform.so.4.6.0  /usr/local/lib/libopencv_line_descriptor.so.4.6.0  /usr/local/lib/libopencv_mcc.so.4.6.0  /usr/local/lib/libopencv_quality.so.4.6.0  /usr/local/lib/libopencv_rapid.so.4.6.0  /usr/local/lib/libopencv_reg.so.4.6.0  /usr/local/lib/libopencv_rgbd.so.4.6.0  /usr/local/lib/libopencv_saliency.so.4.6.0  /usr/local/lib/libopencv_sfm.so.4.6.0  /usr/local/lib/libopencv_stereo.so.4.6.0  /usr/local/lib/libopencv_structured_light.so.4.6.0  /usr/local/lib/libopencv_superres.so.4.6.0  /usr/local/lib/libopencv_surface_matching.so.4.6.0  /usr/local/lib/libopencv_tracking.so.4.6.0  /usr/local/lib/libopencv_videostab.so.4.6.0  /usr/local/lib/libopencv_wechat_qrcode.so.4.6.0  /usr/local/lib/libopencv_xfeatures2d.so.4.6.0  /usr/local/lib/libopencv_xobjdetect.so.4.6.0  /usr/local/lib/libopencv_xphoto.so.4.6.0  /usr/local/lib/libopencv_shape.so.4.6.0  /usr/local/lib/libopencv_highgui.so.4.6.0  /usr/local/lib/libopencv_datasets.so.4.6.0  /usr/local/lib/libopencv_plot.so.4.6.0  /usr/local/lib/libopencv_text.so.4.6.0  /usr/local/lib/libopencv_ml.so.4.6.0  /usr/local/lib/libopencv_phase_unwrapping.so.4.6.0  /usr/local/lib/libopencv_optflow.so.4.6.0  /usr/local/lib/libopencv_ximgproc.so.4.6.0  /usr/local/lib/libopencv_video.so.4.6.0  /usr/local/lib/libopencv_videoio.so.4.6.0  /usr/local/lib/libopencv_imgcodecs.so.4.6.0  /usr/local/lib/libopencv_objdetect.so.4.6.0  /usr/local/lib/libopencv_calib3d.so.4.6.0  /usr/local/lib/libopencv_dnn.so.4.6.0  /usr/local/lib/libopencv_features2d.so.4.6.0  /usr/local/lib/libopencv_flann.so.4.6.0  /usr/local/lib/libopencv_photo.so.4.6.0  /usr/local/lib/libopencv_imgproc.so.4.6.0  /usr/local/lib/libopencv_core.so.4.6.0
+  OBJECT_DIR = CMakeFiles/ocv.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = ocv
+  TARGET_PDB = ocv.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target my_test
@@ -86,14 +82,12 @@ build ocv.exe: CXX_EXECUTABLE_LINKER__ocv_Debug CMakeFiles/ocv.dir/main.cpp.obj 
 
 build cmake_object_order_depends_target_my_test: phony || CMakeFiles/my_test.dir
 
-build CMakeFiles/my_test.dir/test/test.cpp.obj: CXX_COMPILER__my_test_Debug D$:/program/cpp/opencv_learn/test/test.cpp || cmake_object_order_depends_target_my_test
-  DEP_FILE = CMakeFiles\my_test.dir\test\test.cpp.obj.d
+build CMakeFiles/my_test.dir/test/test.cpp.o: CXX_COMPILER__my_test_Debug /home/sjtu/code/cpp/opencv_learn/test/test.cpp || cmake_object_order_depends_target_my_test
+  DEP_FILE = CMakeFiles/my_test.dir/test/test.cpp.o.d
   FLAGS = -g -std=gnu++11
-  INCLUDES = -ID:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/include
-  OBJECT_DIR = CMakeFiles\my_test.dir
-  OBJECT_FILE_DIR = CMakeFiles\my_test.dir\test
-  TARGET_COMPILE_PDB = CMakeFiles\my_test.dir\
-  TARGET_PDB = my_test.pdb
+  INCLUDES = -I/usr/local/include/opencv4 -I/usr/include/eigen3
+  OBJECT_DIR = CMakeFiles/my_test.dir
+  OBJECT_FILE_DIR = CMakeFiles/my_test.dir/test
 
 
 # =============================================================================
@@ -101,18 +95,15 @@ build CMakeFiles/my_test.dir/test/test.cpp.obj: CXX_COMPILER__my_test_Debug D$:/
 
 
 #############################################
-# Link the executable my_test.exe
+# Link the executable my_test
 
-build my_test.exe: CXX_EXECUTABLE_LINKER__my_test_Debug CMakeFiles/my_test.dir/test/test.cpp.obj
+build my_test: CXX_EXECUTABLE_LINKER__my_test_Debug CMakeFiles/my_test.dir/test/test.cpp.o
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\my_test.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\my_test.dir\
-  TARGET_FILE = my_test.exe
-  TARGET_IMPLIB = libmy_test.dll.a
-  TARGET_PDB = my_test.pdb
+  OBJECT_DIR = CMakeFiles/my_test.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = my_test
+  TARGET_PDB = my_test.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target demo1
@@ -123,14 +114,12 @@ build my_test.exe: CXX_EXECUTABLE_LINKER__my_test_Debug CMakeFiles/my_test.dir/t
 
 build cmake_object_order_depends_target_demo1: phony || CMakeFiles/demo1.dir
 
-build CMakeFiles/demo1.dir/src/mat/demo1.cpp.obj: CXX_COMPILER__demo1_Debug D$:/program/cpp/opencv_learn/src/mat/demo1.cpp || cmake_object_order_depends_target_demo1
-  DEP_FILE = CMakeFiles\demo1.dir\src\mat\demo1.cpp.obj.d
+build CMakeFiles/demo1.dir/src/mat/demo1.cpp.o: CXX_COMPILER__demo1_Debug /home/sjtu/code/cpp/opencv_learn/src/mat/demo1.cpp || cmake_object_order_depends_target_demo1
+  DEP_FILE = CMakeFiles/demo1.dir/src/mat/demo1.cpp.o.d
   FLAGS = -g -std=gnu++11
-  INCLUDES = -isystem D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/include
-  OBJECT_DIR = CMakeFiles\demo1.dir
-  OBJECT_FILE_DIR = CMakeFiles\demo1.dir\src\mat
-  TARGET_COMPILE_PDB = CMakeFiles\demo1.dir\
-  TARGET_PDB = demo1.pdb
+  INCLUDES = -I/usr/include/eigen3 -isystem /usr/local/include/opencv4
+  OBJECT_DIR = CMakeFiles/demo1.dir
+  OBJECT_FILE_DIR = CMakeFiles/demo1.dir/src/mat
 
 
 # =============================================================================
@@ -138,18 +127,16 @@ build CMakeFiles/demo1.dir/src/mat/demo1.cpp.obj: CXX_COMPILER__demo1_Debug D$:/
 
 
 #############################################
-# Link the executable demo1.exe
+# Link the executable demo1
 
-build demo1.exe: CXX_EXECUTABLE_LINKER__demo1_Debug CMakeFiles/demo1.dir/src/mat/demo1.cpp.obj | D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_gapi455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_highgui455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_ml455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_objdetect455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_photo455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_stitching455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_video455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_videoio455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgcodecs455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_dnn455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_calib3d455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_features2d455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_flann455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgproc455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_core455.dll.a
+build demo1: CXX_EXECUTABLE_LINKER__demo1_Debug CMakeFiles/demo1.dir/src/mat/demo1.cpp.o | /usr/local/lib/libopencv_gapi.so.4.6.0 /usr/local/lib/libopencv_stitching.so.4.6.0 /usr/local/lib/libopencv_alphamat.so.4.6.0 /usr/local/lib/libopencv_aruco.so.4.6.0 /usr/local/lib/libopencv_barcode.so.4.6.0 /usr/local/lib/libopencv_bgsegm.so.4.6.0 /usr/local/lib/libopencv_bioinspired.so.4.6.0 /usr/local/lib/libopencv_ccalib.so.4.6.0 /usr/local/lib/libopencv_dnn_objdetect.so.4.6.0 /usr/local/lib/libopencv_dnn_superres.so.4.6.0 /usr/local/lib/libopencv_dpm.so.4.6.0 /usr/local/lib/libopencv_face.so.4.6.0 /usr/local/lib/libopencv_freetype.so.4.6.0 /usr/local/lib/libopencv_fuzzy.so.4.6.0 /usr/local/lib/libopencv_hfs.so.4.6.0 /usr/local/lib/libopencv_img_hash.so.4.6.0 /usr/local/lib/libopencv_intensity_transform.so.4.6.0 /usr/local/lib/libopencv_line_descriptor.so.4.6.0 /usr/local/lib/libopencv_mcc.so.4.6.0 /usr/local/lib/libopencv_quality.so.4.6.0 /usr/local/lib/libopencv_rapid.so.4.6.0 /usr/local/lib/libopencv_reg.so.4.6.0 /usr/local/lib/libopencv_rgbd.so.4.6.0 /usr/local/lib/libopencv_saliency.so.4.6.0 /usr/local/lib/libopencv_sfm.so.4.6.0 /usr/local/lib/libopencv_stereo.so.4.6.0 /usr/local/lib/libopencv_structured_light.so.4.6.0 /usr/local/lib/libopencv_superres.so.4.6.0 /usr/local/lib/libopencv_surface_matching.so.4.6.0 /usr/local/lib/libopencv_tracking.so.4.6.0 /usr/local/lib/libopencv_videostab.so.4.6.0 /usr/local/lib/libopencv_wechat_qrcode.so.4.6.0 /usr/local/lib/libopencv_xfeatures2d.so.4.6.0 /usr/local/lib/libopencv_xobjdetect.so.4.6.0 /usr/local/lib/libopencv_xphoto.so.4.6.0 /usr/local/lib/libopencv_shape.so.4.6.0 /usr/local/lib/libopencv_highgui.so.4.6.0 /usr/local/lib/libopencv_datasets.so.4.6.0 /usr/local/lib/libopencv_plot.so.4.6.0 /usr/local/lib/libopencv_text.so.4.6.0 /usr/local/lib/libopencv_ml.so.4.6.0 /usr/local/lib/libopencv_phase_unwrapping.so.4.6.0 /usr/local/lib/libopencv_optflow.so.4.6.0 /usr/local/lib/libopencv_ximgproc.so.4.6.0 /usr/local/lib/libopencv_video.so.4.6.0 /usr/local/lib/libopencv_videoio.so.4.6.0 /usr/local/lib/libopencv_imgcodecs.so.4.6.0 /usr/local/lib/libopencv_objdetect.so.4.6.0 /usr/local/lib/libopencv_calib3d.so.4.6.0 /usr/local/lib/libopencv_dnn.so.4.6.0 /usr/local/lib/libopencv_features2d.so.4.6.0 /usr/local/lib/libopencv_flann.so.4.6.0 /usr/local/lib/libopencv_photo.so.4.6.0 /usr/local/lib/libopencv_imgproc.so.4.6.0 /usr/local/lib/libopencv_core.so.4.6.0
   FLAGS = -g
-  LINK_LIBRARIES = D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_gapi455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_highgui455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_ml455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_objdetect455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_photo455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_stitching455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_video455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_videoio455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgcodecs455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_dnn455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_calib3d455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_features2d455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_flann455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgproc455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_core455.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\demo1.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\demo1.dir\
-  TARGET_FILE = demo1.exe
-  TARGET_IMPLIB = libdemo1.dll.a
-  TARGET_PDB = demo1.pdb
+  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  /usr/local/lib/libopencv_gapi.so.4.6.0  /usr/local/lib/libopencv_stitching.so.4.6.0  /usr/local/lib/libopencv_alphamat.so.4.6.0  /usr/local/lib/libopencv_aruco.so.4.6.0  /usr/local/lib/libopencv_barcode.so.4.6.0  /usr/local/lib/libopencv_bgsegm.so.4.6.0  /usr/local/lib/libopencv_bioinspired.so.4.6.0  /usr/local/lib/libopencv_ccalib.so.4.6.0  /usr/local/lib/libopencv_dnn_objdetect.so.4.6.0  /usr/local/lib/libopencv_dnn_superres.so.4.6.0  /usr/local/lib/libopencv_dpm.so.4.6.0  /usr/local/lib/libopencv_face.so.4.6.0  /usr/local/lib/libopencv_freetype.so.4.6.0  /usr/local/lib/libopencv_fuzzy.so.4.6.0  /usr/local/lib/libopencv_hfs.so.4.6.0  /usr/local/lib/libopencv_img_hash.so.4.6.0  /usr/local/lib/libopencv_intensity_transform.so.4.6.0  /usr/local/lib/libopencv_line_descriptor.so.4.6.0  /usr/local/lib/libopencv_mcc.so.4.6.0  /usr/local/lib/libopencv_quality.so.4.6.0  /usr/local/lib/libopencv_rapid.so.4.6.0  /usr/local/lib/libopencv_reg.so.4.6.0  /usr/local/lib/libopencv_rgbd.so.4.6.0  /usr/local/lib/libopencv_saliency.so.4.6.0  /usr/local/lib/libopencv_sfm.so.4.6.0  /usr/local/lib/libopencv_stereo.so.4.6.0  /usr/local/lib/libopencv_structured_light.so.4.6.0  /usr/local/lib/libopencv_superres.so.4.6.0  /usr/local/lib/libopencv_surface_matching.so.4.6.0  /usr/local/lib/libopencv_tracking.so.4.6.0  /usr/local/lib/libopencv_videostab.so.4.6.0  /usr/local/lib/libopencv_wechat_qrcode.so.4.6.0  /usr/local/lib/libopencv_xfeatures2d.so.4.6.0  /usr/local/lib/libopencv_xobjdetect.so.4.6.0  /usr/local/lib/libopencv_xphoto.so.4.6.0  /usr/local/lib/libopencv_shape.so.4.6.0  /usr/local/lib/libopencv_highgui.so.4.6.0  /usr/local/lib/libopencv_datasets.so.4.6.0  /usr/local/lib/libopencv_plot.so.4.6.0  /usr/local/lib/libopencv_text.so.4.6.0  /usr/local/lib/libopencv_ml.so.4.6.0  /usr/local/lib/libopencv_phase_unwrapping.so.4.6.0  /usr/local/lib/libopencv_optflow.so.4.6.0  /usr/local/lib/libopencv_ximgproc.so.4.6.0  /usr/local/lib/libopencv_video.so.4.6.0  /usr/local/lib/libopencv_videoio.so.4.6.0  /usr/local/lib/libopencv_imgcodecs.so.4.6.0  /usr/local/lib/libopencv_objdetect.so.4.6.0  /usr/local/lib/libopencv_calib3d.so.4.6.0  /usr/local/lib/libopencv_dnn.so.4.6.0  /usr/local/lib/libopencv_features2d.so.4.6.0  /usr/local/lib/libopencv_flann.so.4.6.0  /usr/local/lib/libopencv_photo.so.4.6.0  /usr/local/lib/libopencv_imgproc.so.4.6.0  /usr/local/lib/libopencv_core.so.4.6.0
+  OBJECT_DIR = CMakeFiles/demo1.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = demo1
+  TARGET_PDB = demo1.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target demo2
@@ -160,14 +147,12 @@ build demo1.exe: CXX_EXECUTABLE_LINKER__demo1_Debug CMakeFiles/demo1.dir/src/mat
 
 build cmake_object_order_depends_target_demo2: phony || CMakeFiles/demo2.dir
 
-build CMakeFiles/demo2.dir/src/mat/demo2.cpp.obj: CXX_COMPILER__demo2_Debug D$:/program/cpp/opencv_learn/src/mat/demo2.cpp || cmake_object_order_depends_target_demo2
-  DEP_FILE = CMakeFiles\demo2.dir\src\mat\demo2.cpp.obj.d
+build CMakeFiles/demo2.dir/src/mat/demo2.cpp.o: CXX_COMPILER__demo2_Debug /home/sjtu/code/cpp/opencv_learn/src/mat/demo2.cpp || cmake_object_order_depends_target_demo2
+  DEP_FILE = CMakeFiles/demo2.dir/src/mat/demo2.cpp.o.d
   FLAGS = -g -std=gnu++11
-  INCLUDES = -isystem D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/include
-  OBJECT_DIR = CMakeFiles\demo2.dir
-  OBJECT_FILE_DIR = CMakeFiles\demo2.dir\src\mat
-  TARGET_COMPILE_PDB = CMakeFiles\demo2.dir\
-  TARGET_PDB = demo2.pdb
+  INCLUDES = -I/usr/include/eigen3 -isystem /usr/local/include/opencv4
+  OBJECT_DIR = CMakeFiles/demo2.dir
+  OBJECT_FILE_DIR = CMakeFiles/demo2.dir/src/mat
 
 
 # =============================================================================
@@ -175,18 +160,16 @@ build CMakeFiles/demo2.dir/src/mat/demo2.cpp.obj: CXX_COMPILER__demo2_Debug D$:/
 
 
 #############################################
-# Link the executable demo2.exe
+# Link the executable demo2
 
-build demo2.exe: CXX_EXECUTABLE_LINKER__demo2_Debug CMakeFiles/demo2.dir/src/mat/demo2.cpp.obj | D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_gapi455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_highgui455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_ml455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_objdetect455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_photo455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_stitching455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_video455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_videoio455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgcodecs455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_dnn455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_calib3d455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_features2d455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_flann455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgproc455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_core455.dll.a
+build demo2: CXX_EXECUTABLE_LINKER__demo2_Debug CMakeFiles/demo2.dir/src/mat/demo2.cpp.o | /usr/local/lib/libopencv_gapi.so.4.6.0 /usr/local/lib/libopencv_stitching.so.4.6.0 /usr/local/lib/libopencv_alphamat.so.4.6.0 /usr/local/lib/libopencv_aruco.so.4.6.0 /usr/local/lib/libopencv_barcode.so.4.6.0 /usr/local/lib/libopencv_bgsegm.so.4.6.0 /usr/local/lib/libopencv_bioinspired.so.4.6.0 /usr/local/lib/libopencv_ccalib.so.4.6.0 /usr/local/lib/libopencv_dnn_objdetect.so.4.6.0 /usr/local/lib/libopencv_dnn_superres.so.4.6.0 /usr/local/lib/libopencv_dpm.so.4.6.0 /usr/local/lib/libopencv_face.so.4.6.0 /usr/local/lib/libopencv_freetype.so.4.6.0 /usr/local/lib/libopencv_fuzzy.so.4.6.0 /usr/local/lib/libopencv_hfs.so.4.6.0 /usr/local/lib/libopencv_img_hash.so.4.6.0 /usr/local/lib/libopencv_intensity_transform.so.4.6.0 /usr/local/lib/libopencv_line_descriptor.so.4.6.0 /usr/local/lib/libopencv_mcc.so.4.6.0 /usr/local/lib/libopencv_quality.so.4.6.0 /usr/local/lib/libopencv_rapid.so.4.6.0 /usr/local/lib/libopencv_reg.so.4.6.0 /usr/local/lib/libopencv_rgbd.so.4.6.0 /usr/local/lib/libopencv_saliency.so.4.6.0 /usr/local/lib/libopencv_sfm.so.4.6.0 /usr/local/lib/libopencv_stereo.so.4.6.0 /usr/local/lib/libopencv_structured_light.so.4.6.0 /usr/local/lib/libopencv_superres.so.4.6.0 /usr/local/lib/libopencv_surface_matching.so.4.6.0 /usr/local/lib/libopencv_tracking.so.4.6.0 /usr/local/lib/libopencv_videostab.so.4.6.0 /usr/local/lib/libopencv_wechat_qrcode.so.4.6.0 /usr/local/lib/libopencv_xfeatures2d.so.4.6.0 /usr/local/lib/libopencv_xobjdetect.so.4.6.0 /usr/local/lib/libopencv_xphoto.so.4.6.0 /usr/local/lib/libopencv_shape.so.4.6.0 /usr/local/lib/libopencv_highgui.so.4.6.0 /usr/local/lib/libopencv_datasets.so.4.6.0 /usr/local/lib/libopencv_plot.so.4.6.0 /usr/local/lib/libopencv_text.so.4.6.0 /usr/local/lib/libopencv_ml.so.4.6.0 /usr/local/lib/libopencv_phase_unwrapping.so.4.6.0 /usr/local/lib/libopencv_optflow.so.4.6.0 /usr/local/lib/libopencv_ximgproc.so.4.6.0 /usr/local/lib/libopencv_video.so.4.6.0 /usr/local/lib/libopencv_videoio.so.4.6.0 /usr/local/lib/libopencv_imgcodecs.so.4.6.0 /usr/local/lib/libopencv_objdetect.so.4.6.0 /usr/local/lib/libopencv_calib3d.so.4.6.0 /usr/local/lib/libopencv_dnn.so.4.6.0 /usr/local/lib/libopencv_features2d.so.4.6.0 /usr/local/lib/libopencv_flann.so.4.6.0 /usr/local/lib/libopencv_photo.so.4.6.0 /usr/local/lib/libopencv_imgproc.so.4.6.0 /usr/local/lib/libopencv_core.so.4.6.0
   FLAGS = -g
-  LINK_LIBRARIES = D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_gapi455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_highgui455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_ml455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_objdetect455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_photo455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_stitching455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_video455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_videoio455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgcodecs455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_dnn455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_calib3d455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_features2d455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_flann455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgproc455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_core455.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\demo2.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\demo2.dir\
-  TARGET_FILE = demo2.exe
-  TARGET_IMPLIB = libdemo2.dll.a
-  TARGET_PDB = demo2.pdb
+  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  /usr/local/lib/libopencv_gapi.so.4.6.0  /usr/local/lib/libopencv_stitching.so.4.6.0  /usr/local/lib/libopencv_alphamat.so.4.6.0  /usr/local/lib/libopencv_aruco.so.4.6.0  /usr/local/lib/libopencv_barcode.so.4.6.0  /usr/local/lib/libopencv_bgsegm.so.4.6.0  /usr/local/lib/libopencv_bioinspired.so.4.6.0  /usr/local/lib/libopencv_ccalib.so.4.6.0  /usr/local/lib/libopencv_dnn_objdetect.so.4.6.0  /usr/local/lib/libopencv_dnn_superres.so.4.6.0  /usr/local/lib/libopencv_dpm.so.4.6.0  /usr/local/lib/libopencv_face.so.4.6.0  /usr/local/lib/libopencv_freetype.so.4.6.0  /usr/local/lib/libopencv_fuzzy.so.4.6.0  /usr/local/lib/libopencv_hfs.so.4.6.0  /usr/local/lib/libopencv_img_hash.so.4.6.0  /usr/local/lib/libopencv_intensity_transform.so.4.6.0  /usr/local/lib/libopencv_line_descriptor.so.4.6.0  /usr/local/lib/libopencv_mcc.so.4.6.0  /usr/local/lib/libopencv_quality.so.4.6.0  /usr/local/lib/libopencv_rapid.so.4.6.0  /usr/local/lib/libopencv_reg.so.4.6.0  /usr/local/lib/libopencv_rgbd.so.4.6.0  /usr/local/lib/libopencv_saliency.so.4.6.0  /usr/local/lib/libopencv_sfm.so.4.6.0  /usr/local/lib/libopencv_stereo.so.4.6.0  /usr/local/lib/libopencv_structured_light.so.4.6.0  /usr/local/lib/libopencv_superres.so.4.6.0  /usr/local/lib/libopencv_surface_matching.so.4.6.0  /usr/local/lib/libopencv_tracking.so.4.6.0  /usr/local/lib/libopencv_videostab.so.4.6.0  /usr/local/lib/libopencv_wechat_qrcode.so.4.6.0  /usr/local/lib/libopencv_xfeatures2d.so.4.6.0  /usr/local/lib/libopencv_xobjdetect.so.4.6.0  /usr/local/lib/libopencv_xphoto.so.4.6.0  /usr/local/lib/libopencv_shape.so.4.6.0  /usr/local/lib/libopencv_highgui.so.4.6.0  /usr/local/lib/libopencv_datasets.so.4.6.0  /usr/local/lib/libopencv_plot.so.4.6.0  /usr/local/lib/libopencv_text.so.4.6.0  /usr/local/lib/libopencv_ml.so.4.6.0  /usr/local/lib/libopencv_phase_unwrapping.so.4.6.0  /usr/local/lib/libopencv_optflow.so.4.6.0  /usr/local/lib/libopencv_ximgproc.so.4.6.0  /usr/local/lib/libopencv_video.so.4.6.0  /usr/local/lib/libopencv_videoio.so.4.6.0  /usr/local/lib/libopencv_imgcodecs.so.4.6.0  /usr/local/lib/libopencv_objdetect.so.4.6.0  /usr/local/lib/libopencv_calib3d.so.4.6.0  /usr/local/lib/libopencv_dnn.so.4.6.0  /usr/local/lib/libopencv_features2d.so.4.6.0  /usr/local/lib/libopencv_flann.so.4.6.0  /usr/local/lib/libopencv_photo.so.4.6.0  /usr/local/lib/libopencv_imgproc.so.4.6.0  /usr/local/lib/libopencv_core.so.4.6.0
+  OBJECT_DIR = CMakeFiles/demo2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = demo2
+  TARGET_PDB = demo2.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target demo3
@@ -197,14 +180,12 @@ build demo2.exe: CXX_EXECUTABLE_LINKER__demo2_Debug CMakeFiles/demo2.dir/src/mat
 
 build cmake_object_order_depends_target_demo3: phony || CMakeFiles/demo3.dir
 
-build CMakeFiles/demo3.dir/src/mat/demo3.cpp.obj: CXX_COMPILER__demo3_Debug D$:/program/cpp/opencv_learn/src/mat/demo3.cpp || cmake_object_order_depends_target_demo3
-  DEP_FILE = CMakeFiles\demo3.dir\src\mat\demo3.cpp.obj.d
+build CMakeFiles/demo3.dir/src/mat/demo3.cpp.o: CXX_COMPILER__demo3_Debug /home/sjtu/code/cpp/opencv_learn/src/mat/demo3.cpp || cmake_object_order_depends_target_demo3
+  DEP_FILE = CMakeFiles/demo3.dir/src/mat/demo3.cpp.o.d
   FLAGS = -g -std=gnu++11
-  INCLUDES = -isystem D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/include
-  OBJECT_DIR = CMakeFiles\demo3.dir
-  OBJECT_FILE_DIR = CMakeFiles\demo3.dir\src\mat
-  TARGET_COMPILE_PDB = CMakeFiles\demo3.dir\
-  TARGET_PDB = demo3.pdb
+  INCLUDES = -I/usr/include/eigen3 -isystem /usr/local/include/opencv4
+  OBJECT_DIR = CMakeFiles/demo3.dir
+  OBJECT_FILE_DIR = CMakeFiles/demo3.dir/src/mat
 
 
 # =============================================================================
@@ -212,18 +193,16 @@ build CMakeFiles/demo3.dir/src/mat/demo3.cpp.obj: CXX_COMPILER__demo3_Debug D$:/
 
 
 #############################################
-# Link the executable demo3.exe
+# Link the executable demo3
 
-build demo3.exe: CXX_EXECUTABLE_LINKER__demo3_Debug CMakeFiles/demo3.dir/src/mat/demo3.cpp.obj | D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_gapi455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_highgui455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_ml455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_objdetect455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_photo455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_stitching455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_video455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_videoio455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgcodecs455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_dnn455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_calib3d455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_features2d455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_flann455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgproc455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_core455.dll.a
+build demo3: CXX_EXECUTABLE_LINKER__demo3_Debug CMakeFiles/demo3.dir/src/mat/demo3.cpp.o | /usr/local/lib/libopencv_gapi.so.4.6.0 /usr/local/lib/libopencv_stitching.so.4.6.0 /usr/local/lib/libopencv_alphamat.so.4.6.0 /usr/local/lib/libopencv_aruco.so.4.6.0 /usr/local/lib/libopencv_barcode.so.4.6.0 /usr/local/lib/libopencv_bgsegm.so.4.6.0 /usr/local/lib/libopencv_bioinspired.so.4.6.0 /usr/local/lib/libopencv_ccalib.so.4.6.0 /usr/local/lib/libopencv_dnn_objdetect.so.4.6.0 /usr/local/lib/libopencv_dnn_superres.so.4.6.0 /usr/local/lib/libopencv_dpm.so.4.6.0 /usr/local/lib/libopencv_face.so.4.6.0 /usr/local/lib/libopencv_freetype.so.4.6.0 /usr/local/lib/libopencv_fuzzy.so.4.6.0 /usr/local/lib/libopencv_hfs.so.4.6.0 /usr/local/lib/libopencv_img_hash.so.4.6.0 /usr/local/lib/libopencv_intensity_transform.so.4.6.0 /usr/local/lib/libopencv_line_descriptor.so.4.6.0 /usr/local/lib/libopencv_mcc.so.4.6.0 /usr/local/lib/libopencv_quality.so.4.6.0 /usr/local/lib/libopencv_rapid.so.4.6.0 /usr/local/lib/libopencv_reg.so.4.6.0 /usr/local/lib/libopencv_rgbd.so.4.6.0 /usr/local/lib/libopencv_saliency.so.4.6.0 /usr/local/lib/libopencv_sfm.so.4.6.0 /usr/local/lib/libopencv_stereo.so.4.6.0 /usr/local/lib/libopencv_structured_light.so.4.6.0 /usr/local/lib/libopencv_superres.so.4.6.0 /usr/local/lib/libopencv_surface_matching.so.4.6.0 /usr/local/lib/libopencv_tracking.so.4.6.0 /usr/local/lib/libopencv_videostab.so.4.6.0 /usr/local/lib/libopencv_wechat_qrcode.so.4.6.0 /usr/local/lib/libopencv_xfeatures2d.so.4.6.0 /usr/local/lib/libopencv_xobjdetect.so.4.6.0 /usr/local/lib/libopencv_xphoto.so.4.6.0 /usr/local/lib/libopencv_shape.so.4.6.0 /usr/local/lib/libopencv_highgui.so.4.6.0 /usr/local/lib/libopencv_datasets.so.4.6.0 /usr/local/lib/libopencv_plot.so.4.6.0 /usr/local/lib/libopencv_text.so.4.6.0 /usr/local/lib/libopencv_ml.so.4.6.0 /usr/local/lib/libopencv_phase_unwrapping.so.4.6.0 /usr/local/lib/libopencv_optflow.so.4.6.0 /usr/local/lib/libopencv_ximgproc.so.4.6.0 /usr/local/lib/libopencv_video.so.4.6.0 /usr/local/lib/libopencv_videoio.so.4.6.0 /usr/local/lib/libopencv_imgcodecs.so.4.6.0 /usr/local/lib/libopencv_objdetect.so.4.6.0 /usr/local/lib/libopencv_calib3d.so.4.6.0 /usr/local/lib/libopencv_dnn.so.4.6.0 /usr/local/lib/libopencv_features2d.so.4.6.0 /usr/local/lib/libopencv_flann.so.4.6.0 /usr/local/lib/libopencv_photo.so.4.6.0 /usr/local/lib/libopencv_imgproc.so.4.6.0 /usr/local/lib/libopencv_core.so.4.6.0
   FLAGS = -g
-  LINK_LIBRARIES = D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_gapi455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_highgui455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_ml455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_objdetect455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_photo455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_stitching455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_video455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_videoio455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgcodecs455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_dnn455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_calib3d455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_features2d455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_flann455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgproc455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_core455.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\demo3.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\demo3.dir\
-  TARGET_FILE = demo3.exe
-  TARGET_IMPLIB = libdemo3.dll.a
-  TARGET_PDB = demo3.pdb
+  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  /usr/local/lib/libopencv_gapi.so.4.6.0  /usr/local/lib/libopencv_stitching.so.4.6.0  /usr/local/lib/libopencv_alphamat.so.4.6.0  /usr/local/lib/libopencv_aruco.so.4.6.0  /usr/local/lib/libopencv_barcode.so.4.6.0  /usr/local/lib/libopencv_bgsegm.so.4.6.0  /usr/local/lib/libopencv_bioinspired.so.4.6.0  /usr/local/lib/libopencv_ccalib.so.4.6.0  /usr/local/lib/libopencv_dnn_objdetect.so.4.6.0  /usr/local/lib/libopencv_dnn_superres.so.4.6.0  /usr/local/lib/libopencv_dpm.so.4.6.0  /usr/local/lib/libopencv_face.so.4.6.0  /usr/local/lib/libopencv_freetype.so.4.6.0  /usr/local/lib/libopencv_fuzzy.so.4.6.0  /usr/local/lib/libopencv_hfs.so.4.6.0  /usr/local/lib/libopencv_img_hash.so.4.6.0  /usr/local/lib/libopencv_intensity_transform.so.4.6.0  /usr/local/lib/libopencv_line_descriptor.so.4.6.0  /usr/local/lib/libopencv_mcc.so.4.6.0  /usr/local/lib/libopencv_quality.so.4.6.0  /usr/local/lib/libopencv_rapid.so.4.6.0  /usr/local/lib/libopencv_reg.so.4.6.0  /usr/local/lib/libopencv_rgbd.so.4.6.0  /usr/local/lib/libopencv_saliency.so.4.6.0  /usr/local/lib/libopencv_sfm.so.4.6.0  /usr/local/lib/libopencv_stereo.so.4.6.0  /usr/local/lib/libopencv_structured_light.so.4.6.0  /usr/local/lib/libopencv_superres.so.4.6.0  /usr/local/lib/libopencv_surface_matching.so.4.6.0  /usr/local/lib/libopencv_tracking.so.4.6.0  /usr/local/lib/libopencv_videostab.so.4.6.0  /usr/local/lib/libopencv_wechat_qrcode.so.4.6.0  /usr/local/lib/libopencv_xfeatures2d.so.4.6.0  /usr/local/lib/libopencv_xobjdetect.so.4.6.0  /usr/local/lib/libopencv_xphoto.so.4.6.0  /usr/local/lib/libopencv_shape.so.4.6.0  /usr/local/lib/libopencv_highgui.so.4.6.0  /usr/local/lib/libopencv_datasets.so.4.6.0  /usr/local/lib/libopencv_plot.so.4.6.0  /usr/local/lib/libopencv_text.so.4.6.0  /usr/local/lib/libopencv_ml.so.4.6.0  /usr/local/lib/libopencv_phase_unwrapping.so.4.6.0  /usr/local/lib/libopencv_optflow.so.4.6.0  /usr/local/lib/libopencv_ximgproc.so.4.6.0  /usr/local/lib/libopencv_video.so.4.6.0  /usr/local/lib/libopencv_videoio.so.4.6.0  /usr/local/lib/libopencv_imgcodecs.so.4.6.0  /usr/local/lib/libopencv_objdetect.so.4.6.0  /usr/local/lib/libopencv_calib3d.so.4.6.0  /usr/local/lib/libopencv_dnn.so.4.6.0  /usr/local/lib/libopencv_features2d.so.4.6.0  /usr/local/lib/libopencv_flann.so.4.6.0  /usr/local/lib/libopencv_photo.so.4.6.0  /usr/local/lib/libopencv_imgproc.so.4.6.0  /usr/local/lib/libopencv_core.so.4.6.0
+  OBJECT_DIR = CMakeFiles/demo3.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = demo3
+  TARGET_PDB = demo3.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target binarization1
@@ -234,14 +213,12 @@ build demo3.exe: CXX_EXECUTABLE_LINKER__demo3_Debug CMakeFiles/demo3.dir/src/mat
 
 build cmake_object_order_depends_target_binarization1: phony || CMakeFiles/binarization1.dir
 
-build CMakeFiles/binarization1.dir/src/binarization/binarization1.cpp.obj: CXX_COMPILER__binarization1_Debug D$:/program/cpp/opencv_learn/src/binarization/binarization1.cpp || cmake_object_order_depends_target_binarization1
-  DEP_FILE = CMakeFiles\binarization1.dir\src\binarization\binarization1.cpp.obj.d
+build CMakeFiles/binarization1.dir/src/binarization/binarization1.cpp.o: CXX_COMPILER__binarization1_Debug /home/sjtu/code/cpp/opencv_learn/src/binarization/binarization1.cpp || cmake_object_order_depends_target_binarization1
+  DEP_FILE = CMakeFiles/binarization1.dir/src/binarization/binarization1.cpp.o.d
   FLAGS = -g -std=gnu++11
-  INCLUDES = -isystem D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/include
-  OBJECT_DIR = CMakeFiles\binarization1.dir
-  OBJECT_FILE_DIR = CMakeFiles\binarization1.dir\src\binarization
-  TARGET_COMPILE_PDB = CMakeFiles\binarization1.dir\
-  TARGET_PDB = binarization1.pdb
+  INCLUDES = -I/usr/include/eigen3 -isystem /usr/local/include/opencv4
+  OBJECT_DIR = CMakeFiles/binarization1.dir
+  OBJECT_FILE_DIR = CMakeFiles/binarization1.dir/src/binarization
 
 
 # =============================================================================
@@ -249,18 +226,16 @@ build CMakeFiles/binarization1.dir/src/binarization/binarization1.cpp.obj: CXX_C
 
 
 #############################################
-# Link the executable binarization1.exe
+# Link the executable binarization1
 
-build binarization1.exe: CXX_EXECUTABLE_LINKER__binarization1_Debug CMakeFiles/binarization1.dir/src/binarization/binarization1.cpp.obj | D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_gapi455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_highgui455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_ml455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_objdetect455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_photo455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_stitching455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_video455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_videoio455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgcodecs455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_dnn455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_calib3d455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_features2d455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_flann455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgproc455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_core455.dll.a
+build binarization1: CXX_EXECUTABLE_LINKER__binarization1_Debug CMakeFiles/binarization1.dir/src/binarization/binarization1.cpp.o | /usr/local/lib/libopencv_gapi.so.4.6.0 /usr/local/lib/libopencv_stitching.so.4.6.0 /usr/local/lib/libopencv_alphamat.so.4.6.0 /usr/local/lib/libopencv_aruco.so.4.6.0 /usr/local/lib/libopencv_barcode.so.4.6.0 /usr/local/lib/libopencv_bgsegm.so.4.6.0 /usr/local/lib/libopencv_bioinspired.so.4.6.0 /usr/local/lib/libopencv_ccalib.so.4.6.0 /usr/local/lib/libopencv_dnn_objdetect.so.4.6.0 /usr/local/lib/libopencv_dnn_superres.so.4.6.0 /usr/local/lib/libopencv_dpm.so.4.6.0 /usr/local/lib/libopencv_face.so.4.6.0 /usr/local/lib/libopencv_freetype.so.4.6.0 /usr/local/lib/libopencv_fuzzy.so.4.6.0 /usr/local/lib/libopencv_hfs.so.4.6.0 /usr/local/lib/libopencv_img_hash.so.4.6.0 /usr/local/lib/libopencv_intensity_transform.so.4.6.0 /usr/local/lib/libopencv_line_descriptor.so.4.6.0 /usr/local/lib/libopencv_mcc.so.4.6.0 /usr/local/lib/libopencv_quality.so.4.6.0 /usr/local/lib/libopencv_rapid.so.4.6.0 /usr/local/lib/libopencv_reg.so.4.6.0 /usr/local/lib/libopencv_rgbd.so.4.6.0 /usr/local/lib/libopencv_saliency.so.4.6.0 /usr/local/lib/libopencv_sfm.so.4.6.0 /usr/local/lib/libopencv_stereo.so.4.6.0 /usr/local/lib/libopencv_structured_light.so.4.6.0 /usr/local/lib/libopencv_superres.so.4.6.0 /usr/local/lib/libopencv_surface_matching.so.4.6.0 /usr/local/lib/libopencv_tracking.so.4.6.0 /usr/local/lib/libopencv_videostab.so.4.6.0 /usr/local/lib/libopencv_wechat_qrcode.so.4.6.0 /usr/local/lib/libopencv_xfeatures2d.so.4.6.0 /usr/local/lib/libopencv_xobjdetect.so.4.6.0 /usr/local/lib/libopencv_xphoto.so.4.6.0 /usr/local/lib/libopencv_shape.so.4.6.0 /usr/local/lib/libopencv_highgui.so.4.6.0 /usr/local/lib/libopencv_datasets.so.4.6.0 /usr/local/lib/libopencv_plot.so.4.6.0 /usr/local/lib/libopencv_text.so.4.6.0 /usr/local/lib/libopencv_ml.so.4.6.0 /usr/local/lib/libopencv_phase_unwrapping.so.4.6.0 /usr/local/lib/libopencv_optflow.so.4.6.0 /usr/local/lib/libopencv_ximgproc.so.4.6.0 /usr/local/lib/libopencv_video.so.4.6.0 /usr/local/lib/libopencv_videoio.so.4.6.0 /usr/local/lib/libopencv_imgcodecs.so.4.6.0 /usr/local/lib/libopencv_objdetect.so.4.6.0 /usr/local/lib/libopencv_calib3d.so.4.6.0 /usr/local/lib/libopencv_dnn.so.4.6.0 /usr/local/lib/libopencv_features2d.so.4.6.0 /usr/local/lib/libopencv_flann.so.4.6.0 /usr/local/lib/libopencv_photo.so.4.6.0 /usr/local/lib/libopencv_imgproc.so.4.6.0 /usr/local/lib/libopencv_core.so.4.6.0
   FLAGS = -g
-  LINK_LIBRARIES = D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_gapi455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_highgui455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_ml455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_objdetect455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_photo455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_stitching455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_video455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_videoio455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgcodecs455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_dnn455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_calib3d455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_features2d455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_flann455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgproc455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_core455.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\binarization1.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\binarization1.dir\
-  TARGET_FILE = binarization1.exe
-  TARGET_IMPLIB = libbinarization1.dll.a
-  TARGET_PDB = binarization1.pdb
+  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  /usr/local/lib/libopencv_gapi.so.4.6.0  /usr/local/lib/libopencv_stitching.so.4.6.0  /usr/local/lib/libopencv_alphamat.so.4.6.0  /usr/local/lib/libopencv_aruco.so.4.6.0  /usr/local/lib/libopencv_barcode.so.4.6.0  /usr/local/lib/libopencv_bgsegm.so.4.6.0  /usr/local/lib/libopencv_bioinspired.so.4.6.0  /usr/local/lib/libopencv_ccalib.so.4.6.0  /usr/local/lib/libopencv_dnn_objdetect.so.4.6.0  /usr/local/lib/libopencv_dnn_superres.so.4.6.0  /usr/local/lib/libopencv_dpm.so.4.6.0  /usr/local/lib/libopencv_face.so.4.6.0  /usr/local/lib/libopencv_freetype.so.4.6.0  /usr/local/lib/libopencv_fuzzy.so.4.6.0  /usr/local/lib/libopencv_hfs.so.4.6.0  /usr/local/lib/libopencv_img_hash.so.4.6.0  /usr/local/lib/libopencv_intensity_transform.so.4.6.0  /usr/local/lib/libopencv_line_descriptor.so.4.6.0  /usr/local/lib/libopencv_mcc.so.4.6.0  /usr/local/lib/libopencv_quality.so.4.6.0  /usr/local/lib/libopencv_rapid.so.4.6.0  /usr/local/lib/libopencv_reg.so.4.6.0  /usr/local/lib/libopencv_rgbd.so.4.6.0  /usr/local/lib/libopencv_saliency.so.4.6.0  /usr/local/lib/libopencv_sfm.so.4.6.0  /usr/local/lib/libopencv_stereo.so.4.6.0  /usr/local/lib/libopencv_structured_light.so.4.6.0  /usr/local/lib/libopencv_superres.so.4.6.0  /usr/local/lib/libopencv_surface_matching.so.4.6.0  /usr/local/lib/libopencv_tracking.so.4.6.0  /usr/local/lib/libopencv_videostab.so.4.6.0  /usr/local/lib/libopencv_wechat_qrcode.so.4.6.0  /usr/local/lib/libopencv_xfeatures2d.so.4.6.0  /usr/local/lib/libopencv_xobjdetect.so.4.6.0  /usr/local/lib/libopencv_xphoto.so.4.6.0  /usr/local/lib/libopencv_shape.so.4.6.0  /usr/local/lib/libopencv_highgui.so.4.6.0  /usr/local/lib/libopencv_datasets.so.4.6.0  /usr/local/lib/libopencv_plot.so.4.6.0  /usr/local/lib/libopencv_text.so.4.6.0  /usr/local/lib/libopencv_ml.so.4.6.0  /usr/local/lib/libopencv_phase_unwrapping.so.4.6.0  /usr/local/lib/libopencv_optflow.so.4.6.0  /usr/local/lib/libopencv_ximgproc.so.4.6.0  /usr/local/lib/libopencv_video.so.4.6.0  /usr/local/lib/libopencv_videoio.so.4.6.0  /usr/local/lib/libopencv_imgcodecs.so.4.6.0  /usr/local/lib/libopencv_objdetect.so.4.6.0  /usr/local/lib/libopencv_calib3d.so.4.6.0  /usr/local/lib/libopencv_dnn.so.4.6.0  /usr/local/lib/libopencv_features2d.so.4.6.0  /usr/local/lib/libopencv_flann.so.4.6.0  /usr/local/lib/libopencv_photo.so.4.6.0  /usr/local/lib/libopencv_imgproc.so.4.6.0  /usr/local/lib/libopencv_core.so.4.6.0
+  OBJECT_DIR = CMakeFiles/binarization1.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = binarization1
+  TARGET_PDB = binarization1.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target binarization2
@@ -271,14 +246,12 @@ build binarization1.exe: CXX_EXECUTABLE_LINKER__binarization1_Debug CMakeFiles/b
 
 build cmake_object_order_depends_target_binarization2: phony || CMakeFiles/binarization2.dir
 
-build CMakeFiles/binarization2.dir/src/binarization/binarization2.cpp.obj: CXX_COMPILER__binarization2_Debug D$:/program/cpp/opencv_learn/src/binarization/binarization2.cpp || cmake_object_order_depends_target_binarization2
-  DEP_FILE = CMakeFiles\binarization2.dir\src\binarization\binarization2.cpp.obj.d
+build CMakeFiles/binarization2.dir/src/binarization/binarization2.cpp.o: CXX_COMPILER__binarization2_Debug /home/sjtu/code/cpp/opencv_learn/src/binarization/binarization2.cpp || cmake_object_order_depends_target_binarization2
+  DEP_FILE = CMakeFiles/binarization2.dir/src/binarization/binarization2.cpp.o.d
   FLAGS = -g -std=gnu++11
-  INCLUDES = -isystem D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/include
-  OBJECT_DIR = CMakeFiles\binarization2.dir
-  OBJECT_FILE_DIR = CMakeFiles\binarization2.dir\src\binarization
-  TARGET_COMPILE_PDB = CMakeFiles\binarization2.dir\
-  TARGET_PDB = binarization2.pdb
+  INCLUDES = -I/usr/include/eigen3 -isystem /usr/local/include/opencv4
+  OBJECT_DIR = CMakeFiles/binarization2.dir
+  OBJECT_FILE_DIR = CMakeFiles/binarization2.dir/src/binarization
 
 
 # =============================================================================
@@ -286,18 +259,16 @@ build CMakeFiles/binarization2.dir/src/binarization/binarization2.cpp.obj: CXX_C
 
 
 #############################################
-# Link the executable binarization2.exe
+# Link the executable binarization2
 
-build binarization2.exe: CXX_EXECUTABLE_LINKER__binarization2_Debug CMakeFiles/binarization2.dir/src/binarization/binarization2.cpp.obj | D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_gapi455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_highgui455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_ml455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_objdetect455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_photo455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_stitching455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_video455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_videoio455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgcodecs455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_dnn455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_calib3d455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_features2d455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_flann455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgproc455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_core455.dll.a
+build binarization2: CXX_EXECUTABLE_LINKER__binarization2_Debug CMakeFiles/binarization2.dir/src/binarization/binarization2.cpp.o | /usr/local/lib/libopencv_gapi.so.4.6.0 /usr/local/lib/libopencv_stitching.so.4.6.0 /usr/local/lib/libopencv_alphamat.so.4.6.0 /usr/local/lib/libopencv_aruco.so.4.6.0 /usr/local/lib/libopencv_barcode.so.4.6.0 /usr/local/lib/libopencv_bgsegm.so.4.6.0 /usr/local/lib/libopencv_bioinspired.so.4.6.0 /usr/local/lib/libopencv_ccalib.so.4.6.0 /usr/local/lib/libopencv_dnn_objdetect.so.4.6.0 /usr/local/lib/libopencv_dnn_superres.so.4.6.0 /usr/local/lib/libopencv_dpm.so.4.6.0 /usr/local/lib/libopencv_face.so.4.6.0 /usr/local/lib/libopencv_freetype.so.4.6.0 /usr/local/lib/libopencv_fuzzy.so.4.6.0 /usr/local/lib/libopencv_hfs.so.4.6.0 /usr/local/lib/libopencv_img_hash.so.4.6.0 /usr/local/lib/libopencv_intensity_transform.so.4.6.0 /usr/local/lib/libopencv_line_descriptor.so.4.6.0 /usr/local/lib/libopencv_mcc.so.4.6.0 /usr/local/lib/libopencv_quality.so.4.6.0 /usr/local/lib/libopencv_rapid.so.4.6.0 /usr/local/lib/libopencv_reg.so.4.6.0 /usr/local/lib/libopencv_rgbd.so.4.6.0 /usr/local/lib/libopencv_saliency.so.4.6.0 /usr/local/lib/libopencv_sfm.so.4.6.0 /usr/local/lib/libopencv_stereo.so.4.6.0 /usr/local/lib/libopencv_structured_light.so.4.6.0 /usr/local/lib/libopencv_superres.so.4.6.0 /usr/local/lib/libopencv_surface_matching.so.4.6.0 /usr/local/lib/libopencv_tracking.so.4.6.0 /usr/local/lib/libopencv_videostab.so.4.6.0 /usr/local/lib/libopencv_wechat_qrcode.so.4.6.0 /usr/local/lib/libopencv_xfeatures2d.so.4.6.0 /usr/local/lib/libopencv_xobjdetect.so.4.6.0 /usr/local/lib/libopencv_xphoto.so.4.6.0 /usr/local/lib/libopencv_shape.so.4.6.0 /usr/local/lib/libopencv_highgui.so.4.6.0 /usr/local/lib/libopencv_datasets.so.4.6.0 /usr/local/lib/libopencv_plot.so.4.6.0 /usr/local/lib/libopencv_text.so.4.6.0 /usr/local/lib/libopencv_ml.so.4.6.0 /usr/local/lib/libopencv_phase_unwrapping.so.4.6.0 /usr/local/lib/libopencv_optflow.so.4.6.0 /usr/local/lib/libopencv_ximgproc.so.4.6.0 /usr/local/lib/libopencv_video.so.4.6.0 /usr/local/lib/libopencv_videoio.so.4.6.0 /usr/local/lib/libopencv_imgcodecs.so.4.6.0 /usr/local/lib/libopencv_objdetect.so.4.6.0 /usr/local/lib/libopencv_calib3d.so.4.6.0 /usr/local/lib/libopencv_dnn.so.4.6.0 /usr/local/lib/libopencv_features2d.so.4.6.0 /usr/local/lib/libopencv_flann.so.4.6.0 /usr/local/lib/libopencv_photo.so.4.6.0 /usr/local/lib/libopencv_imgproc.so.4.6.0 /usr/local/lib/libopencv_core.so.4.6.0
   FLAGS = -g
-  LINK_LIBRARIES = D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_gapi455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_highgui455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_ml455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_objdetect455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_photo455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_stitching455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_video455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_videoio455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgcodecs455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_dnn455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_calib3d455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_features2d455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_flann455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgproc455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_core455.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\binarization2.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\binarization2.dir\
-  TARGET_FILE = binarization2.exe
-  TARGET_IMPLIB = libbinarization2.dll.a
-  TARGET_PDB = binarization2.pdb
+  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  /usr/local/lib/libopencv_gapi.so.4.6.0  /usr/local/lib/libopencv_stitching.so.4.6.0  /usr/local/lib/libopencv_alphamat.so.4.6.0  /usr/local/lib/libopencv_aruco.so.4.6.0  /usr/local/lib/libopencv_barcode.so.4.6.0  /usr/local/lib/libopencv_bgsegm.so.4.6.0  /usr/local/lib/libopencv_bioinspired.so.4.6.0  /usr/local/lib/libopencv_ccalib.so.4.6.0  /usr/local/lib/libopencv_dnn_objdetect.so.4.6.0  /usr/local/lib/libopencv_dnn_superres.so.4.6.0  /usr/local/lib/libopencv_dpm.so.4.6.0  /usr/local/lib/libopencv_face.so.4.6.0  /usr/local/lib/libopencv_freetype.so.4.6.0  /usr/local/lib/libopencv_fuzzy.so.4.6.0  /usr/local/lib/libopencv_hfs.so.4.6.0  /usr/local/lib/libopencv_img_hash.so.4.6.0  /usr/local/lib/libopencv_intensity_transform.so.4.6.0  /usr/local/lib/libopencv_line_descriptor.so.4.6.0  /usr/local/lib/libopencv_mcc.so.4.6.0  /usr/local/lib/libopencv_quality.so.4.6.0  /usr/local/lib/libopencv_rapid.so.4.6.0  /usr/local/lib/libopencv_reg.so.4.6.0  /usr/local/lib/libopencv_rgbd.so.4.6.0  /usr/local/lib/libopencv_saliency.so.4.6.0  /usr/local/lib/libopencv_sfm.so.4.6.0  /usr/local/lib/libopencv_stereo.so.4.6.0  /usr/local/lib/libopencv_structured_light.so.4.6.0  /usr/local/lib/libopencv_superres.so.4.6.0  /usr/local/lib/libopencv_surface_matching.so.4.6.0  /usr/local/lib/libopencv_tracking.so.4.6.0  /usr/local/lib/libopencv_videostab.so.4.6.0  /usr/local/lib/libopencv_wechat_qrcode.so.4.6.0  /usr/local/lib/libopencv_xfeatures2d.so.4.6.0  /usr/local/lib/libopencv_xobjdetect.so.4.6.0  /usr/local/lib/libopencv_xphoto.so.4.6.0  /usr/local/lib/libopencv_shape.so.4.6.0  /usr/local/lib/libopencv_highgui.so.4.6.0  /usr/local/lib/libopencv_datasets.so.4.6.0  /usr/local/lib/libopencv_plot.so.4.6.0  /usr/local/lib/libopencv_text.so.4.6.0  /usr/local/lib/libopencv_ml.so.4.6.0  /usr/local/lib/libopencv_phase_unwrapping.so.4.6.0  /usr/local/lib/libopencv_optflow.so.4.6.0  /usr/local/lib/libopencv_ximgproc.so.4.6.0  /usr/local/lib/libopencv_video.so.4.6.0  /usr/local/lib/libopencv_videoio.so.4.6.0  /usr/local/lib/libopencv_imgcodecs.so.4.6.0  /usr/local/lib/libopencv_objdetect.so.4.6.0  /usr/local/lib/libopencv_calib3d.so.4.6.0  /usr/local/lib/libopencv_dnn.so.4.6.0  /usr/local/lib/libopencv_features2d.so.4.6.0  /usr/local/lib/libopencv_flann.so.4.6.0  /usr/local/lib/libopencv_photo.so.4.6.0  /usr/local/lib/libopencv_imgproc.so.4.6.0  /usr/local/lib/libopencv_core.so.4.6.0
+  OBJECT_DIR = CMakeFiles/binarization2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = binarization2
+  TARGET_PDB = binarization2.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target energy_main
@@ -308,14 +279,12 @@ build binarization2.exe: CXX_EXECUTABLE_LINKER__binarization2_Debug CMakeFiles/b
 
 build cmake_object_order_depends_target_energy_main: phony || CMakeFiles/energy_main.dir
 
-build CMakeFiles/energy_main.dir/src/demo/energy/main.cpp.obj: CXX_COMPILER__energy_main_Debug D$:/program/cpp/opencv_learn/src/demo/energy/main.cpp || cmake_object_order_depends_target_energy_main
-  DEP_FILE = CMakeFiles\energy_main.dir\src\demo\energy\main.cpp.obj.d
+build CMakeFiles/energy_main.dir/src/demo/energy/main.cpp.o: CXX_COMPILER__energy_main_Debug /home/sjtu/code/cpp/opencv_learn/src/demo/energy/main.cpp || cmake_object_order_depends_target_energy_main
+  DEP_FILE = CMakeFiles/energy_main.dir/src/demo/energy/main.cpp.o.d
   FLAGS = -g -std=gnu++11
-  INCLUDES = -isystem D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/include
-  OBJECT_DIR = CMakeFiles\energy_main.dir
-  OBJECT_FILE_DIR = CMakeFiles\energy_main.dir\src\demo\energy
-  TARGET_COMPILE_PDB = CMakeFiles\energy_main.dir\
-  TARGET_PDB = energy_main.pdb
+  INCLUDES = -I/usr/include/eigen3 -isystem /usr/local/include/opencv4
+  OBJECT_DIR = CMakeFiles/energy_main.dir
+  OBJECT_FILE_DIR = CMakeFiles/energy_main.dir/src/demo/energy
 
 
 # =============================================================================
@@ -323,18 +292,16 @@ build CMakeFiles/energy_main.dir/src/demo/energy/main.cpp.obj: CXX_COMPILER__ene
 
 
 #############################################
-# Link the executable energy_main.exe
+# Link the executable energy_main
 
-build energy_main.exe: CXX_EXECUTABLE_LINKER__energy_main_Debug CMakeFiles/energy_main.dir/src/demo/energy/main.cpp.obj | D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_gapi455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_highgui455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_ml455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_objdetect455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_photo455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_stitching455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_video455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_videoio455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgcodecs455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_dnn455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_calib3d455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_features2d455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_flann455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgproc455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_core455.dll.a
+build energy_main: CXX_EXECUTABLE_LINKER__energy_main_Debug CMakeFiles/energy_main.dir/src/demo/energy/main.cpp.o | /usr/local/lib/libopencv_gapi.so.4.6.0 /usr/local/lib/libopencv_stitching.so.4.6.0 /usr/local/lib/libopencv_alphamat.so.4.6.0 /usr/local/lib/libopencv_aruco.so.4.6.0 /usr/local/lib/libopencv_barcode.so.4.6.0 /usr/local/lib/libopencv_bgsegm.so.4.6.0 /usr/local/lib/libopencv_bioinspired.so.4.6.0 /usr/local/lib/libopencv_ccalib.so.4.6.0 /usr/local/lib/libopencv_dnn_objdetect.so.4.6.0 /usr/local/lib/libopencv_dnn_superres.so.4.6.0 /usr/local/lib/libopencv_dpm.so.4.6.0 /usr/local/lib/libopencv_face.so.4.6.0 /usr/local/lib/libopencv_freetype.so.4.6.0 /usr/local/lib/libopencv_fuzzy.so.4.6.0 /usr/local/lib/libopencv_hfs.so.4.6.0 /usr/local/lib/libopencv_img_hash.so.4.6.0 /usr/local/lib/libopencv_intensity_transform.so.4.6.0 /usr/local/lib/libopencv_line_descriptor.so.4.6.0 /usr/local/lib/libopencv_mcc.so.4.6.0 /usr/local/lib/libopencv_quality.so.4.6.0 /usr/local/lib/libopencv_rapid.so.4.6.0 /usr/local/lib/libopencv_reg.so.4.6.0 /usr/local/lib/libopencv_rgbd.so.4.6.0 /usr/local/lib/libopencv_saliency.so.4.6.0 /usr/local/lib/libopencv_sfm.so.4.6.0 /usr/local/lib/libopencv_stereo.so.4.6.0 /usr/local/lib/libopencv_structured_light.so.4.6.0 /usr/local/lib/libopencv_superres.so.4.6.0 /usr/local/lib/libopencv_surface_matching.so.4.6.0 /usr/local/lib/libopencv_tracking.so.4.6.0 /usr/local/lib/libopencv_videostab.so.4.6.0 /usr/local/lib/libopencv_wechat_qrcode.so.4.6.0 /usr/local/lib/libopencv_xfeatures2d.so.4.6.0 /usr/local/lib/libopencv_xobjdetect.so.4.6.0 /usr/local/lib/libopencv_xphoto.so.4.6.0 /usr/local/lib/libopencv_shape.so.4.6.0 /usr/local/lib/libopencv_highgui.so.4.6.0 /usr/local/lib/libopencv_datasets.so.4.6.0 /usr/local/lib/libopencv_plot.so.4.6.0 /usr/local/lib/libopencv_text.so.4.6.0 /usr/local/lib/libopencv_ml.so.4.6.0 /usr/local/lib/libopencv_phase_unwrapping.so.4.6.0 /usr/local/lib/libopencv_optflow.so.4.6.0 /usr/local/lib/libopencv_ximgproc.so.4.6.0 /usr/local/lib/libopencv_video.so.4.6.0 /usr/local/lib/libopencv_videoio.so.4.6.0 /usr/local/lib/libopencv_imgcodecs.so.4.6.0 /usr/local/lib/libopencv_objdetect.so.4.6.0 /usr/local/lib/libopencv_calib3d.so.4.6.0 /usr/local/lib/libopencv_dnn.so.4.6.0 /usr/local/lib/libopencv_features2d.so.4.6.0 /usr/local/lib/libopencv_flann.so.4.6.0 /usr/local/lib/libopencv_photo.so.4.6.0 /usr/local/lib/libopencv_imgproc.so.4.6.0 /usr/local/lib/libopencv_core.so.4.6.0
   FLAGS = -g
-  LINK_LIBRARIES = D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_gapi455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_highgui455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_ml455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_objdetect455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_photo455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_stitching455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_video455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_videoio455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgcodecs455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_dnn455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_calib3d455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_features2d455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_flann455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgproc455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_core455.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\energy_main.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\energy_main.dir\
-  TARGET_FILE = energy_main.exe
-  TARGET_IMPLIB = libenergy_main.dll.a
-  TARGET_PDB = energy_main.pdb
+  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  /usr/local/lib/libopencv_gapi.so.4.6.0  /usr/local/lib/libopencv_stitching.so.4.6.0  /usr/local/lib/libopencv_alphamat.so.4.6.0  /usr/local/lib/libopencv_aruco.so.4.6.0  /usr/local/lib/libopencv_barcode.so.4.6.0  /usr/local/lib/libopencv_bgsegm.so.4.6.0  /usr/local/lib/libopencv_bioinspired.so.4.6.0  /usr/local/lib/libopencv_ccalib.so.4.6.0  /usr/local/lib/libopencv_dnn_objdetect.so.4.6.0  /usr/local/lib/libopencv_dnn_superres.so.4.6.0  /usr/local/lib/libopencv_dpm.so.4.6.0  /usr/local/lib/libopencv_face.so.4.6.0  /usr/local/lib/libopencv_freetype.so.4.6.0  /usr/local/lib/libopencv_fuzzy.so.4.6.0  /usr/local/lib/libopencv_hfs.so.4.6.0  /usr/local/lib/libopencv_img_hash.so.4.6.0  /usr/local/lib/libopencv_intensity_transform.so.4.6.0  /usr/local/lib/libopencv_line_descriptor.so.4.6.0  /usr/local/lib/libopencv_mcc.so.4.6.0  /usr/local/lib/libopencv_quality.so.4.6.0  /usr/local/lib/libopencv_rapid.so.4.6.0  /usr/local/lib/libopencv_reg.so.4.6.0  /usr/local/lib/libopencv_rgbd.so.4.6.0  /usr/local/lib/libopencv_saliency.so.4.6.0  /usr/local/lib/libopencv_sfm.so.4.6.0  /usr/local/lib/libopencv_stereo.so.4.6.0  /usr/local/lib/libopencv_structured_light.so.4.6.0  /usr/local/lib/libopencv_superres.so.4.6.0  /usr/local/lib/libopencv_surface_matching.so.4.6.0  /usr/local/lib/libopencv_tracking.so.4.6.0  /usr/local/lib/libopencv_videostab.so.4.6.0  /usr/local/lib/libopencv_wechat_qrcode.so.4.6.0  /usr/local/lib/libopencv_xfeatures2d.so.4.6.0  /usr/local/lib/libopencv_xobjdetect.so.4.6.0  /usr/local/lib/libopencv_xphoto.so.4.6.0  /usr/local/lib/libopencv_shape.so.4.6.0  /usr/local/lib/libopencv_highgui.so.4.6.0  /usr/local/lib/libopencv_datasets.so.4.6.0  /usr/local/lib/libopencv_plot.so.4.6.0  /usr/local/lib/libopencv_text.so.4.6.0  /usr/local/lib/libopencv_ml.so.4.6.0  /usr/local/lib/libopencv_phase_unwrapping.so.4.6.0  /usr/local/lib/libopencv_optflow.so.4.6.0  /usr/local/lib/libopencv_ximgproc.so.4.6.0  /usr/local/lib/libopencv_video.so.4.6.0  /usr/local/lib/libopencv_videoio.so.4.6.0  /usr/local/lib/libopencv_imgcodecs.so.4.6.0  /usr/local/lib/libopencv_objdetect.so.4.6.0  /usr/local/lib/libopencv_calib3d.so.4.6.0  /usr/local/lib/libopencv_dnn.so.4.6.0  /usr/local/lib/libopencv_features2d.so.4.6.0  /usr/local/lib/libopencv_flann.so.4.6.0  /usr/local/lib/libopencv_photo.so.4.6.0  /usr/local/lib/libopencv_imgproc.so.4.6.0  /usr/local/lib/libopencv_core.so.4.6.0
+  OBJECT_DIR = CMakeFiles/energy_main.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = energy_main
+  TARGET_PDB = energy_main.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target hsv-substraction
@@ -345,14 +312,12 @@ build energy_main.exe: CXX_EXECUTABLE_LINKER__energy_main_Debug CMakeFiles/energ
 
 build cmake_object_order_depends_target_hsv-substraction: phony || CMakeFiles/hsv-substraction.dir
 
-build CMakeFiles/hsv-substraction.dir/src/extract/hsv-extract.cpp.obj: CXX_COMPILER__hsv-substraction_Debug D$:/program/cpp/opencv_learn/src/extract/hsv-extract.cpp || cmake_object_order_depends_target_hsv-substraction
-  DEP_FILE = CMakeFiles\hsv-substraction.dir\src\extract\hsv-extract.cpp.obj.d
+build CMakeFiles/hsv-substraction.dir/src/extract/hsv-extract.cpp.o: CXX_COMPILER__hsv-substraction_Debug /home/sjtu/code/cpp/opencv_learn/src/extract/hsv-extract.cpp || cmake_object_order_depends_target_hsv-substraction
+  DEP_FILE = CMakeFiles/hsv-substraction.dir/src/extract/hsv-extract.cpp.o.d
   FLAGS = -g -std=gnu++11
-  INCLUDES = -isystem D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/include
-  OBJECT_DIR = CMakeFiles\hsv-substraction.dir
-  OBJECT_FILE_DIR = CMakeFiles\hsv-substraction.dir\src\extract
-  TARGET_COMPILE_PDB = CMakeFiles\hsv-substraction.dir\
-  TARGET_PDB = hsv-substraction.pdb
+  INCLUDES = -I/usr/include/eigen3 -isystem /usr/local/include/opencv4
+  OBJECT_DIR = CMakeFiles/hsv-substraction.dir
+  OBJECT_FILE_DIR = CMakeFiles/hsv-substraction.dir/src/extract
 
 
 # =============================================================================
@@ -360,18 +325,16 @@ build CMakeFiles/hsv-substraction.dir/src/extract/hsv-extract.cpp.obj: CXX_COMPI
 
 
 #############################################
-# Link the executable hsv-substraction.exe
+# Link the executable hsv-substraction
 
-build hsv-substraction.exe: CXX_EXECUTABLE_LINKER__hsv-substraction_Debug CMakeFiles/hsv-substraction.dir/src/extract/hsv-extract.cpp.obj | D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_gapi455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_highgui455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_ml455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_objdetect455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_photo455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_stitching455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_video455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_videoio455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgcodecs455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_dnn455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_calib3d455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_features2d455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_flann455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgproc455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_core455.dll.a
+build hsv-substraction: CXX_EXECUTABLE_LINKER__hsv-substraction_Debug CMakeFiles/hsv-substraction.dir/src/extract/hsv-extract.cpp.o | /usr/local/lib/libopencv_gapi.so.4.6.0 /usr/local/lib/libopencv_stitching.so.4.6.0 /usr/local/lib/libopencv_alphamat.so.4.6.0 /usr/local/lib/libopencv_aruco.so.4.6.0 /usr/local/lib/libopencv_barcode.so.4.6.0 /usr/local/lib/libopencv_bgsegm.so.4.6.0 /usr/local/lib/libopencv_bioinspired.so.4.6.0 /usr/local/lib/libopencv_ccalib.so.4.6.0 /usr/local/lib/libopencv_dnn_objdetect.so.4.6.0 /usr/local/lib/libopencv_dnn_superres.so.4.6.0 /usr/local/lib/libopencv_dpm.so.4.6.0 /usr/local/lib/libopencv_face.so.4.6.0 /usr/local/lib/libopencv_freetype.so.4.6.0 /usr/local/lib/libopencv_fuzzy.so.4.6.0 /usr/local/lib/libopencv_hfs.so.4.6.0 /usr/local/lib/libopencv_img_hash.so.4.6.0 /usr/local/lib/libopencv_intensity_transform.so.4.6.0 /usr/local/lib/libopencv_line_descriptor.so.4.6.0 /usr/local/lib/libopencv_mcc.so.4.6.0 /usr/local/lib/libopencv_quality.so.4.6.0 /usr/local/lib/libopencv_rapid.so.4.6.0 /usr/local/lib/libopencv_reg.so.4.6.0 /usr/local/lib/libopencv_rgbd.so.4.6.0 /usr/local/lib/libopencv_saliency.so.4.6.0 /usr/local/lib/libopencv_sfm.so.4.6.0 /usr/local/lib/libopencv_stereo.so.4.6.0 /usr/local/lib/libopencv_structured_light.so.4.6.0 /usr/local/lib/libopencv_superres.so.4.6.0 /usr/local/lib/libopencv_surface_matching.so.4.6.0 /usr/local/lib/libopencv_tracking.so.4.6.0 /usr/local/lib/libopencv_videostab.so.4.6.0 /usr/local/lib/libopencv_wechat_qrcode.so.4.6.0 /usr/local/lib/libopencv_xfeatures2d.so.4.6.0 /usr/local/lib/libopencv_xobjdetect.so.4.6.0 /usr/local/lib/libopencv_xphoto.so.4.6.0 /usr/local/lib/libopencv_shape.so.4.6.0 /usr/local/lib/libopencv_highgui.so.4.6.0 /usr/local/lib/libopencv_datasets.so.4.6.0 /usr/local/lib/libopencv_plot.so.4.6.0 /usr/local/lib/libopencv_text.so.4.6.0 /usr/local/lib/libopencv_ml.so.4.6.0 /usr/local/lib/libopencv_phase_unwrapping.so.4.6.0 /usr/local/lib/libopencv_optflow.so.4.6.0 /usr/local/lib/libopencv_ximgproc.so.4.6.0 /usr/local/lib/libopencv_video.so.4.6.0 /usr/local/lib/libopencv_videoio.so.4.6.0 /usr/local/lib/libopencv_imgcodecs.so.4.6.0 /usr/local/lib/libopencv_objdetect.so.4.6.0 /usr/local/lib/libopencv_calib3d.so.4.6.0 /usr/local/lib/libopencv_dnn.so.4.6.0 /usr/local/lib/libopencv_features2d.so.4.6.0 /usr/local/lib/libopencv_flann.so.4.6.0 /usr/local/lib/libopencv_photo.so.4.6.0 /usr/local/lib/libopencv_imgproc.so.4.6.0 /usr/local/lib/libopencv_core.so.4.6.0
   FLAGS = -g
-  LINK_LIBRARIES = D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_gapi455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_highgui455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_ml455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_objdetect455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_photo455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_stitching455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_video455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_videoio455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgcodecs455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_dnn455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_calib3d455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_features2d455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_flann455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgproc455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_core455.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\hsv-substraction.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\hsv-substraction.dir\
-  TARGET_FILE = hsv-substraction.exe
-  TARGET_IMPLIB = libhsv-substraction.dll.a
-  TARGET_PDB = hsv-substraction.pdb
+  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  /usr/local/lib/libopencv_gapi.so.4.6.0  /usr/local/lib/libopencv_stitching.so.4.6.0  /usr/local/lib/libopencv_alphamat.so.4.6.0  /usr/local/lib/libopencv_aruco.so.4.6.0  /usr/local/lib/libopencv_barcode.so.4.6.0  /usr/local/lib/libopencv_bgsegm.so.4.6.0  /usr/local/lib/libopencv_bioinspired.so.4.6.0  /usr/local/lib/libopencv_ccalib.so.4.6.0  /usr/local/lib/libopencv_dnn_objdetect.so.4.6.0  /usr/local/lib/libopencv_dnn_superres.so.4.6.0  /usr/local/lib/libopencv_dpm.so.4.6.0  /usr/local/lib/libopencv_face.so.4.6.0  /usr/local/lib/libopencv_freetype.so.4.6.0  /usr/local/lib/libopencv_fuzzy.so.4.6.0  /usr/local/lib/libopencv_hfs.so.4.6.0  /usr/local/lib/libopencv_img_hash.so.4.6.0  /usr/local/lib/libopencv_intensity_transform.so.4.6.0  /usr/local/lib/libopencv_line_descriptor.so.4.6.0  /usr/local/lib/libopencv_mcc.so.4.6.0  /usr/local/lib/libopencv_quality.so.4.6.0  /usr/local/lib/libopencv_rapid.so.4.6.0  /usr/local/lib/libopencv_reg.so.4.6.0  /usr/local/lib/libopencv_rgbd.so.4.6.0  /usr/local/lib/libopencv_saliency.so.4.6.0  /usr/local/lib/libopencv_sfm.so.4.6.0  /usr/local/lib/libopencv_stereo.so.4.6.0  /usr/local/lib/libopencv_structured_light.so.4.6.0  /usr/local/lib/libopencv_superres.so.4.6.0  /usr/local/lib/libopencv_surface_matching.so.4.6.0  /usr/local/lib/libopencv_tracking.so.4.6.0  /usr/local/lib/libopencv_videostab.so.4.6.0  /usr/local/lib/libopencv_wechat_qrcode.so.4.6.0  /usr/local/lib/libopencv_xfeatures2d.so.4.6.0  /usr/local/lib/libopencv_xobjdetect.so.4.6.0  /usr/local/lib/libopencv_xphoto.so.4.6.0  /usr/local/lib/libopencv_shape.so.4.6.0  /usr/local/lib/libopencv_highgui.so.4.6.0  /usr/local/lib/libopencv_datasets.so.4.6.0  /usr/local/lib/libopencv_plot.so.4.6.0  /usr/local/lib/libopencv_text.so.4.6.0  /usr/local/lib/libopencv_ml.so.4.6.0  /usr/local/lib/libopencv_phase_unwrapping.so.4.6.0  /usr/local/lib/libopencv_optflow.so.4.6.0  /usr/local/lib/libopencv_ximgproc.so.4.6.0  /usr/local/lib/libopencv_video.so.4.6.0  /usr/local/lib/libopencv_videoio.so.4.6.0  /usr/local/lib/libopencv_imgcodecs.so.4.6.0  /usr/local/lib/libopencv_objdetect.so.4.6.0  /usr/local/lib/libopencv_calib3d.so.4.6.0  /usr/local/lib/libopencv_dnn.so.4.6.0  /usr/local/lib/libopencv_features2d.so.4.6.0  /usr/local/lib/libopencv_flann.so.4.6.0  /usr/local/lib/libopencv_photo.so.4.6.0  /usr/local/lib/libopencv_imgproc.so.4.6.0  /usr/local/lib/libopencv_core.so.4.6.0
+  OBJECT_DIR = CMakeFiles/hsv-substraction.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = hsv-substraction
+  TARGET_PDB = hsv-substraction.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target filter1
@@ -382,14 +345,12 @@ build hsv-substraction.exe: CXX_EXECUTABLE_LINKER__hsv-substraction_Debug CMakeF
 
 build cmake_object_order_depends_target_filter1: phony || CMakeFiles/filter1.dir
 
-build CMakeFiles/filter1.dir/src/filter/filter1.cpp.obj: CXX_COMPILER__filter1_Debug D$:/program/cpp/opencv_learn/src/filter/filter1.cpp || cmake_object_order_depends_target_filter1
-  DEP_FILE = CMakeFiles\filter1.dir\src\filter\filter1.cpp.obj.d
+build CMakeFiles/filter1.dir/src/filter/filter1.cpp.o: CXX_COMPILER__filter1_Debug /home/sjtu/code/cpp/opencv_learn/src/filter/filter1.cpp || cmake_object_order_depends_target_filter1
+  DEP_FILE = CMakeFiles/filter1.dir/src/filter/filter1.cpp.o.d
   FLAGS = -g -std=gnu++11
-  INCLUDES = -isystem D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/include
-  OBJECT_DIR = CMakeFiles\filter1.dir
-  OBJECT_FILE_DIR = CMakeFiles\filter1.dir\src\filter
-  TARGET_COMPILE_PDB = CMakeFiles\filter1.dir\
-  TARGET_PDB = filter1.pdb
+  INCLUDES = -I/usr/include/eigen3 -isystem /usr/local/include/opencv4
+  OBJECT_DIR = CMakeFiles/filter1.dir
+  OBJECT_FILE_DIR = CMakeFiles/filter1.dir/src/filter
 
 
 # =============================================================================
@@ -397,18 +358,16 @@ build CMakeFiles/filter1.dir/src/filter/filter1.cpp.obj: CXX_COMPILER__filter1_D
 
 
 #############################################
-# Link the executable filter1.exe
+# Link the executable filter1
 
-build filter1.exe: CXX_EXECUTABLE_LINKER__filter1_Debug CMakeFiles/filter1.dir/src/filter/filter1.cpp.obj | D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_gapi455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_highgui455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_ml455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_objdetect455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_photo455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_stitching455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_video455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_videoio455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgcodecs455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_dnn455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_calib3d455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_features2d455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_flann455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgproc455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_core455.dll.a
+build filter1: CXX_EXECUTABLE_LINKER__filter1_Debug CMakeFiles/filter1.dir/src/filter/filter1.cpp.o | /usr/local/lib/libopencv_gapi.so.4.6.0 /usr/local/lib/libopencv_stitching.so.4.6.0 /usr/local/lib/libopencv_alphamat.so.4.6.0 /usr/local/lib/libopencv_aruco.so.4.6.0 /usr/local/lib/libopencv_barcode.so.4.6.0 /usr/local/lib/libopencv_bgsegm.so.4.6.0 /usr/local/lib/libopencv_bioinspired.so.4.6.0 /usr/local/lib/libopencv_ccalib.so.4.6.0 /usr/local/lib/libopencv_dnn_objdetect.so.4.6.0 /usr/local/lib/libopencv_dnn_superres.so.4.6.0 /usr/local/lib/libopencv_dpm.so.4.6.0 /usr/local/lib/libopencv_face.so.4.6.0 /usr/local/lib/libopencv_freetype.so.4.6.0 /usr/local/lib/libopencv_fuzzy.so.4.6.0 /usr/local/lib/libopencv_hfs.so.4.6.0 /usr/local/lib/libopencv_img_hash.so.4.6.0 /usr/local/lib/libopencv_intensity_transform.so.4.6.0 /usr/local/lib/libopencv_line_descriptor.so.4.6.0 /usr/local/lib/libopencv_mcc.so.4.6.0 /usr/local/lib/libopencv_quality.so.4.6.0 /usr/local/lib/libopencv_rapid.so.4.6.0 /usr/local/lib/libopencv_reg.so.4.6.0 /usr/local/lib/libopencv_rgbd.so.4.6.0 /usr/local/lib/libopencv_saliency.so.4.6.0 /usr/local/lib/libopencv_sfm.so.4.6.0 /usr/local/lib/libopencv_stereo.so.4.6.0 /usr/local/lib/libopencv_structured_light.so.4.6.0 /usr/local/lib/libopencv_superres.so.4.6.0 /usr/local/lib/libopencv_surface_matching.so.4.6.0 /usr/local/lib/libopencv_tracking.so.4.6.0 /usr/local/lib/libopencv_videostab.so.4.6.0 /usr/local/lib/libopencv_wechat_qrcode.so.4.6.0 /usr/local/lib/libopencv_xfeatures2d.so.4.6.0 /usr/local/lib/libopencv_xobjdetect.so.4.6.0 /usr/local/lib/libopencv_xphoto.so.4.6.0 /usr/local/lib/libopencv_shape.so.4.6.0 /usr/local/lib/libopencv_highgui.so.4.6.0 /usr/local/lib/libopencv_datasets.so.4.6.0 /usr/local/lib/libopencv_plot.so.4.6.0 /usr/local/lib/libopencv_text.so.4.6.0 /usr/local/lib/libopencv_ml.so.4.6.0 /usr/local/lib/libopencv_phase_unwrapping.so.4.6.0 /usr/local/lib/libopencv_optflow.so.4.6.0 /usr/local/lib/libopencv_ximgproc.so.4.6.0 /usr/local/lib/libopencv_video.so.4.6.0 /usr/local/lib/libopencv_videoio.so.4.6.0 /usr/local/lib/libopencv_imgcodecs.so.4.6.0 /usr/local/lib/libopencv_objdetect.so.4.6.0 /usr/local/lib/libopencv_calib3d.so.4.6.0 /usr/local/lib/libopencv_dnn.so.4.6.0 /usr/local/lib/libopencv_features2d.so.4.6.0 /usr/local/lib/libopencv_flann.so.4.6.0 /usr/local/lib/libopencv_photo.so.4.6.0 /usr/local/lib/libopencv_imgproc.so.4.6.0 /usr/local/lib/libopencv_core.so.4.6.0
   FLAGS = -g
-  LINK_LIBRARIES = D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_gapi455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_highgui455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_ml455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_objdetect455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_photo455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_stitching455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_video455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_videoio455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgcodecs455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_dnn455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_calib3d455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_features2d455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_flann455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgproc455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_core455.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\filter1.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\filter1.dir\
-  TARGET_FILE = filter1.exe
-  TARGET_IMPLIB = libfilter1.dll.a
-  TARGET_PDB = filter1.pdb
+  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  /usr/local/lib/libopencv_gapi.so.4.6.0  /usr/local/lib/libopencv_stitching.so.4.6.0  /usr/local/lib/libopencv_alphamat.so.4.6.0  /usr/local/lib/libopencv_aruco.so.4.6.0  /usr/local/lib/libopencv_barcode.so.4.6.0  /usr/local/lib/libopencv_bgsegm.so.4.6.0  /usr/local/lib/libopencv_bioinspired.so.4.6.0  /usr/local/lib/libopencv_ccalib.so.4.6.0  /usr/local/lib/libopencv_dnn_objdetect.so.4.6.0  /usr/local/lib/libopencv_dnn_superres.so.4.6.0  /usr/local/lib/libopencv_dpm.so.4.6.0  /usr/local/lib/libopencv_face.so.4.6.0  /usr/local/lib/libopencv_freetype.so.4.6.0  /usr/local/lib/libopencv_fuzzy.so.4.6.0  /usr/local/lib/libopencv_hfs.so.4.6.0  /usr/local/lib/libopencv_img_hash.so.4.6.0  /usr/local/lib/libopencv_intensity_transform.so.4.6.0  /usr/local/lib/libopencv_line_descriptor.so.4.6.0  /usr/local/lib/libopencv_mcc.so.4.6.0  /usr/local/lib/libopencv_quality.so.4.6.0  /usr/local/lib/libopencv_rapid.so.4.6.0  /usr/local/lib/libopencv_reg.so.4.6.0  /usr/local/lib/libopencv_rgbd.so.4.6.0  /usr/local/lib/libopencv_saliency.so.4.6.0  /usr/local/lib/libopencv_sfm.so.4.6.0  /usr/local/lib/libopencv_stereo.so.4.6.0  /usr/local/lib/libopencv_structured_light.so.4.6.0  /usr/local/lib/libopencv_superres.so.4.6.0  /usr/local/lib/libopencv_surface_matching.so.4.6.0  /usr/local/lib/libopencv_tracking.so.4.6.0  /usr/local/lib/libopencv_videostab.so.4.6.0  /usr/local/lib/libopencv_wechat_qrcode.so.4.6.0  /usr/local/lib/libopencv_xfeatures2d.so.4.6.0  /usr/local/lib/libopencv_xobjdetect.so.4.6.0  /usr/local/lib/libopencv_xphoto.so.4.6.0  /usr/local/lib/libopencv_shape.so.4.6.0  /usr/local/lib/libopencv_highgui.so.4.6.0  /usr/local/lib/libopencv_datasets.so.4.6.0  /usr/local/lib/libopencv_plot.so.4.6.0  /usr/local/lib/libopencv_text.so.4.6.0  /usr/local/lib/libopencv_ml.so.4.6.0  /usr/local/lib/libopencv_phase_unwrapping.so.4.6.0  /usr/local/lib/libopencv_optflow.so.4.6.0  /usr/local/lib/libopencv_ximgproc.so.4.6.0  /usr/local/lib/libopencv_video.so.4.6.0  /usr/local/lib/libopencv_videoio.so.4.6.0  /usr/local/lib/libopencv_imgcodecs.so.4.6.0  /usr/local/lib/libopencv_objdetect.so.4.6.0  /usr/local/lib/libopencv_calib3d.so.4.6.0  /usr/local/lib/libopencv_dnn.so.4.6.0  /usr/local/lib/libopencv_features2d.so.4.6.0  /usr/local/lib/libopencv_flann.so.4.6.0  /usr/local/lib/libopencv_photo.so.4.6.0  /usr/local/lib/libopencv_imgproc.so.4.6.0  /usr/local/lib/libopencv_core.so.4.6.0
+  OBJECT_DIR = CMakeFiles/filter1.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = filter1
+  TARGET_PDB = filter1.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target canny1
@@ -419,14 +378,12 @@ build filter1.exe: CXX_EXECUTABLE_LINKER__filter1_Debug CMakeFiles/filter1.dir/s
 
 build cmake_object_order_depends_target_canny1: phony || CMakeFiles/canny1.dir
 
-build CMakeFiles/canny1.dir/src/contour-detect/canny1.cpp.obj: CXX_COMPILER__canny1_Debug D$:/program/cpp/opencv_learn/src/contour-detect/canny1.cpp || cmake_object_order_depends_target_canny1
-  DEP_FILE = CMakeFiles\canny1.dir\src\contour-detect\canny1.cpp.obj.d
+build CMakeFiles/canny1.dir/src/contour-detect/canny1.cpp.o: CXX_COMPILER__canny1_Debug /home/sjtu/code/cpp/opencv_learn/src/contour-detect/canny1.cpp || cmake_object_order_depends_target_canny1
+  DEP_FILE = CMakeFiles/canny1.dir/src/contour-detect/canny1.cpp.o.d
   FLAGS = -g -std=gnu++11
-  INCLUDES = -isystem D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/include
-  OBJECT_DIR = CMakeFiles\canny1.dir
-  OBJECT_FILE_DIR = CMakeFiles\canny1.dir\src\contour-detect
-  TARGET_COMPILE_PDB = CMakeFiles\canny1.dir\
-  TARGET_PDB = canny1.pdb
+  INCLUDES = -I/usr/include/eigen3 -isystem /usr/local/include/opencv4
+  OBJECT_DIR = CMakeFiles/canny1.dir
+  OBJECT_FILE_DIR = CMakeFiles/canny1.dir/src/contour-detect
 
 
 # =============================================================================
@@ -434,18 +391,16 @@ build CMakeFiles/canny1.dir/src/contour-detect/canny1.cpp.obj: CXX_COMPILER__can
 
 
 #############################################
-# Link the executable canny1.exe
+# Link the executable canny1
 
-build canny1.exe: CXX_EXECUTABLE_LINKER__canny1_Debug CMakeFiles/canny1.dir/src/contour-detect/canny1.cpp.obj | D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_gapi455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_highgui455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_ml455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_objdetect455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_photo455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_stitching455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_video455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_videoio455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgcodecs455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_dnn455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_calib3d455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_features2d455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_flann455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgproc455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_core455.dll.a
+build canny1: CXX_EXECUTABLE_LINKER__canny1_Debug CMakeFiles/canny1.dir/src/contour-detect/canny1.cpp.o | /usr/local/lib/libopencv_gapi.so.4.6.0 /usr/local/lib/libopencv_stitching.so.4.6.0 /usr/local/lib/libopencv_alphamat.so.4.6.0 /usr/local/lib/libopencv_aruco.so.4.6.0 /usr/local/lib/libopencv_barcode.so.4.6.0 /usr/local/lib/libopencv_bgsegm.so.4.6.0 /usr/local/lib/libopencv_bioinspired.so.4.6.0 /usr/local/lib/libopencv_ccalib.so.4.6.0 /usr/local/lib/libopencv_dnn_objdetect.so.4.6.0 /usr/local/lib/libopencv_dnn_superres.so.4.6.0 /usr/local/lib/libopencv_dpm.so.4.6.0 /usr/local/lib/libopencv_face.so.4.6.0 /usr/local/lib/libopencv_freetype.so.4.6.0 /usr/local/lib/libopencv_fuzzy.so.4.6.0 /usr/local/lib/libopencv_hfs.so.4.6.0 /usr/local/lib/libopencv_img_hash.so.4.6.0 /usr/local/lib/libopencv_intensity_transform.so.4.6.0 /usr/local/lib/libopencv_line_descriptor.so.4.6.0 /usr/local/lib/libopencv_mcc.so.4.6.0 /usr/local/lib/libopencv_quality.so.4.6.0 /usr/local/lib/libopencv_rapid.so.4.6.0 /usr/local/lib/libopencv_reg.so.4.6.0 /usr/local/lib/libopencv_rgbd.so.4.6.0 /usr/local/lib/libopencv_saliency.so.4.6.0 /usr/local/lib/libopencv_sfm.so.4.6.0 /usr/local/lib/libopencv_stereo.so.4.6.0 /usr/local/lib/libopencv_structured_light.so.4.6.0 /usr/local/lib/libopencv_superres.so.4.6.0 /usr/local/lib/libopencv_surface_matching.so.4.6.0 /usr/local/lib/libopencv_tracking.so.4.6.0 /usr/local/lib/libopencv_videostab.so.4.6.0 /usr/local/lib/libopencv_wechat_qrcode.so.4.6.0 /usr/local/lib/libopencv_xfeatures2d.so.4.6.0 /usr/local/lib/libopencv_xobjdetect.so.4.6.0 /usr/local/lib/libopencv_xphoto.so.4.6.0 /usr/local/lib/libopencv_shape.so.4.6.0 /usr/local/lib/libopencv_highgui.so.4.6.0 /usr/local/lib/libopencv_datasets.so.4.6.0 /usr/local/lib/libopencv_plot.so.4.6.0 /usr/local/lib/libopencv_text.so.4.6.0 /usr/local/lib/libopencv_ml.so.4.6.0 /usr/local/lib/libopencv_phase_unwrapping.so.4.6.0 /usr/local/lib/libopencv_optflow.so.4.6.0 /usr/local/lib/libopencv_ximgproc.so.4.6.0 /usr/local/lib/libopencv_video.so.4.6.0 /usr/local/lib/libopencv_videoio.so.4.6.0 /usr/local/lib/libopencv_imgcodecs.so.4.6.0 /usr/local/lib/libopencv_objdetect.so.4.6.0 /usr/local/lib/libopencv_calib3d.so.4.6.0 /usr/local/lib/libopencv_dnn.so.4.6.0 /usr/local/lib/libopencv_features2d.so.4.6.0 /usr/local/lib/libopencv_flann.so.4.6.0 /usr/local/lib/libopencv_photo.so.4.6.0 /usr/local/lib/libopencv_imgproc.so.4.6.0 /usr/local/lib/libopencv_core.so.4.6.0
   FLAGS = -g
-  LINK_LIBRARIES = D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_gapi455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_highgui455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_ml455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_objdetect455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_photo455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_stitching455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_video455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_videoio455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgcodecs455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_dnn455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_calib3d455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_features2d455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_flann455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgproc455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_core455.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\canny1.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\canny1.dir\
-  TARGET_FILE = canny1.exe
-  TARGET_IMPLIB = libcanny1.dll.a
-  TARGET_PDB = canny1.pdb
+  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  /usr/local/lib/libopencv_gapi.so.4.6.0  /usr/local/lib/libopencv_stitching.so.4.6.0  /usr/local/lib/libopencv_alphamat.so.4.6.0  /usr/local/lib/libopencv_aruco.so.4.6.0  /usr/local/lib/libopencv_barcode.so.4.6.0  /usr/local/lib/libopencv_bgsegm.so.4.6.0  /usr/local/lib/libopencv_bioinspired.so.4.6.0  /usr/local/lib/libopencv_ccalib.so.4.6.0  /usr/local/lib/libopencv_dnn_objdetect.so.4.6.0  /usr/local/lib/libopencv_dnn_superres.so.4.6.0  /usr/local/lib/libopencv_dpm.so.4.6.0  /usr/local/lib/libopencv_face.so.4.6.0  /usr/local/lib/libopencv_freetype.so.4.6.0  /usr/local/lib/libopencv_fuzzy.so.4.6.0  /usr/local/lib/libopencv_hfs.so.4.6.0  /usr/local/lib/libopencv_img_hash.so.4.6.0  /usr/local/lib/libopencv_intensity_transform.so.4.6.0  /usr/local/lib/libopencv_line_descriptor.so.4.6.0  /usr/local/lib/libopencv_mcc.so.4.6.0  /usr/local/lib/libopencv_quality.so.4.6.0  /usr/local/lib/libopencv_rapid.so.4.6.0  /usr/local/lib/libopencv_reg.so.4.6.0  /usr/local/lib/libopencv_rgbd.so.4.6.0  /usr/local/lib/libopencv_saliency.so.4.6.0  /usr/local/lib/libopencv_sfm.so.4.6.0  /usr/local/lib/libopencv_stereo.so.4.6.0  /usr/local/lib/libopencv_structured_light.so.4.6.0  /usr/local/lib/libopencv_superres.so.4.6.0  /usr/local/lib/libopencv_surface_matching.so.4.6.0  /usr/local/lib/libopencv_tracking.so.4.6.0  /usr/local/lib/libopencv_videostab.so.4.6.0  /usr/local/lib/libopencv_wechat_qrcode.so.4.6.0  /usr/local/lib/libopencv_xfeatures2d.so.4.6.0  /usr/local/lib/libopencv_xobjdetect.so.4.6.0  /usr/local/lib/libopencv_xphoto.so.4.6.0  /usr/local/lib/libopencv_shape.so.4.6.0  /usr/local/lib/libopencv_highgui.so.4.6.0  /usr/local/lib/libopencv_datasets.so.4.6.0  /usr/local/lib/libopencv_plot.so.4.6.0  /usr/local/lib/libopencv_text.so.4.6.0  /usr/local/lib/libopencv_ml.so.4.6.0  /usr/local/lib/libopencv_phase_unwrapping.so.4.6.0  /usr/local/lib/libopencv_optflow.so.4.6.0  /usr/local/lib/libopencv_ximgproc.so.4.6.0  /usr/local/lib/libopencv_video.so.4.6.0  /usr/local/lib/libopencv_videoio.so.4.6.0  /usr/local/lib/libopencv_imgcodecs.so.4.6.0  /usr/local/lib/libopencv_objdetect.so.4.6.0  /usr/local/lib/libopencv_calib3d.so.4.6.0  /usr/local/lib/libopencv_dnn.so.4.6.0  /usr/local/lib/libopencv_features2d.so.4.6.0  /usr/local/lib/libopencv_flann.so.4.6.0  /usr/local/lib/libopencv_photo.so.4.6.0  /usr/local/lib/libopencv_imgproc.so.4.6.0  /usr/local/lib/libopencv_core.so.4.6.0
+  OBJECT_DIR = CMakeFiles/canny1.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = canny1
+  TARGET_PDB = canny1.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target channel
@@ -456,14 +411,12 @@ build canny1.exe: CXX_EXECUTABLE_LINKER__canny1_Debug CMakeFiles/canny1.dir/src/
 
 build cmake_object_order_depends_target_channel: phony || CMakeFiles/channel.dir
 
-build CMakeFiles/channel.dir/src/extract/channel.cpp.obj: CXX_COMPILER__channel_Debug D$:/program/cpp/opencv_learn/src/extract/channel.cpp || cmake_object_order_depends_target_channel
-  DEP_FILE = CMakeFiles\channel.dir\src\extract\channel.cpp.obj.d
+build CMakeFiles/channel.dir/src/extract/channel.cpp.o: CXX_COMPILER__channel_Debug /home/sjtu/code/cpp/opencv_learn/src/extract/channel.cpp || cmake_object_order_depends_target_channel
+  DEP_FILE = CMakeFiles/channel.dir/src/extract/channel.cpp.o.d
   FLAGS = -g -std=gnu++11
-  INCLUDES = -isystem D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/include
-  OBJECT_DIR = CMakeFiles\channel.dir
-  OBJECT_FILE_DIR = CMakeFiles\channel.dir\src\extract
-  TARGET_COMPILE_PDB = CMakeFiles\channel.dir\
-  TARGET_PDB = channel.pdb
+  INCLUDES = -I/usr/include/eigen3 -isystem /usr/local/include/opencv4
+  OBJECT_DIR = CMakeFiles/channel.dir
+  OBJECT_FILE_DIR = CMakeFiles/channel.dir/src/extract
 
 
 # =============================================================================
@@ -471,26 +424,250 @@ build CMakeFiles/channel.dir/src/extract/channel.cpp.obj: CXX_COMPILER__channel_
 
 
 #############################################
-# Link the executable channel.exe
+# Link the executable channel
 
-build channel.exe: CXX_EXECUTABLE_LINKER__channel_Debug CMakeFiles/channel.dir/src/extract/channel.cpp.obj | D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_gapi455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_highgui455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_ml455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_objdetect455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_photo455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_stitching455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_video455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_videoio455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgcodecs455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_dnn455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_calib3d455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_features2d455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_flann455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgproc455.dll.a D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_core455.dll.a
+build channel: CXX_EXECUTABLE_LINKER__channel_Debug CMakeFiles/channel.dir/src/extract/channel.cpp.o | /usr/local/lib/libopencv_gapi.so.4.6.0 /usr/local/lib/libopencv_stitching.so.4.6.0 /usr/local/lib/libopencv_alphamat.so.4.6.0 /usr/local/lib/libopencv_aruco.so.4.6.0 /usr/local/lib/libopencv_barcode.so.4.6.0 /usr/local/lib/libopencv_bgsegm.so.4.6.0 /usr/local/lib/libopencv_bioinspired.so.4.6.0 /usr/local/lib/libopencv_ccalib.so.4.6.0 /usr/local/lib/libopencv_dnn_objdetect.so.4.6.0 /usr/local/lib/libopencv_dnn_superres.so.4.6.0 /usr/local/lib/libopencv_dpm.so.4.6.0 /usr/local/lib/libopencv_face.so.4.6.0 /usr/local/lib/libopencv_freetype.so.4.6.0 /usr/local/lib/libopencv_fuzzy.so.4.6.0 /usr/local/lib/libopencv_hfs.so.4.6.0 /usr/local/lib/libopencv_img_hash.so.4.6.0 /usr/local/lib/libopencv_intensity_transform.so.4.6.0 /usr/local/lib/libopencv_line_descriptor.so.4.6.0 /usr/local/lib/libopencv_mcc.so.4.6.0 /usr/local/lib/libopencv_quality.so.4.6.0 /usr/local/lib/libopencv_rapid.so.4.6.0 /usr/local/lib/libopencv_reg.so.4.6.0 /usr/local/lib/libopencv_rgbd.so.4.6.0 /usr/local/lib/libopencv_saliency.so.4.6.0 /usr/local/lib/libopencv_sfm.so.4.6.0 /usr/local/lib/libopencv_stereo.so.4.6.0 /usr/local/lib/libopencv_structured_light.so.4.6.0 /usr/local/lib/libopencv_superres.so.4.6.0 /usr/local/lib/libopencv_surface_matching.so.4.6.0 /usr/local/lib/libopencv_tracking.so.4.6.0 /usr/local/lib/libopencv_videostab.so.4.6.0 /usr/local/lib/libopencv_wechat_qrcode.so.4.6.0 /usr/local/lib/libopencv_xfeatures2d.so.4.6.0 /usr/local/lib/libopencv_xobjdetect.so.4.6.0 /usr/local/lib/libopencv_xphoto.so.4.6.0 /usr/local/lib/libopencv_shape.so.4.6.0 /usr/local/lib/libopencv_highgui.so.4.6.0 /usr/local/lib/libopencv_datasets.so.4.6.0 /usr/local/lib/libopencv_plot.so.4.6.0 /usr/local/lib/libopencv_text.so.4.6.0 /usr/local/lib/libopencv_ml.so.4.6.0 /usr/local/lib/libopencv_phase_unwrapping.so.4.6.0 /usr/local/lib/libopencv_optflow.so.4.6.0 /usr/local/lib/libopencv_ximgproc.so.4.6.0 /usr/local/lib/libopencv_video.so.4.6.0 /usr/local/lib/libopencv_videoio.so.4.6.0 /usr/local/lib/libopencv_imgcodecs.so.4.6.0 /usr/local/lib/libopencv_objdetect.so.4.6.0 /usr/local/lib/libopencv_calib3d.so.4.6.0 /usr/local/lib/libopencv_dnn.so.4.6.0 /usr/local/lib/libopencv_features2d.so.4.6.0 /usr/local/lib/libopencv_flann.so.4.6.0 /usr/local/lib/libopencv_photo.so.4.6.0 /usr/local/lib/libopencv_imgproc.so.4.6.0 /usr/local/lib/libopencv_core.so.4.6.0
   FLAGS = -g
-  LINK_LIBRARIES = D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_gapi455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_highgui455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_ml455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_objdetect455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_photo455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_stitching455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_video455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_videoio455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgcodecs455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_dnn455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_calib3d455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_features2d455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_flann455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_imgproc455.dll.a  D:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/libopencv_core455.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\channel.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\channel.dir\
-  TARGET_FILE = channel.exe
-  TARGET_IMPLIB = libchannel.dll.a
-  TARGET_PDB = channel.pdb
+  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  /usr/local/lib/libopencv_gapi.so.4.6.0  /usr/local/lib/libopencv_stitching.so.4.6.0  /usr/local/lib/libopencv_alphamat.so.4.6.0  /usr/local/lib/libopencv_aruco.so.4.6.0  /usr/local/lib/libopencv_barcode.so.4.6.0  /usr/local/lib/libopencv_bgsegm.so.4.6.0  /usr/local/lib/libopencv_bioinspired.so.4.6.0  /usr/local/lib/libopencv_ccalib.so.4.6.0  /usr/local/lib/libopencv_dnn_objdetect.so.4.6.0  /usr/local/lib/libopencv_dnn_superres.so.4.6.0  /usr/local/lib/libopencv_dpm.so.4.6.0  /usr/local/lib/libopencv_face.so.4.6.0  /usr/local/lib/libopencv_freetype.so.4.6.0  /usr/local/lib/libopencv_fuzzy.so.4.6.0  /usr/local/lib/libopencv_hfs.so.4.6.0  /usr/local/lib/libopencv_img_hash.so.4.6.0  /usr/local/lib/libopencv_intensity_transform.so.4.6.0  /usr/local/lib/libopencv_line_descriptor.so.4.6.0  /usr/local/lib/libopencv_mcc.so.4.6.0  /usr/local/lib/libopencv_quality.so.4.6.0  /usr/local/lib/libopencv_rapid.so.4.6.0  /usr/local/lib/libopencv_reg.so.4.6.0  /usr/local/lib/libopencv_rgbd.so.4.6.0  /usr/local/lib/libopencv_saliency.so.4.6.0  /usr/local/lib/libopencv_sfm.so.4.6.0  /usr/local/lib/libopencv_stereo.so.4.6.0  /usr/local/lib/libopencv_structured_light.so.4.6.0  /usr/local/lib/libopencv_superres.so.4.6.0  /usr/local/lib/libopencv_surface_matching.so.4.6.0  /usr/local/lib/libopencv_tracking.so.4.6.0  /usr/local/lib/libopencv_videostab.so.4.6.0  /usr/local/lib/libopencv_wechat_qrcode.so.4.6.0  /usr/local/lib/libopencv_xfeatures2d.so.4.6.0  /usr/local/lib/libopencv_xobjdetect.so.4.6.0  /usr/local/lib/libopencv_xphoto.so.4.6.0  /usr/local/lib/libopencv_shape.so.4.6.0  /usr/local/lib/libopencv_highgui.so.4.6.0  /usr/local/lib/libopencv_datasets.so.4.6.0  /usr/local/lib/libopencv_plot.so.4.6.0  /usr/local/lib/libopencv_text.so.4.6.0  /usr/local/lib/libopencv_ml.so.4.6.0  /usr/local/lib/libopencv_phase_unwrapping.so.4.6.0  /usr/local/lib/libopencv_optflow.so.4.6.0  /usr/local/lib/libopencv_ximgproc.so.4.6.0  /usr/local/lib/libopencv_video.so.4.6.0  /usr/local/lib/libopencv_videoio.so.4.6.0  /usr/local/lib/libopencv_imgcodecs.so.4.6.0  /usr/local/lib/libopencv_objdetect.so.4.6.0  /usr/local/lib/libopencv_calib3d.so.4.6.0  /usr/local/lib/libopencv_dnn.so.4.6.0  /usr/local/lib/libopencv_features2d.so.4.6.0  /usr/local/lib/libopencv_flann.so.4.6.0  /usr/local/lib/libopencv_photo.so.4.6.0  /usr/local/lib/libopencv_imgproc.so.4.6.0  /usr/local/lib/libopencv_core.so.4.6.0
+  OBJECT_DIR = CMakeFiles/channel.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = channel
+  TARGET_PDB = channel.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target eigen_demo1
+
+
+#############################################
+# Order-only phony target for eigen_demo1
+
+build cmake_object_order_depends_target_eigen_demo1: phony || CMakeFiles/eigen_demo1.dir
+
+build CMakeFiles/eigen_demo1.dir/src/Eigen_learn/eigen_demo1.cpp.o: CXX_COMPILER__eigen_demo1_Debug /home/sjtu/code/cpp/opencv_learn/src/Eigen_learn/eigen_demo1.cpp || cmake_object_order_depends_target_eigen_demo1
+  DEP_FILE = CMakeFiles/eigen_demo1.dir/src/Eigen_learn/eigen_demo1.cpp.o.d
+  FLAGS = -g -std=gnu++11
+  INCLUDES = -I/usr/local/include/opencv4 -I/usr/include/eigen3
+  OBJECT_DIR = CMakeFiles/eigen_demo1.dir
+  OBJECT_FILE_DIR = CMakeFiles/eigen_demo1.dir/src/Eigen_learn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target eigen_demo1
+
+
+#############################################
+# Link the executable eigen_demo1
+
+build eigen_demo1: CXX_EXECUTABLE_LINKER__eigen_demo1_Debug CMakeFiles/eigen_demo1.dir/src/Eigen_learn/eigen_demo1.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/eigen_demo1.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = eigen_demo1
+  TARGET_PDB = eigen_demo1.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target eigen_demo2
+
+
+#############################################
+# Order-only phony target for eigen_demo2
+
+build cmake_object_order_depends_target_eigen_demo2: phony || CMakeFiles/eigen_demo2.dir
+
+build CMakeFiles/eigen_demo2.dir/src/Eigen_learn/eigen_demo2.cpp.o: CXX_COMPILER__eigen_demo2_Debug /home/sjtu/code/cpp/opencv_learn/src/Eigen_learn/eigen_demo2.cpp || cmake_object_order_depends_target_eigen_demo2
+  DEP_FILE = CMakeFiles/eigen_demo2.dir/src/Eigen_learn/eigen_demo2.cpp.o.d
+  FLAGS = -g -std=gnu++11
+  INCLUDES = -I/usr/local/include/opencv4 -I/usr/include/eigen3
+  OBJECT_DIR = CMakeFiles/eigen_demo2.dir
+  OBJECT_FILE_DIR = CMakeFiles/eigen_demo2.dir/src/Eigen_learn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target eigen_demo2
+
+
+#############################################
+# Link the executable eigen_demo2
+
+build eigen_demo2: CXX_EXECUTABLE_LINKER__eigen_demo2_Debug CMakeFiles/eigen_demo2.dir/src/Eigen_learn/eigen_demo2.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/eigen_demo2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = eigen_demo2
+  TARGET_PDB = eigen_demo2.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target eigen_demo3
+
+
+#############################################
+# Order-only phony target for eigen_demo3
+
+build cmake_object_order_depends_target_eigen_demo3: phony || CMakeFiles/eigen_demo3.dir
+
+build CMakeFiles/eigen_demo3.dir/src/Eigen_learn/eigen_demo3.cpp.o: CXX_COMPILER__eigen_demo3_Debug /home/sjtu/code/cpp/opencv_learn/src/Eigen_learn/eigen_demo3.cpp || cmake_object_order_depends_target_eigen_demo3
+  DEP_FILE = CMakeFiles/eigen_demo3.dir/src/Eigen_learn/eigen_demo3.cpp.o.d
+  FLAGS = -g -std=gnu++11
+  INCLUDES = -I/usr/local/include/opencv4 -I/usr/include/eigen3
+  OBJECT_DIR = CMakeFiles/eigen_demo3.dir
+  OBJECT_FILE_DIR = CMakeFiles/eigen_demo3.dir/src/Eigen_learn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target eigen_demo3
+
+
+#############################################
+# Link the executable eigen_demo3
+
+build eigen_demo3: CXX_EXECUTABLE_LINKER__eigen_demo3_Debug CMakeFiles/eigen_demo3.dir/src/Eigen_learn/eigen_demo3.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/eigen_demo3.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = eigen_demo3
+  TARGET_PDB = eigen_demo3.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target eigen_demo4
+
+
+#############################################
+# Order-only phony target for eigen_demo4
+
+build cmake_object_order_depends_target_eigen_demo4: phony || CMakeFiles/eigen_demo4.dir
+
+build CMakeFiles/eigen_demo4.dir/src/Eigen_learn/eigen_demo4.cpp.o: CXX_COMPILER__eigen_demo4_Debug /home/sjtu/code/cpp/opencv_learn/src/Eigen_learn/eigen_demo4.cpp || cmake_object_order_depends_target_eigen_demo4
+  DEP_FILE = CMakeFiles/eigen_demo4.dir/src/Eigen_learn/eigen_demo4.cpp.o.d
+  FLAGS = -g -std=gnu++11
+  INCLUDES = -I/usr/local/include/opencv4 -I/usr/include/eigen3
+  OBJECT_DIR = CMakeFiles/eigen_demo4.dir
+  OBJECT_FILE_DIR = CMakeFiles/eigen_demo4.dir/src/Eigen_learn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target eigen_demo4
+
+
+#############################################
+# Link the executable eigen_demo4
+
+build eigen_demo4: CXX_EXECUTABLE_LINKER__eigen_demo4_Debug CMakeFiles/eigen_demo4.dir/src/Eigen_learn/eigen_demo4.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/eigen_demo4.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = eigen_demo4
+  TARGET_PDB = eigen_demo4.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target geometry
+
+
+#############################################
+# Order-only phony target for geometry
+
+build cmake_object_order_depends_target_geometry: phony || CMakeFiles/geometry.dir
+
+build CMakeFiles/geometry.dir/src/Eigen_learn/geometry.cpp.o: CXX_COMPILER__geometry_Debug /home/sjtu/code/cpp/opencv_learn/src/Eigen_learn/geometry.cpp || cmake_object_order_depends_target_geometry
+  DEP_FILE = CMakeFiles/geometry.dir/src/Eigen_learn/geometry.cpp.o.d
+  FLAGS = -g -std=gnu++11
+  INCLUDES = -I/usr/local/include/opencv4 -I/usr/include/eigen3
+  OBJECT_DIR = CMakeFiles/geometry.dir
+  OBJECT_FILE_DIR = CMakeFiles/geometry.dir/src/Eigen_learn
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target geometry
+
+
+#############################################
+# Link the executable geometry
+
+build geometry: CXX_EXECUTABLE_LINKER__geometry_Debug CMakeFiles/geometry.dir/src/Eigen_learn/geometry.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/geometry.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = geometry
+  TARGET_PDB = geometry.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target transform_main
+
+
+#############################################
+# Order-only phony target for transform_main
+
+build cmake_object_order_depends_target_transform_main: phony || CMakeFiles/transform_main.dir
+
+build CMakeFiles/transform_main.dir/src/demo/transform/main.cpp.o: CXX_COMPILER__transform_main_Debug /home/sjtu/code/cpp/opencv_learn/src/demo/transform/main.cpp || cmake_object_order_depends_target_transform_main
+  DEP_FILE = CMakeFiles/transform_main.dir/src/demo/transform/main.cpp.o.d
+  FLAGS = -g -std=gnu++11
+  INCLUDES = -I/usr/local/include/opencv4 -I/usr/include/eigen3
+  OBJECT_DIR = CMakeFiles/transform_main.dir
+  OBJECT_FILE_DIR = CMakeFiles/transform_main.dir/src/demo/transform
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target transform_main
+
+
+#############################################
+# Link the executable transform_main
+
+build transform_main: CXX_EXECUTABLE_LINKER__transform_main_Debug CMakeFiles/transform_main.dir/src/demo/transform/main.cpp.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/transform_main.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = transform_main
+  TARGET_PDB = transform_main.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target calibration
+
+
+#############################################
+# Order-only phony target for calibration
+
+build cmake_object_order_depends_target_calibration: phony || CMakeFiles/calibration.dir
+
+build CMakeFiles/calibration.dir/src/camera/calibration.cpp.o: CXX_COMPILER__calibration_Debug /home/sjtu/code/cpp/opencv_learn/src/camera/calibration.cpp || cmake_object_order_depends_target_calibration
+  DEP_FILE = CMakeFiles/calibration.dir/src/camera/calibration.cpp.o.d
+  FLAGS = -g -std=gnu++11
+  INCLUDES = -I/usr/include/eigen3 -isystem /usr/local/include/opencv4
+  OBJECT_DIR = CMakeFiles/calibration.dir
+  OBJECT_FILE_DIR = CMakeFiles/calibration.dir/src/camera
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target calibration
+
+
+#############################################
+# Link the executable calibration
+
+build calibration: CXX_EXECUTABLE_LINKER__calibration_Debug CMakeFiles/calibration.dir/src/camera/calibration.cpp.o | /usr/local/lib/libopencv_gapi.so.4.6.0 /usr/local/lib/libopencv_stitching.so.4.6.0 /usr/local/lib/libopencv_alphamat.so.4.6.0 /usr/local/lib/libopencv_aruco.so.4.6.0 /usr/local/lib/libopencv_barcode.so.4.6.0 /usr/local/lib/libopencv_bgsegm.so.4.6.0 /usr/local/lib/libopencv_bioinspired.so.4.6.0 /usr/local/lib/libopencv_ccalib.so.4.6.0 /usr/local/lib/libopencv_dnn_objdetect.so.4.6.0 /usr/local/lib/libopencv_dnn_superres.so.4.6.0 /usr/local/lib/libopencv_dpm.so.4.6.0 /usr/local/lib/libopencv_face.so.4.6.0 /usr/local/lib/libopencv_freetype.so.4.6.0 /usr/local/lib/libopencv_fuzzy.so.4.6.0 /usr/local/lib/libopencv_hfs.so.4.6.0 /usr/local/lib/libopencv_img_hash.so.4.6.0 /usr/local/lib/libopencv_intensity_transform.so.4.6.0 /usr/local/lib/libopencv_line_descriptor.so.4.6.0 /usr/local/lib/libopencv_mcc.so.4.6.0 /usr/local/lib/libopencv_quality.so.4.6.0 /usr/local/lib/libopencv_rapid.so.4.6.0 /usr/local/lib/libopencv_reg.so.4.6.0 /usr/local/lib/libopencv_rgbd.so.4.6.0 /usr/local/lib/libopencv_saliency.so.4.6.0 /usr/local/lib/libopencv_sfm.so.4.6.0 /usr/local/lib/libopencv_stereo.so.4.6.0 /usr/local/lib/libopencv_structured_light.so.4.6.0 /usr/local/lib/libopencv_superres.so.4.6.0 /usr/local/lib/libopencv_surface_matching.so.4.6.0 /usr/local/lib/libopencv_tracking.so.4.6.0 /usr/local/lib/libopencv_videostab.so.4.6.0 /usr/local/lib/libopencv_wechat_qrcode.so.4.6.0 /usr/local/lib/libopencv_xfeatures2d.so.4.6.0 /usr/local/lib/libopencv_xobjdetect.so.4.6.0 /usr/local/lib/libopencv_xphoto.so.4.6.0 /usr/local/lib/libopencv_shape.so.4.6.0 /usr/local/lib/libopencv_highgui.so.4.6.0 /usr/local/lib/libopencv_datasets.so.4.6.0 /usr/local/lib/libopencv_plot.so.4.6.0 /usr/local/lib/libopencv_text.so.4.6.0 /usr/local/lib/libopencv_ml.so.4.6.0 /usr/local/lib/libopencv_phase_unwrapping.so.4.6.0 /usr/local/lib/libopencv_optflow.so.4.6.0 /usr/local/lib/libopencv_ximgproc.so.4.6.0 /usr/local/lib/libopencv_video.so.4.6.0 /usr/local/lib/libopencv_videoio.so.4.6.0 /usr/local/lib/libopencv_imgcodecs.so.4.6.0 /usr/local/lib/libopencv_objdetect.so.4.6.0 /usr/local/lib/libopencv_calib3d.so.4.6.0 /usr/local/lib/libopencv_dnn.so.4.6.0 /usr/local/lib/libopencv_features2d.so.4.6.0 /usr/local/lib/libopencv_flann.so.4.6.0 /usr/local/lib/libopencv_photo.so.4.6.0 /usr/local/lib/libopencv_imgproc.so.4.6.0 /usr/local/lib/libopencv_core.so.4.6.0
+  FLAGS = -g
+  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  /usr/local/lib/libopencv_gapi.so.4.6.0  /usr/local/lib/libopencv_stitching.so.4.6.0  /usr/local/lib/libopencv_alphamat.so.4.6.0  /usr/local/lib/libopencv_aruco.so.4.6.0  /usr/local/lib/libopencv_barcode.so.4.6.0  /usr/local/lib/libopencv_bgsegm.so.4.6.0  /usr/local/lib/libopencv_bioinspired.so.4.6.0  /usr/local/lib/libopencv_ccalib.so.4.6.0  /usr/local/lib/libopencv_dnn_objdetect.so.4.6.0  /usr/local/lib/libopencv_dnn_superres.so.4.6.0  /usr/local/lib/libopencv_dpm.so.4.6.0  /usr/local/lib/libopencv_face.so.4.6.0  /usr/local/lib/libopencv_freetype.so.4.6.0  /usr/local/lib/libopencv_fuzzy.so.4.6.0  /usr/local/lib/libopencv_hfs.so.4.6.0  /usr/local/lib/libopencv_img_hash.so.4.6.0  /usr/local/lib/libopencv_intensity_transform.so.4.6.0  /usr/local/lib/libopencv_line_descriptor.so.4.6.0  /usr/local/lib/libopencv_mcc.so.4.6.0  /usr/local/lib/libopencv_quality.so.4.6.0  /usr/local/lib/libopencv_rapid.so.4.6.0  /usr/local/lib/libopencv_reg.so.4.6.0  /usr/local/lib/libopencv_rgbd.so.4.6.0  /usr/local/lib/libopencv_saliency.so.4.6.0  /usr/local/lib/libopencv_sfm.so.4.6.0  /usr/local/lib/libopencv_stereo.so.4.6.0  /usr/local/lib/libopencv_structured_light.so.4.6.0  /usr/local/lib/libopencv_superres.so.4.6.0  /usr/local/lib/libopencv_surface_matching.so.4.6.0  /usr/local/lib/libopencv_tracking.so.4.6.0  /usr/local/lib/libopencv_videostab.so.4.6.0  /usr/local/lib/libopencv_wechat_qrcode.so.4.6.0  /usr/local/lib/libopencv_xfeatures2d.so.4.6.0  /usr/local/lib/libopencv_xobjdetect.so.4.6.0  /usr/local/lib/libopencv_xphoto.so.4.6.0  /usr/local/lib/libopencv_shape.so.4.6.0  /usr/local/lib/libopencv_highgui.so.4.6.0  /usr/local/lib/libopencv_datasets.so.4.6.0  /usr/local/lib/libopencv_plot.so.4.6.0  /usr/local/lib/libopencv_text.so.4.6.0  /usr/local/lib/libopencv_ml.so.4.6.0  /usr/local/lib/libopencv_phase_unwrapping.so.4.6.0  /usr/local/lib/libopencv_optflow.so.4.6.0  /usr/local/lib/libopencv_ximgproc.so.4.6.0  /usr/local/lib/libopencv_video.so.4.6.0  /usr/local/lib/libopencv_videoio.so.4.6.0  /usr/local/lib/libopencv_imgcodecs.so.4.6.0  /usr/local/lib/libopencv_objdetect.so.4.6.0  /usr/local/lib/libopencv_calib3d.so.4.6.0  /usr/local/lib/libopencv_dnn.so.4.6.0  /usr/local/lib/libopencv_features2d.so.4.6.0  /usr/local/lib/libopencv_flann.so.4.6.0  /usr/local/lib/libopencv_photo.so.4.6.0  /usr/local/lib/libopencv_imgproc.so.4.6.0  /usr/local/lib/libopencv_core.so.4.6.0
+  OBJECT_DIR = CMakeFiles/calibration.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = calibration
+  TARGET_PDB = calibration.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\program\cpp\opencv_learn\cmake-build-debug && D:\software\jetbrains-app\apps\CLion\ch-0\222.4167.35\bin\cmake\win\bin\cmake.exe -E echo "No interactive CMake dialog available.""
-  DESC = No interactive CMake dialog available...
+  COMMAND = cd /home/sjtu/code/cpp/opencv_learn/cmake-build-debug && /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/bin/ccmake -S/home/sjtu/code/cpp/opencv_learn -B/home/sjtu/code/cpp/opencv_learn/cmake-build-debug
+  DESC = Running CMake cache editor...
+  pool = console
   restat = 1
 
 build edit_cache: phony CMakeFiles/edit_cache.util
@@ -500,7 +677,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\program\cpp\opencv_learn\cmake-build-debug && D:\software\jetbrains-app\apps\CLion\ch-0\222.4167.35\bin\cmake\win\bin\cmake.exe --regenerate-during-build -SD:\program\cpp\opencv_learn -BD:\program\cpp\opencv_learn\cmake-build-debug"
+  COMMAND = cd /home/sjtu/code/cpp/opencv_learn/cmake-build-debug && /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/bin/cmake --regenerate-during-build -S/home/sjtu/code/cpp/opencv_learn -B/home/sjtu/code/cpp/opencv_learn/cmake-build-debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -510,39 +687,15 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build binarization1: phony binarization1.exe
-
-build binarization2: phony binarization2.exe
-
-build canny1: phony canny1.exe
-
-build channel: phony channel.exe
-
-build demo1: phony demo1.exe
-
-build demo2: phony demo2.exe
-
-build demo3: phony demo3.exe
-
-build energy_main: phony energy_main.exe
-
-build filter1: phony filter1.exe
-
-build hsv-substraction: phony hsv-substraction.exe
-
-build my_test: phony my_test.exe
-
-build ocv: phony ocv.exe
-
 # =============================================================================
 # Folder targets.
 
 # =============================================================================
 
 #############################################
-# Folder: D:/program/cpp/opencv_learn/cmake-build-debug
+# Folder: /home/sjtu/code/cpp/opencv_learn/cmake-build-debug
 
-build all: phony ocv.exe my_test.exe demo1.exe demo2.exe demo3.exe binarization1.exe binarization2.exe energy_main.exe hsv-substraction.exe filter1.exe canny1.exe channel.exe
+build all: phony ocv my_test demo1 demo2 demo3 binarization1 binarization2 energy_main hsv-substraction filter1 canny1 channel eigen_demo1 eigen_demo2 eigen_demo3 eigen_demo4 geometry transform_main calibration
 
 # =============================================================================
 # Built-in targets
@@ -551,14 +704,14 @@ build all: phony ocv.exe my_test.exe demo1.exe demo2.exe demo3.exe binarization1
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeRCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeCCompiler.cmake.in D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeCCompilerABI.c D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeCInformation.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXCompiler.cmake.in D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXInformation.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeCompilerIdDetection.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineCCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineCXXCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineCompileFeatures.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineCompilerABI.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineCompilerId.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineRCCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineSystem.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeFindBinUtils.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeGenericSystem.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeParseImplicitIncludeInfo.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeParseImplicitLinkInfo.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeParseLibraryArchitecture.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeRCCompiler.cmake.in D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeRCInformation.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystem.cmake.in D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeTestCCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeTestCXXCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeTestCompilerCommon.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeTestRCCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/ADSP-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/ARMCC-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/ARMClang-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/AppleClang-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Borland-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Bruce-C-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompilerInternal.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Compaq-C-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Cray-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Embarcadero-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Fujitsu-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GHS-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-C-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-C.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-FindBinUtils.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/HP-C-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/HP-CXX-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/IAR-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Intel-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/LCC-C-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/MSVC-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/NVHPC-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/NVIDIA-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/PGI-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/PathScale-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/SCO-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/SDCC-C-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/SunPro-C-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/TI-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Watcom-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/XL-C-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/XL-CXX-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/XLClang-C-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/zOS-C-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/FindPackageMessage.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Internal/FeatureTesting.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-Determine-CXX.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-windres.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/OpenCVConfig-version.cmake D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/OpenCVConfig.cmake D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/OpenCVConfig.cmake D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/OpenCVModules-release.cmake D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/OpenCVModules.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCInformation.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-C.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageMessage.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-C.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-CXX.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Platform/UnixPaths.cmake /usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake /usr/local/lib/cmake/opencv4/OpenCVConfig.cmake /usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake /usr/local/lib/cmake/opencv4/OpenCVModules.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeRCCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeCCompiler.cmake.in D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeCCompilerABI.c D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeCInformation.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXCompiler.cmake.in D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeCXXInformation.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeCompilerIdDetection.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineCCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineCXXCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineCompileFeatures.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineCompilerABI.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineCompilerId.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineRCCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeDetermineSystem.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeFindBinUtils.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeGenericSystem.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeParseImplicitIncludeInfo.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeParseImplicitLinkInfo.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeParseLibraryArchitecture.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeRCCompiler.cmake.in D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeRCInformation.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystem.cmake.in D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeTestCCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeTestCXXCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeTestCompilerCommon.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/CMakeTestRCCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/ADSP-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/ARMCC-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/ARMClang-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/AppleClang-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Borland-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Bruce-C-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompilerInternal.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Compaq-C-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Cray-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Embarcadero-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Fujitsu-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GHS-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-C-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-C.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU-FindBinUtils.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/GNU.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/HP-C-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/HP-CXX-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/IAR-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Intel-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/LCC-C-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/MSVC-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/NVHPC-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/NVIDIA-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/PGI-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/PathScale-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/SCO-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/SDCC-C-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/SunPro-C-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/TI-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/Watcom-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/XL-C-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/XL-CXX-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/XLClang-C-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/zOS-C-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/FindPackageMessage.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Internal/FeatureTesting.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-Determine-CXX.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C-ABI.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-C.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX-ABI.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU-CXX.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-GNU.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows-windres.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Platform/Windows.cmake D$:/software/jetbrains-app/apps/CLion/ch-0/222.4167.35/bin/cmake/win/share/cmake-3.23/Modules/Platform/WindowsPaths.cmake D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/OpenCVConfig-version.cmake D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/OpenCVConfig.cmake D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/OpenCVConfig.cmake D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/OpenCVModules-release.cmake D$:/software/opencv/OpenCV-MinGW-Build-OpenCV-4.5.5-x64/x64/mingw/lib/OpenCVModules.cmake: phony
+build ../CMakeLists.txt /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCInformation.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-C.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU-CXX.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Compiler/GNU.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/FindPackageMessage.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-C.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU-CXX.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux-GNU.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Platform/Linux.cmake /home/sjtu/Downloads/clion-2022.2.1/bin/cmake/linux/share/cmake-3.23/Modules/Platform/UnixPaths.cmake /usr/local/lib/cmake/opencv4/OpenCVConfig-version.cmake /usr/local/lib/cmake/opencv4/OpenCVConfig.cmake /usr/local/lib/cmake/opencv4/OpenCVModules-release.cmake /usr/local/lib/cmake/opencv4/OpenCVModules.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCCompiler.cmake CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
 
 
 #############################################

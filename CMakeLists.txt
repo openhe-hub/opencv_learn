@@ -42,3 +42,6 @@ add_executable(eigen_demo4 src/Eigen_learn/eigen_demo4.cpp)
 add_executable(geometry src/Eigen_learn/geometry.cpp)
 
 add_executable(transform_main src/demo/transform/main.cpp)
+
+add_executable(calibration src/camera/calibration.cpp)
+target_link_libraries(calibration ${OpenCV_LIBS})
