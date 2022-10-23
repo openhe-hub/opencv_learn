@@ -18,7 +18,7 @@ int main() {
 
     int k = 0, n = 0, found = 0;
 
-    cv::Mat src0 = cv::imread("../src/camera/distortion.png");
+    cv::Mat src0 = cv::imread("../src/camera/calibration/distortion.png");
     img_size.width = src0.cols;
     img_size.height = src0.rows;
 
@@ -39,7 +39,9 @@ int main() {
 
     // calibration
     cv::Size square_size(10,10);
+    // 相机内参
     cv::Mat  camera_matrix(3,3,CV_32FC1,cv::Scalar::all(0));
+    // 畸变参数
     cv::Mat  dist_coef(1,5,CV_32FC1,cv::Scalar::all(0));
     std::vector<std::vector<cv::Point3f>> point_grid_pos;
     std::vector<cv::Point3f> point_grid_pos_buf;

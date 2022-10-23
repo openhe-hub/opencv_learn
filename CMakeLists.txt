@@ -43,5 +43,11 @@ add_executable(geometry src/Eigen_learn/geometry.cpp)
 
 add_executable(transform_main src/demo/transform/main.cpp)
 
-add_executable(calibration src/camera/calibration.cpp)
+add_executable(calibration src/camera/calibration/calibration.cpp)
 target_link_libraries(calibration ${OpenCV_LIBS})
+add_executable(undistortion src/camera/undistortion/undistortion.cpp)
+target_link_libraries(undistortion ${OpenCV_LIBS})
+add_executable(undistortion2 src/camera/undistortion/undistortion2.cpp)
+target_link_libraries(undistortion2 ${OpenCV_LIBS})
+add_executable(stereo1 src/camera/stereo/stereo1.cpp)
+target_link_libraries(stereo1 ${OpenCV_LIBS})

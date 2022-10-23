@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /tmp/tmp.OfiI9xYkEj
+CMAKE_SOURCE_DIR = /tmp/opencv_learn
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /tmp/tmp.OfiI9xYkEj/cmake-build-debug
+CMAKE_BINARY_DIR = /tmp/opencv_learn/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/tmp.OfiI9xYkEj/cmake-build-debug/CMakeFiles /tmp/tmp.OfiI9xYkEj/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/opencv_learn/cmake-build-debug/CMakeFiles /tmp/opencv_learn/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/tmp.OfiI9xYkEj/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /tmp/opencv_learn/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,95 +111,95 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named hsv-substraction
+# Target rules for targets named calibration
 
 # Build rule for target.
-hsv-substraction: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 hsv-substraction
-.PHONY : hsv-substraction
+calibration: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 calibration
+.PHONY : calibration
 
 # fast build rule for target.
-hsv-substraction/fast:
-	$(MAKE) -f CMakeFiles/hsv-substraction.dir/build.make CMakeFiles/hsv-substraction.dir/build
-.PHONY : hsv-substraction/fast
+calibration/fast:
+	$(MAKE) -f CMakeFiles/calibration.dir/build.make CMakeFiles/calibration.dir/build
+.PHONY : calibration/fast
 
 #=============================================================================
-# Target rules for targets named binarization2
+# Target rules for targets named transform_main
 
 # Build rule for target.
-binarization2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 binarization2
-.PHONY : binarization2
+transform_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 transform_main
+.PHONY : transform_main
 
 # fast build rule for target.
-binarization2/fast:
-	$(MAKE) -f CMakeFiles/binarization2.dir/build.make CMakeFiles/binarization2.dir/build
-.PHONY : binarization2/fast
+transform_main/fast:
+	$(MAKE) -f CMakeFiles/transform_main.dir/build.make CMakeFiles/transform_main.dir/build
+.PHONY : transform_main/fast
 
 #=============================================================================
-# Target rules for targets named demo3
+# Target rules for targets named eigen_demo4
 
 # Build rule for target.
-demo3: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 demo3
-.PHONY : demo3
+eigen_demo4: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 eigen_demo4
+.PHONY : eigen_demo4
 
 # fast build rule for target.
-demo3/fast:
-	$(MAKE) -f CMakeFiles/demo3.dir/build.make CMakeFiles/demo3.dir/build
-.PHONY : demo3/fast
+eigen_demo4/fast:
+	$(MAKE) -f CMakeFiles/eigen_demo4.dir/build.make CMakeFiles/eigen_demo4.dir/build
+.PHONY : eigen_demo4/fast
 
 #=============================================================================
-# Target rules for targets named filter1
+# Target rules for targets named eigen_demo3
 
 # Build rule for target.
-filter1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 filter1
-.PHONY : filter1
+eigen_demo3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 eigen_demo3
+.PHONY : eigen_demo3
 
 # fast build rule for target.
-filter1/fast:
-	$(MAKE) -f CMakeFiles/filter1.dir/build.make CMakeFiles/filter1.dir/build
-.PHONY : filter1/fast
+eigen_demo3/fast:
+	$(MAKE) -f CMakeFiles/eigen_demo3.dir/build.make CMakeFiles/eigen_demo3.dir/build
+.PHONY : eigen_demo3/fast
 
 #=============================================================================
-# Target rules for targets named demo2
+# Target rules for targets named eigen_demo2
 
 # Build rule for target.
-demo2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 demo2
-.PHONY : demo2
+eigen_demo2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 eigen_demo2
+.PHONY : eigen_demo2
 
 # fast build rule for target.
-demo2/fast:
-	$(MAKE) -f CMakeFiles/demo2.dir/build.make CMakeFiles/demo2.dir/build
-.PHONY : demo2/fast
+eigen_demo2/fast:
+	$(MAKE) -f CMakeFiles/eigen_demo2.dir/build.make CMakeFiles/eigen_demo2.dir/build
+.PHONY : eigen_demo2/fast
 
 #=============================================================================
-# Target rules for targets named demo1
+# Target rules for targets named geometry
 
 # Build rule for target.
-demo1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 demo1
-.PHONY : demo1
+geometry: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 geometry
+.PHONY : geometry
 
 # fast build rule for target.
-demo1/fast:
-	$(MAKE) -f CMakeFiles/demo1.dir/build.make CMakeFiles/demo1.dir/build
-.PHONY : demo1/fast
+geometry/fast:
+	$(MAKE) -f CMakeFiles/geometry.dir/build.make CMakeFiles/geometry.dir/build
+.PHONY : geometry/fast
 
 #=============================================================================
-# Target rules for targets named energy_main
+# Target rules for targets named ocv
 
 # Build rule for target.
-energy_main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 energy_main
-.PHONY : energy_main
+ocv: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ocv
+.PHONY : ocv
 
 # fast build rule for target.
-energy_main/fast:
-	$(MAKE) -f CMakeFiles/energy_main.dir/build.make CMakeFiles/energy_main.dir/build
-.PHONY : energy_main/fast
+ocv/fast:
+	$(MAKE) -f CMakeFiles/ocv.dir/build.make CMakeFiles/ocv.dir/build
+.PHONY : ocv/fast
 
 #=============================================================================
 # Target rules for targets named binarization1
@@ -215,6 +215,84 @@ binarization1/fast:
 .PHONY : binarization1/fast
 
 #=============================================================================
+# Target rules for targets named demo1
+
+# Build rule for target.
+demo1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo1
+.PHONY : demo1
+
+# fast build rule for target.
+demo1/fast:
+	$(MAKE) -f CMakeFiles/demo1.dir/build.make CMakeFiles/demo1.dir/build
+.PHONY : demo1/fast
+
+#=============================================================================
+# Target rules for targets named undistortion2
+
+# Build rule for target.
+undistortion2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 undistortion2
+.PHONY : undistortion2
+
+# fast build rule for target.
+undistortion2/fast:
+	$(MAKE) -f CMakeFiles/undistortion2.dir/build.make CMakeFiles/undistortion2.dir/build
+.PHONY : undistortion2/fast
+
+#=============================================================================
+# Target rules for targets named demo3
+
+# Build rule for target.
+demo3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo3
+.PHONY : demo3
+
+# fast build rule for target.
+demo3/fast:
+	$(MAKE) -f CMakeFiles/demo3.dir/build.make CMakeFiles/demo3.dir/build
+.PHONY : demo3/fast
+
+#=============================================================================
+# Target rules for targets named energy_main
+
+# Build rule for target.
+energy_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 energy_main
+.PHONY : energy_main
+
+# fast build rule for target.
+energy_main/fast:
+	$(MAKE) -f CMakeFiles/energy_main.dir/build.make CMakeFiles/energy_main.dir/build
+.PHONY : energy_main/fast
+
+#=============================================================================
+# Target rules for targets named demo2
+
+# Build rule for target.
+demo2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo2
+.PHONY : demo2
+
+# fast build rule for target.
+demo2/fast:
+	$(MAKE) -f CMakeFiles/demo2.dir/build.make CMakeFiles/demo2.dir/build
+.PHONY : demo2/fast
+
+#=============================================================================
+# Target rules for targets named canny1
+
+# Build rule for target.
+canny1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 canny1
+.PHONY : canny1
+
+# fast build rule for target.
+canny1/fast:
+	$(MAKE) -f CMakeFiles/canny1.dir/build.make CMakeFiles/canny1.dir/build
+.PHONY : canny1/fast
+
+#=============================================================================
 # Target rules for targets named my_test
 
 # Build rule for target.
@@ -228,17 +306,95 @@ my_test/fast:
 .PHONY : my_test/fast
 
 #=============================================================================
-# Target rules for targets named ocv
+# Target rules for targets named channel
 
 # Build rule for target.
-ocv: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ocv
-.PHONY : ocv
+channel: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 channel
+.PHONY : channel
 
 # fast build rule for target.
-ocv/fast:
-	$(MAKE) -f CMakeFiles/ocv.dir/build.make CMakeFiles/ocv.dir/build
-.PHONY : ocv/fast
+channel/fast:
+	$(MAKE) -f CMakeFiles/channel.dir/build.make CMakeFiles/channel.dir/build
+.PHONY : channel/fast
+
+#=============================================================================
+# Target rules for targets named stereo1
+
+# Build rule for target.
+stereo1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 stereo1
+.PHONY : stereo1
+
+# fast build rule for target.
+stereo1/fast:
+	$(MAKE) -f CMakeFiles/stereo1.dir/build.make CMakeFiles/stereo1.dir/build
+.PHONY : stereo1/fast
+
+#=============================================================================
+# Target rules for targets named undistortion
+
+# Build rule for target.
+undistortion: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 undistortion
+.PHONY : undistortion
+
+# fast build rule for target.
+undistortion/fast:
+	$(MAKE) -f CMakeFiles/undistortion.dir/build.make CMakeFiles/undistortion.dir/build
+.PHONY : undistortion/fast
+
+#=============================================================================
+# Target rules for targets named binarization2
+
+# Build rule for target.
+binarization2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 binarization2
+.PHONY : binarization2
+
+# fast build rule for target.
+binarization2/fast:
+	$(MAKE) -f CMakeFiles/binarization2.dir/build.make CMakeFiles/binarization2.dir/build
+.PHONY : binarization2/fast
+
+#=============================================================================
+# Target rules for targets named hsv-substraction
+
+# Build rule for target.
+hsv-substraction: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hsv-substraction
+.PHONY : hsv-substraction
+
+# fast build rule for target.
+hsv-substraction/fast:
+	$(MAKE) -f CMakeFiles/hsv-substraction.dir/build.make CMakeFiles/hsv-substraction.dir/build
+.PHONY : hsv-substraction/fast
+
+#=============================================================================
+# Target rules for targets named filter1
+
+# Build rule for target.
+filter1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 filter1
+.PHONY : filter1
+
+# fast build rule for target.
+filter1/fast:
+	$(MAKE) -f CMakeFiles/filter1.dir/build.make CMakeFiles/filter1.dir/build
+.PHONY : filter1/fast
+
+#=============================================================================
+# Target rules for targets named eigen_demo1
+
+# Build rule for target.
+eigen_demo1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 eigen_demo1
+.PHONY : eigen_demo1
+
+# fast build rule for target.
+eigen_demo1/fast:
+	$(MAKE) -f CMakeFiles/eigen_demo1.dir/build.make CMakeFiles/eigen_demo1.dir/build
+.PHONY : eigen_demo1/fast
 
 main.o: main.cpp.o
 
@@ -266,6 +422,141 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/ocv.dir/build.make CMakeFiles/ocv.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+src/Eigen_learn/eigen_demo1.o: src/Eigen_learn/eigen_demo1.cpp.o
+
+.PHONY : src/Eigen_learn/eigen_demo1.o
+
+# target to build an object file
+src/Eigen_learn/eigen_demo1.cpp.o:
+	$(MAKE) -f CMakeFiles/eigen_demo1.dir/build.make CMakeFiles/eigen_demo1.dir/src/Eigen_learn/eigen_demo1.cpp.o
+.PHONY : src/Eigen_learn/eigen_demo1.cpp.o
+
+src/Eigen_learn/eigen_demo1.i: src/Eigen_learn/eigen_demo1.cpp.i
+
+.PHONY : src/Eigen_learn/eigen_demo1.i
+
+# target to preprocess a source file
+src/Eigen_learn/eigen_demo1.cpp.i:
+	$(MAKE) -f CMakeFiles/eigen_demo1.dir/build.make CMakeFiles/eigen_demo1.dir/src/Eigen_learn/eigen_demo1.cpp.i
+.PHONY : src/Eigen_learn/eigen_demo1.cpp.i
+
+src/Eigen_learn/eigen_demo1.s: src/Eigen_learn/eigen_demo1.cpp.s
+
+.PHONY : src/Eigen_learn/eigen_demo1.s
+
+# target to generate assembly for a file
+src/Eigen_learn/eigen_demo1.cpp.s:
+	$(MAKE) -f CMakeFiles/eigen_demo1.dir/build.make CMakeFiles/eigen_demo1.dir/src/Eigen_learn/eigen_demo1.cpp.s
+.PHONY : src/Eigen_learn/eigen_demo1.cpp.s
+
+src/Eigen_learn/eigen_demo2.o: src/Eigen_learn/eigen_demo2.cpp.o
+
+.PHONY : src/Eigen_learn/eigen_demo2.o
+
+# target to build an object file
+src/Eigen_learn/eigen_demo2.cpp.o:
+	$(MAKE) -f CMakeFiles/eigen_demo2.dir/build.make CMakeFiles/eigen_demo2.dir/src/Eigen_learn/eigen_demo2.cpp.o
+.PHONY : src/Eigen_learn/eigen_demo2.cpp.o
+
+src/Eigen_learn/eigen_demo2.i: src/Eigen_learn/eigen_demo2.cpp.i
+
+.PHONY : src/Eigen_learn/eigen_demo2.i
+
+# target to preprocess a source file
+src/Eigen_learn/eigen_demo2.cpp.i:
+	$(MAKE) -f CMakeFiles/eigen_demo2.dir/build.make CMakeFiles/eigen_demo2.dir/src/Eigen_learn/eigen_demo2.cpp.i
+.PHONY : src/Eigen_learn/eigen_demo2.cpp.i
+
+src/Eigen_learn/eigen_demo2.s: src/Eigen_learn/eigen_demo2.cpp.s
+
+.PHONY : src/Eigen_learn/eigen_demo2.s
+
+# target to generate assembly for a file
+src/Eigen_learn/eigen_demo2.cpp.s:
+	$(MAKE) -f CMakeFiles/eigen_demo2.dir/build.make CMakeFiles/eigen_demo2.dir/src/Eigen_learn/eigen_demo2.cpp.s
+.PHONY : src/Eigen_learn/eigen_demo2.cpp.s
+
+src/Eigen_learn/eigen_demo3.o: src/Eigen_learn/eigen_demo3.cpp.o
+
+.PHONY : src/Eigen_learn/eigen_demo3.o
+
+# target to build an object file
+src/Eigen_learn/eigen_demo3.cpp.o:
+	$(MAKE) -f CMakeFiles/eigen_demo3.dir/build.make CMakeFiles/eigen_demo3.dir/src/Eigen_learn/eigen_demo3.cpp.o
+.PHONY : src/Eigen_learn/eigen_demo3.cpp.o
+
+src/Eigen_learn/eigen_demo3.i: src/Eigen_learn/eigen_demo3.cpp.i
+
+.PHONY : src/Eigen_learn/eigen_demo3.i
+
+# target to preprocess a source file
+src/Eigen_learn/eigen_demo3.cpp.i:
+	$(MAKE) -f CMakeFiles/eigen_demo3.dir/build.make CMakeFiles/eigen_demo3.dir/src/Eigen_learn/eigen_demo3.cpp.i
+.PHONY : src/Eigen_learn/eigen_demo3.cpp.i
+
+src/Eigen_learn/eigen_demo3.s: src/Eigen_learn/eigen_demo3.cpp.s
+
+.PHONY : src/Eigen_learn/eigen_demo3.s
+
+# target to generate assembly for a file
+src/Eigen_learn/eigen_demo3.cpp.s:
+	$(MAKE) -f CMakeFiles/eigen_demo3.dir/build.make CMakeFiles/eigen_demo3.dir/src/Eigen_learn/eigen_demo3.cpp.s
+.PHONY : src/Eigen_learn/eigen_demo3.cpp.s
+
+src/Eigen_learn/eigen_demo4.o: src/Eigen_learn/eigen_demo4.cpp.o
+
+.PHONY : src/Eigen_learn/eigen_demo4.o
+
+# target to build an object file
+src/Eigen_learn/eigen_demo4.cpp.o:
+	$(MAKE) -f CMakeFiles/eigen_demo4.dir/build.make CMakeFiles/eigen_demo4.dir/src/Eigen_learn/eigen_demo4.cpp.o
+.PHONY : src/Eigen_learn/eigen_demo4.cpp.o
+
+src/Eigen_learn/eigen_demo4.i: src/Eigen_learn/eigen_demo4.cpp.i
+
+.PHONY : src/Eigen_learn/eigen_demo4.i
+
+# target to preprocess a source file
+src/Eigen_learn/eigen_demo4.cpp.i:
+	$(MAKE) -f CMakeFiles/eigen_demo4.dir/build.make CMakeFiles/eigen_demo4.dir/src/Eigen_learn/eigen_demo4.cpp.i
+.PHONY : src/Eigen_learn/eigen_demo4.cpp.i
+
+src/Eigen_learn/eigen_demo4.s: src/Eigen_learn/eigen_demo4.cpp.s
+
+.PHONY : src/Eigen_learn/eigen_demo4.s
+
+# target to generate assembly for a file
+src/Eigen_learn/eigen_demo4.cpp.s:
+	$(MAKE) -f CMakeFiles/eigen_demo4.dir/build.make CMakeFiles/eigen_demo4.dir/src/Eigen_learn/eigen_demo4.cpp.s
+.PHONY : src/Eigen_learn/eigen_demo4.cpp.s
+
+src/Eigen_learn/geometry.o: src/Eigen_learn/geometry.cpp.o
+
+.PHONY : src/Eigen_learn/geometry.o
+
+# target to build an object file
+src/Eigen_learn/geometry.cpp.o:
+	$(MAKE) -f CMakeFiles/geometry.dir/build.make CMakeFiles/geometry.dir/src/Eigen_learn/geometry.cpp.o
+.PHONY : src/Eigen_learn/geometry.cpp.o
+
+src/Eigen_learn/geometry.i: src/Eigen_learn/geometry.cpp.i
+
+.PHONY : src/Eigen_learn/geometry.i
+
+# target to preprocess a source file
+src/Eigen_learn/geometry.cpp.i:
+	$(MAKE) -f CMakeFiles/geometry.dir/build.make CMakeFiles/geometry.dir/src/Eigen_learn/geometry.cpp.i
+.PHONY : src/Eigen_learn/geometry.cpp.i
+
+src/Eigen_learn/geometry.s: src/Eigen_learn/geometry.cpp.s
+
+.PHONY : src/Eigen_learn/geometry.s
+
+# target to generate assembly for a file
+src/Eigen_learn/geometry.cpp.s:
+	$(MAKE) -f CMakeFiles/geometry.dir/build.make CMakeFiles/geometry.dir/src/Eigen_learn/geometry.cpp.s
+.PHONY : src/Eigen_learn/geometry.cpp.s
 
 src/binarization/binarization1.o: src/binarization/binarization1.cpp.o
 
@@ -321,6 +612,141 @@ src/binarization/binarization2.cpp.s:
 	$(MAKE) -f CMakeFiles/binarization2.dir/build.make CMakeFiles/binarization2.dir/src/binarization/binarization2.cpp.s
 .PHONY : src/binarization/binarization2.cpp.s
 
+src/camera/calibration/calibration.o: src/camera/calibration/calibration.cpp.o
+
+.PHONY : src/camera/calibration/calibration.o
+
+# target to build an object file
+src/camera/calibration/calibration.cpp.o:
+	$(MAKE) -f CMakeFiles/calibration.dir/build.make CMakeFiles/calibration.dir/src/camera/calibration/calibration.cpp.o
+.PHONY : src/camera/calibration/calibration.cpp.o
+
+src/camera/calibration/calibration.i: src/camera/calibration/calibration.cpp.i
+
+.PHONY : src/camera/calibration/calibration.i
+
+# target to preprocess a source file
+src/camera/calibration/calibration.cpp.i:
+	$(MAKE) -f CMakeFiles/calibration.dir/build.make CMakeFiles/calibration.dir/src/camera/calibration/calibration.cpp.i
+.PHONY : src/camera/calibration/calibration.cpp.i
+
+src/camera/calibration/calibration.s: src/camera/calibration/calibration.cpp.s
+
+.PHONY : src/camera/calibration/calibration.s
+
+# target to generate assembly for a file
+src/camera/calibration/calibration.cpp.s:
+	$(MAKE) -f CMakeFiles/calibration.dir/build.make CMakeFiles/calibration.dir/src/camera/calibration/calibration.cpp.s
+.PHONY : src/camera/calibration/calibration.cpp.s
+
+src/camera/stereo/stereo1.o: src/camera/stereo/stereo1.cpp.o
+
+.PHONY : src/camera/stereo/stereo1.o
+
+# target to build an object file
+src/camera/stereo/stereo1.cpp.o:
+	$(MAKE) -f CMakeFiles/stereo1.dir/build.make CMakeFiles/stereo1.dir/src/camera/stereo/stereo1.cpp.o
+.PHONY : src/camera/stereo/stereo1.cpp.o
+
+src/camera/stereo/stereo1.i: src/camera/stereo/stereo1.cpp.i
+
+.PHONY : src/camera/stereo/stereo1.i
+
+# target to preprocess a source file
+src/camera/stereo/stereo1.cpp.i:
+	$(MAKE) -f CMakeFiles/stereo1.dir/build.make CMakeFiles/stereo1.dir/src/camera/stereo/stereo1.cpp.i
+.PHONY : src/camera/stereo/stereo1.cpp.i
+
+src/camera/stereo/stereo1.s: src/camera/stereo/stereo1.cpp.s
+
+.PHONY : src/camera/stereo/stereo1.s
+
+# target to generate assembly for a file
+src/camera/stereo/stereo1.cpp.s:
+	$(MAKE) -f CMakeFiles/stereo1.dir/build.make CMakeFiles/stereo1.dir/src/camera/stereo/stereo1.cpp.s
+.PHONY : src/camera/stereo/stereo1.cpp.s
+
+src/camera/undistortion/undistortion.o: src/camera/undistortion/undistortion.cpp.o
+
+.PHONY : src/camera/undistortion/undistortion.o
+
+# target to build an object file
+src/camera/undistortion/undistortion.cpp.o:
+	$(MAKE) -f CMakeFiles/undistortion.dir/build.make CMakeFiles/undistortion.dir/src/camera/undistortion/undistortion.cpp.o
+.PHONY : src/camera/undistortion/undistortion.cpp.o
+
+src/camera/undistortion/undistortion.i: src/camera/undistortion/undistortion.cpp.i
+
+.PHONY : src/camera/undistortion/undistortion.i
+
+# target to preprocess a source file
+src/camera/undistortion/undistortion.cpp.i:
+	$(MAKE) -f CMakeFiles/undistortion.dir/build.make CMakeFiles/undistortion.dir/src/camera/undistortion/undistortion.cpp.i
+.PHONY : src/camera/undistortion/undistortion.cpp.i
+
+src/camera/undistortion/undistortion.s: src/camera/undistortion/undistortion.cpp.s
+
+.PHONY : src/camera/undistortion/undistortion.s
+
+# target to generate assembly for a file
+src/camera/undistortion/undistortion.cpp.s:
+	$(MAKE) -f CMakeFiles/undistortion.dir/build.make CMakeFiles/undistortion.dir/src/camera/undistortion/undistortion.cpp.s
+.PHONY : src/camera/undistortion/undistortion.cpp.s
+
+src/camera/undistortion/undistortion2.o: src/camera/undistortion/undistortion2.cpp.o
+
+.PHONY : src/camera/undistortion/undistortion2.o
+
+# target to build an object file
+src/camera/undistortion/undistortion2.cpp.o:
+	$(MAKE) -f CMakeFiles/undistortion2.dir/build.make CMakeFiles/undistortion2.dir/src/camera/undistortion/undistortion2.cpp.o
+.PHONY : src/camera/undistortion/undistortion2.cpp.o
+
+src/camera/undistortion/undistortion2.i: src/camera/undistortion/undistortion2.cpp.i
+
+.PHONY : src/camera/undistortion/undistortion2.i
+
+# target to preprocess a source file
+src/camera/undistortion/undistortion2.cpp.i:
+	$(MAKE) -f CMakeFiles/undistortion2.dir/build.make CMakeFiles/undistortion2.dir/src/camera/undistortion/undistortion2.cpp.i
+.PHONY : src/camera/undistortion/undistortion2.cpp.i
+
+src/camera/undistortion/undistortion2.s: src/camera/undistortion/undistortion2.cpp.s
+
+.PHONY : src/camera/undistortion/undistortion2.s
+
+# target to generate assembly for a file
+src/camera/undistortion/undistortion2.cpp.s:
+	$(MAKE) -f CMakeFiles/undistortion2.dir/build.make CMakeFiles/undistortion2.dir/src/camera/undistortion/undistortion2.cpp.s
+.PHONY : src/camera/undistortion/undistortion2.cpp.s
+
+src/contour-detect/canny1.o: src/contour-detect/canny1.cpp.o
+
+.PHONY : src/contour-detect/canny1.o
+
+# target to build an object file
+src/contour-detect/canny1.cpp.o:
+	$(MAKE) -f CMakeFiles/canny1.dir/build.make CMakeFiles/canny1.dir/src/contour-detect/canny1.cpp.o
+.PHONY : src/contour-detect/canny1.cpp.o
+
+src/contour-detect/canny1.i: src/contour-detect/canny1.cpp.i
+
+.PHONY : src/contour-detect/canny1.i
+
+# target to preprocess a source file
+src/contour-detect/canny1.cpp.i:
+	$(MAKE) -f CMakeFiles/canny1.dir/build.make CMakeFiles/canny1.dir/src/contour-detect/canny1.cpp.i
+.PHONY : src/contour-detect/canny1.cpp.i
+
+src/contour-detect/canny1.s: src/contour-detect/canny1.cpp.s
+
+.PHONY : src/contour-detect/canny1.s
+
+# target to generate assembly for a file
+src/contour-detect/canny1.cpp.s:
+	$(MAKE) -f CMakeFiles/canny1.dir/build.make CMakeFiles/canny1.dir/src/contour-detect/canny1.cpp.s
+.PHONY : src/contour-detect/canny1.cpp.s
+
 src/demo/energy/main.o: src/demo/energy/main.cpp.o
 
 .PHONY : src/demo/energy/main.o
@@ -347,6 +773,60 @@ src/demo/energy/main.s: src/demo/energy/main.cpp.s
 src/demo/energy/main.cpp.s:
 	$(MAKE) -f CMakeFiles/energy_main.dir/build.make CMakeFiles/energy_main.dir/src/demo/energy/main.cpp.s
 .PHONY : src/demo/energy/main.cpp.s
+
+src/demo/transform/main.o: src/demo/transform/main.cpp.o
+
+.PHONY : src/demo/transform/main.o
+
+# target to build an object file
+src/demo/transform/main.cpp.o:
+	$(MAKE) -f CMakeFiles/transform_main.dir/build.make CMakeFiles/transform_main.dir/src/demo/transform/main.cpp.o
+.PHONY : src/demo/transform/main.cpp.o
+
+src/demo/transform/main.i: src/demo/transform/main.cpp.i
+
+.PHONY : src/demo/transform/main.i
+
+# target to preprocess a source file
+src/demo/transform/main.cpp.i:
+	$(MAKE) -f CMakeFiles/transform_main.dir/build.make CMakeFiles/transform_main.dir/src/demo/transform/main.cpp.i
+.PHONY : src/demo/transform/main.cpp.i
+
+src/demo/transform/main.s: src/demo/transform/main.cpp.s
+
+.PHONY : src/demo/transform/main.s
+
+# target to generate assembly for a file
+src/demo/transform/main.cpp.s:
+	$(MAKE) -f CMakeFiles/transform_main.dir/build.make CMakeFiles/transform_main.dir/src/demo/transform/main.cpp.s
+.PHONY : src/demo/transform/main.cpp.s
+
+src/extract/channel.o: src/extract/channel.cpp.o
+
+.PHONY : src/extract/channel.o
+
+# target to build an object file
+src/extract/channel.cpp.o:
+	$(MAKE) -f CMakeFiles/channel.dir/build.make CMakeFiles/channel.dir/src/extract/channel.cpp.o
+.PHONY : src/extract/channel.cpp.o
+
+src/extract/channel.i: src/extract/channel.cpp.i
+
+.PHONY : src/extract/channel.i
+
+# target to preprocess a source file
+src/extract/channel.cpp.i:
+	$(MAKE) -f CMakeFiles/channel.dir/build.make CMakeFiles/channel.dir/src/extract/channel.cpp.i
+.PHONY : src/extract/channel.cpp.i
+
+src/extract/channel.s: src/extract/channel.cpp.s
+
+.PHONY : src/extract/channel.s
+
+# target to generate assembly for a file
+src/extract/channel.cpp.s:
+	$(MAKE) -f CMakeFiles/channel.dir/build.make CMakeFiles/channel.dir/src/extract/channel.cpp.s
+.PHONY : src/extract/channel.cpp.s
 
 src/extract/hsv-extract.o: src/extract/hsv-extract.cpp.o
 
@@ -517,29 +997,77 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... hsv-substraction"
-	@echo "... binarization2"
 	@echo "... edit_cache"
-	@echo "... demo3"
-	@echo "... filter1"
-	@echo "... demo2"
-	@echo "... demo1"
-	@echo "... energy_main"
-	@echo "... binarization1"
-	@echo "... my_test"
+	@echo "... calibration"
+	@echo "... transform_main"
+	@echo "... eigen_demo4"
+	@echo "... eigen_demo3"
+	@echo "... eigen_demo2"
+	@echo "... geometry"
 	@echo "... ocv"
+	@echo "... binarization1"
+	@echo "... demo1"
+	@echo "... undistortion2"
+	@echo "... demo3"
+	@echo "... energy_main"
+	@echo "... demo2"
+	@echo "... canny1"
+	@echo "... my_test"
+	@echo "... channel"
+	@echo "... stereo1"
+	@echo "... undistortion"
+	@echo "... binarization2"
+	@echo "... hsv-substraction"
+	@echo "... filter1"
+	@echo "... eigen_demo1"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/Eigen_learn/eigen_demo1.o"
+	@echo "... src/Eigen_learn/eigen_demo1.i"
+	@echo "... src/Eigen_learn/eigen_demo1.s"
+	@echo "... src/Eigen_learn/eigen_demo2.o"
+	@echo "... src/Eigen_learn/eigen_demo2.i"
+	@echo "... src/Eigen_learn/eigen_demo2.s"
+	@echo "... src/Eigen_learn/eigen_demo3.o"
+	@echo "... src/Eigen_learn/eigen_demo3.i"
+	@echo "... src/Eigen_learn/eigen_demo3.s"
+	@echo "... src/Eigen_learn/eigen_demo4.o"
+	@echo "... src/Eigen_learn/eigen_demo4.i"
+	@echo "... src/Eigen_learn/eigen_demo4.s"
+	@echo "... src/Eigen_learn/geometry.o"
+	@echo "... src/Eigen_learn/geometry.i"
+	@echo "... src/Eigen_learn/geometry.s"
 	@echo "... src/binarization/binarization1.o"
 	@echo "... src/binarization/binarization1.i"
 	@echo "... src/binarization/binarization1.s"
 	@echo "... src/binarization/binarization2.o"
 	@echo "... src/binarization/binarization2.i"
 	@echo "... src/binarization/binarization2.s"
+	@echo "... src/camera/calibration/calibration.o"
+	@echo "... src/camera/calibration/calibration.i"
+	@echo "... src/camera/calibration/calibration.s"
+	@echo "... src/camera/stereo/stereo1.o"
+	@echo "... src/camera/stereo/stereo1.i"
+	@echo "... src/camera/stereo/stereo1.s"
+	@echo "... src/camera/undistortion/undistortion.o"
+	@echo "... src/camera/undistortion/undistortion.i"
+	@echo "... src/camera/undistortion/undistortion.s"
+	@echo "... src/camera/undistortion/undistortion2.o"
+	@echo "... src/camera/undistortion/undistortion2.i"
+	@echo "... src/camera/undistortion/undistortion2.s"
+	@echo "... src/contour-detect/canny1.o"
+	@echo "... src/contour-detect/canny1.i"
+	@echo "... src/contour-detect/canny1.s"
 	@echo "... src/demo/energy/main.o"
 	@echo "... src/demo/energy/main.i"
 	@echo "... src/demo/energy/main.s"
+	@echo "... src/demo/transform/main.o"
+	@echo "... src/demo/transform/main.i"
+	@echo "... src/demo/transform/main.s"
+	@echo "... src/extract/channel.o"
+	@echo "... src/extract/channel.i"
+	@echo "... src/extract/channel.s"
 	@echo "... src/extract/hsv-extract.o"
 	@echo "... src/extract/hsv-extract.i"
 	@echo "... src/extract/hsv-extract.s"
