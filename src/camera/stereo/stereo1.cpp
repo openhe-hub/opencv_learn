@@ -51,12 +51,6 @@ int main(int argc, char **argv) {
     return 0;
 }
 
-sudo apt-get install libglew-dev
-        sudo apt-get install cmake
-        sudo apt-get install libpython2.7-dev
-        sudo apt-get install ffmpeg libavcodec-dev libavutil-dev libavformat-dev libswscale-dev libavdevice-dev
-        sudo apt-get install libdc1394-22-dev libraw1394-dev
-        sudo apt-get install libjpeg-dev libpng12-dev libtiff5-dev libopenexr-dev
 
 
 void showPointCloud(const vector<Vector4d, Eigen::aligned_allocator<Vector4d>> &pointcloud) {

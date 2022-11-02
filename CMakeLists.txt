@@ -1,15 +1,19 @@
 cmake_minimum_required(VERSION 3.10)
 project(ocv)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 14)
 
 find_package( OpenCV REQUIRED )
+find_package(Ceres REQUIRED)
 
 include_directories(${OpenCV_INCLUDE_DIRS})
+include_directories(${Ceres_INCLUDE_DIRS})
 include_directories("/usr/include/eigen3")
 
 add_executable(ocv main.cpp)
 target_link_libraries(  ocv ${OpenCV_LIBS}  )
+set(LIBS ${Ceres_LIBS_DIR}/libceres.a umfpack cxsparse glog gflags gomp
+        ccolamd btf klu cholmod lapack blas camd amd pthread)
 
 
 add_executable(my_test test/test.cpp)
@@ -49,5 +53,12 @@ add_executable(undistortion src/camera/undistortion/undistortion.cpp)
 target_link_libraries(undistortion ${OpenCV_LIBS})
 add_executable(undistortion2 src/camera/undistortion/undistortion2.cpp)
 target_link_libraries(undistortion2 ${OpenCV_LIBS})
-add_executable(stereo1 src/camera/stereo/stereo1.cpp)
-target_link_libraries(stereo1 ${OpenCV_LIBS})
+
+add_executable(pnp-demo src/camera/pnp/pnp-demo.cpp)
+target_link_libraries(pnp-demo ${OpenCV_LIBS})
+add_executable(origin-pred src/slam/kalman-filter/origin-pred.cpp)
+add_executable(kalman-demo1 src/slam/kalman-filter/kalman-demo1.cpp)
+add_executable(kalman-demo2 src/slam/kalman-filter/kalman-demo2.cpp)
+
+add_executable(ekf-demo1 src/slam/kalman-filter/ekf_demo1.cpp)
+target_link_libraries(ekf-demo1 ${CERES_LIBRARIES})
